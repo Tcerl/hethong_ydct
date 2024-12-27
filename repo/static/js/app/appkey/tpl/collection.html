@@ -1,0 +1,23 @@
+<!-- Page Header -->
+<div class="row header">
+	<div class="card col-12">
+		<div class="card-body py-2">
+			<h4 id="title_page" class="page-title text-uppercase text-center text-primary">Danh sách ứng dụng kết nối</h4>
+		</div>
+	</div>
+</div>
+<!-- End Page Header -->
+<div class="card">
+		<div class="card-body">
+			<div class="row ">
+				<div class="col-md-4 col-sm-12 mb-3">
+					<div block-bind="toolbar"></div>
+				</div>	
+				<div class="col-md-8 col-sm-12 mb-3">
+					<div class="form-group text-right" id="grid_search">
+			        </div>
+				</div>
+			</div>
+			<div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+		</div>
+</div>

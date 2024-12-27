@@ -1,0 +1,30 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "survey_id": {
+        "type": "string",
+        "required": true
+    },
+    "step_title": {
+        "type": "string"
+    },
+    "step_description": {
+        "type": "string"
+    },
+    "priority": {
+        "type": "number",
+        "default": 0
+    },
+    "status": {
+        "type": "number",
+        "default": 1
+    }
+}

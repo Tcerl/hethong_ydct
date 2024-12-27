@@ -1,0 +1,122 @@
+<div class="container-fluid px-0">
+    <div class="card">
+        <div class="card-body">
+            <h3 class="text-primary text-center">Đăng ký tài khoản sử dụng phần mềm truy xuất nguồn gốc dược liệu</h3>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="card-body">
+            <h4>Thông tin hành chính</h4>
+            <div class="row">
+                <div class="col-12 col-md-6 border-right">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Tên đơn vị <span class="text-danger">*</span></label>
+                        <input id="ten_coso" data-bind="value:ten_coso" class="form-control" placeholder="Nhập tên đơn vị">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold">Mã số đăng ký kinh doanh <span class="text-danger">*</span></label>
+                        <input id="sogiayphep" data-bind="value:sogiayphep" class="form-control" placeholder="Nhập mã số đăng ký kinh doanh">
+                        <small class="text-danger" style="padding-left: 2px;">(Đề nghị nhập Số giấy phép kinh doanh dược)</small>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12 col-md-6 pr-1">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Ngày cấp phép <span class="text-danger">*</span></label>
+                                <input class="form-control" data-bind="value:ngaycapphep">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 pl-1">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Loại hình hoạt động</label>
+                                <input class="form-control" data-bind="value:loai_donvi">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 pr-1">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Số điện thoại</label>
+                                <input class="form-control" data-bind="value:dienthoai" id="dienthoai" placeholder="Nhập số điện thoại liên hệ">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 pl-1">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Email</label>
+                                <input class="form-control" data-bind="value:email" id="email" placeholder="Nhập email liên hệ">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-weight-bold">Giới thiệu</label>
+                        <textarea class="form-control" data-bind="value:gioithieu" placeholder="Nhập giới thiệu về đơn vị"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="font-weight-bold">Đính kèm giấy phép kinh doanh <span class="text-danger">*</span></label>
+                        <button class="btn btn-sm btn-success btn-add-file mb-2 float-right"><i class="fa fa-plus"></i>  Thêm</button>
+						<div class="collapse show" id="taskcollapse1">
+							<div class="table-responsive w-80 list-attachment">
+							</div>
+						</div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Tỉnh/Thành</label>
+                        <select class="form-control" id="tinhthanh" placeholder="Tìm kiếm và chọn tỉnh thành"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold">Quận huyện</label>
+                        <select class="form-control" id="quanhuyen" placeholder="Tìm kiếm và chọn quận huyện"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold">Xã phường</label>
+                        <select class="form-control" id="xaphuong" placeholder="Tìm kiếm và chọn xã phường"></select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold">Địa chỉ chi tiết</label>
+                        <textarea class="form-control" placeholder="Nhập địa chỉ chi tiết"></textarea>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h4>Thông tin người quản trị và sử dụng để đăng nhập vào phần mềm</h4>
+            <div class="row">
+                <div class="col-12 col-md-6 border-right">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Họ và tên người dùng <span class="text-danger">*</span></label>
+                        <input class="form-control" id="nguoidaidien" data-bind="value:nguoidaidien" placeholder="Nhập tên người dùng">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold">Số điện thoại <span class="text-danger">*</span></label>
+                        <input class="form-control" id="nguoidaidien_dienthoai" data-bind="value:nguoidaidien_dienthoai" placeholder="Nhập số điện thoại người dùng">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold">Email <span class="text-danger">*</span></label>
+                        <input class="form-control" id="nguoidaidien_email" data-bind="value:nguoidaidien_email" placeholder="Nhập email người dùng">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Mật khẩu <span class="text-danger">*</span></label>
+                        <input class="form-control" id="password" type="password" data-bind="value:nguoidaidien_matkhau" placeholder="Nhập mật khẩu đăng nhập">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold">Xác nhận mật khẩu <span class="text-danger">*</span></label>
+                        <input class="form-control" id="comfirm-password" type="password" placeholder="Nhập lại mật khẩu">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row mt-4">
+            <div id="button-alway-show" class="text-center">
+                <button class="btn btn btn-secondary btn-back"><i class="fas fa-arrow-circle-left"></i> Quay lại</button>
+                <button class="btn btn btn-primary btn-register"><i class="far fa-check-circle"></i> Đăng ký</button>
+            </div>
+        </div>
+    </div>
+</div>

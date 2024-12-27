@@ -1,0 +1,98 @@
+
+<div block-bind="content">
+	<div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin vật tư đơn vị</h4>
+            </div>
+        </div>
+    </div>
+	<div class="card  card-small mb-4">
+		<div class="card-body">
+			<form class="form-horizontal row" role="form">
+				<div class="col-12 col-md-8">
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Nhóm vật tư<span class="text-danger">*</span></label>
+						<div class="col-sm-9">
+							<select id="selectize-nhom-vattu" class="form-control" placeholder="Chọn nhóm vật tư"></select>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Tên vật tư<span class="text-danger">*</span></label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:ten_vattu">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Tên thương mại<span class="text-danger">*</span></label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:ten_vattu_thuongmai">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Mã vật tư<span class="text-danger">*</span></label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" data-bind="value:ma_vattu">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Mã vật tư theo bảo hiểm</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" data-bind="value:ma_bhxh">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Mã vật tư bộ y tế</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" data-bind="value:ma_boyte">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Mã vật tư theo nhà sản xuất</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" data-bind="value:ma_sanxuat">
+						</div>
+					</div>
+					<!-- <div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Loại thuốc<span class="text-danger">*</span></label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:loai_vattu">
+						</div>
+					</div> -->
+					<!-- <div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Tên viết tắt</label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:ten_viettat">
+						</div>
+					</div> -->
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Đơn vị tính<span class="text-danger">*</span></label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:donvitinh">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Hãng sản xuất</label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:hang_sanxuat">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Nước sản xuất</label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:nuoc_sanxuat">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+				</div>
+                
+			</form>
+		</div>
+	</div>
+	<div class="form-group row" >
+        <!-- <div id="button-alway-show" > -->
+            <div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        <!-- </div> -->
+    </div>
+</div>

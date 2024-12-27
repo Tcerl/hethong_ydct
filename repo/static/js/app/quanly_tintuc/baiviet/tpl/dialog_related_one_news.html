@@ -1,0 +1,139 @@
+<div class="row text-center py-2" style="justify-content: center;">
+    <h4 class="page-title text-uppercase text-center text-primary">Chọn tin liên quan</h4>
+</div>
+<div class="card col-lg-12 col-xs-12">
+    <div class="card-body row">
+        <div class="form-group row col-sm-12">
+            <label class="col-form-label" for="simpleinput">Từ khóa</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="search">
+            </div>
+            <label class="col-form-label" for="simpleinput">Chuyên mục</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="selectize_category">
+            </div>
+            <button type="button" class="btn btn-sm btn-primary" id="btn_search">Tìm kiếm</button>
+        </div>
+        <!-- <hr class="solid"> -->
+        <div class="row col-sm-12 mt-2">
+            <ul class="blog" id="list_post">
+            </ul>
+            <div class="pagination-container" id="pag_grid">
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #btn_search {
+        height: 31px;
+    }
+    body[data-layout-mode=horizontal] .modal-dialog {
+        width: 900px !important;
+    }
+    
+    .blog {
+        list-style: none;
+        height: 490px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .post {
+        float: left;
+        clear: both;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .post_img {
+        float: left;
+        margin-right: 15px;
+    }
+    .post_img input {
+        width: 20px; 
+        height: 20px;
+        cursor: pointer;
+    }
+    .post_img img {
+        width: 150px; 
+        height:100px;
+    }
+    .post_content {
+        margin-left: 190px;  
+        width: 700px;
+    }
+    .post_content h5 {
+        margin-top: 0px !important;
+        color:#0056c1;
+        cursor: pointer;
+    }
+    .post_details {
+        list-style: none;
+        clear: none;
+        position: static;
+        background: none;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+    ul.post_details li.category, ul.post_details li.category a {
+        color: #ED1C24;
+        font-weight: bold;
+    }
+    li.category a {
+        text-decoration: none;
+        outline: none;
+    }
+    ul.post_details li {
+        background: none;
+        padding: 0;
+        float: left;
+        font-family: arial;
+        font-size: 12px;
+    }
+    ul.post_details li.date {
+        margin-left: 10px;
+        border: none;
+        color: #7C7C7C;
+    }
+    .list_post_added {
+        color: #0056c1;
+        border-bottom: 1px solid #DCDCDC;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .custom_close {
+        cursor: pointer;
+        position: absolute;
+        right: 0%;
+        transform: translate(0%, -85%);
+        font-size: 30px;
+    }
+
+    .custom_close:hover {background: #bbb;}
+
+    #pag_grid {
+        margin-left: 650px;
+    }
+    @media only screen and (max-width: 500px) {
+        body[data-layout-mode=horizontal] .modal-dialog {
+        width: 95% !important;
+        }
+        .post_img img {
+            width: 70px;
+            height: 70px;
+        }
+        #btn_search {
+            margin-top: 10px;
+            margin-left: 12px;
+        }
+        .post_content {
+            margin-left: 100px;
+            width: calc(100% - 105px);
+        }
+    }
+</style>

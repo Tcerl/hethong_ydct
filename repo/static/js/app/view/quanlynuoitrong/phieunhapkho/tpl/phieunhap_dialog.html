@@ -1,0 +1,110 @@
+<div class="content">
+    <div class="content-header py-2">
+        <h4 class="page-title text-uppercase text-primary text-center">Chi tiết phiếu nhập</h4>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-12 border-right">
+            <div class="form-group">
+                <label>Tên dược liệu <span class="text-danger">*</span></label>
+                <select class="form-control" id="sanpham"></select>
+                <div class="row pl-1">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <span>Tên khoa học: </span>
+                                <span class="ten_khoa_hoc font-weight-bold"></span  >
+                            </div>
+                            <div class="col-12 col-md-12">
+                                <span>Mã viết tắt: </span>
+                                <span class="ma_viet_tat font-weight-bold"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-12">
+            <div class="form-group">
+                <label>Kho nhập dược liệu</label>
+                <select class="form-control" id="chonkho"></select>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-12 border-right">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-12 col-md-6 pr-0">
+                        <div class="form-group">
+                            <label>Thời gian nhập kho <span class="text-danger">*</span></label>
+                            <input type="text" data-bind="value:thoigian_nhap" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label>Hạn sử dụng</label>
+                            <input class="form-control" type="text" data-bind="value:hansudung">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-12 col-md-6 pr-0">
+                        <label>Số phiếu chứng từ</label>
+                        <input type="text" data-bind="value:so_phieu" class="form-control">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group>">
+                            <label>Số lượng thực tế <span class="text-danger">*</span></label>
+                            <input class="form-control" type="number" data-bind="value:soluong_thucte">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label>Số lô</label>
+                            <input class="form-control" type="text" data-bind="value:so_lo">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="form-group">
+                            <label>Đơn vị tính</label>
+                            <input class="form-control" type="text" data-bind="value:donvitinh">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-12">
+            <div class="form-group">
+                <label>Giấy chứng nhận nguồn gốc </label>
+                <button class="btn btn-sm btn-primary btn-new-co float-right mb-1"><i class="fa fa-plus"></i> Thêm mới</button>
+                <select class="form-control" id="selectize-co"></select>
+                <small id="view-co" style="cursor: pointer !important;" class="text-primary d-none">Nhấn vào để xem chi tiết giấy chứng nhận nguồn gốc CO</small>
+            </div>
+            <div class="form-group">
+                <label>Giấy chứng nhận chất lượng </label>
+                <button class="btn btn-sm btn-primary btn-new-cq float-right mb-1"><i class="fa fa-plus"></i> Thêm mới</button>
+                <select class="form-control" id="selectize-cq"></select>
+                <small id="view-cq" style="cursor: pointer !important;" class="text-primary d-none">Nhấn vào để xem chi tiết giấy chứng nhận chất lượng CQ</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="row py-2 mt-3 justify-content-center">
+        <div block-bind="toolbar"></div>
+    </div>
+</div>
+
+<style>
+    .modal-lg {
+        max-width: 1200px !important;
+    }
+</style>

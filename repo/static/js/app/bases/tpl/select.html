@@ -1,0 +1,19 @@
+<!-- Page Header -->
+<div class="row mt-2">
+        <div class="page-title-box page-title-box-alt">
+			<!-- <h4 id="title_page" class="page-title">Danh sách tuyến đơn vị</h4> -->
+			<h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin hồ sơ cá nhân</h4>
+        </div>
+</div>
+<!-- End Page Header -->
+	
+	<div class="row mb-3">
+		<div class="col-md-5 col-sm-12">
+			<div block-bind="toolbar"></div>
+		</div>	
+		<div class="col-md-7 col-sm-12">
+			<div class="form-group text-right" id="grid_search">
+			</div>
+		</div>
+	</div>
+	<div id="grid" data-bind='collection:$collection'></div>

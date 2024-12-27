@@ -1,0 +1,142 @@
+<div class="row text-center py-2" style="justify-content: center;">
+    <h4 class="page-title text-uppercase text-center text-primary">Quản lý file đính kèm</h4>
+</div>
+<div class="card col-lg-12 col-xs-12">
+    <div class="card-body row">
+        <div class="form-group row col-sm-12">
+            <label class="col-form-label" for="simpleinput">Từ khóa</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="search">
+            </div>
+            <button type="button" class="btn btn-primary mr-2" id="btn_search">Tìm kiếm</button>
+            <button type="button" class="btn btn-success mr-2" id="btn_add_file">Tải lên file mới</button>
+        </div>
+        <div class="form-group row col-sm-12">
+            <label class="col-form-label" for="simpleinput">File của tôi</label>
+            <label class="m_switch mr-3">
+                <input type="checkbox" id="img_me" checked>
+                <span class="m_slider m_round"></span>
+            </label>
+            
+            <label class="col-form-label" for="simpleinput">Nguời tải lên</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="selectize_people">
+            </div>
+        </div>
+        <div class="row col-sm-12 mt-2">
+            <div class="media-container">
+                <div class="media-body">
+                    <div class="m_notify">
+                        <p>Không có dữ liệu</p>
+                    </div>
+                    <div class="list-item-media">
+                        
+                    </div>
+                </div>
+                <div class="media-footer">
+                    <div class="pagination-container" id="pag_grid">
+                    </div>
+                </div>
+            </div>
+            <div class="media-info">
+                <div class="m_notify">
+                    <p>Không có dữ liệu</p>
+                </div>
+                <div class="m_info-container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+        </div>
+    </div>
+</div>
+<style>
+    .media-body, .media-footer {
+        width: 100%;
+    }
+    .file-item {
+        outline: none;
+        box-sizing: border-box; 
+        font-family: "SF Pro Display", "SF", Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        margin: 10px 0 0 10px;
+        display: inline-flex;
+        background-color: #fff;
+        border: 1px solid transparent;
+        padding: 10px;
+        width: calc((100% - 40px)/3);
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    }
+    .file-item-ext {
+        margin-right: 10px;
+    }
+    .file-item-ext button {
+        background-color: #fff;
+        padding: .45rem;
+        box-shadow: none;
+    }
+    .file-item-ext button i {
+        font-size: 30px;
+        color: red;
+    }
+    .file-item-info {
+        width: calc(100% - 60px);
+    }
+    .file-item-name {
+        color: #343a40;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: normal;
+        overflow: hidden;
+        height: 25px;
+        line-height: 25px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        margin: 0;
+        font-family: Roboto-Regular;
+    }
+    .meta-data {
+        font-weight: normal;
+        font-size: 13px;
+        color: #a9a9a9;
+    }
+    .media-container {
+        width: 80%;
+    }
+    .media-info {
+        width: 20%;
+        height: 100%;
+        z-index: 0;
+        background-color: #f0f0f0;
+        position: relative;
+        border-left: 2px solid #fff;
+    }
+    .m_info-container {
+        margin: 10px;
+        background-color: #fff;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        padding: 10px;
+    }
+    .m_info-body {
+        height: calc(100% - 60px);
+    }
+    .file-detail-info {
+        font-family: Roboto-Regular;
+        color: #333;
+    }
+    .file-detail-info label {
+        font-weight: 600;
+        color: #000;
+    }
+    .btn-icon-file:hover, .btn-icon-file:focus {
+        background-color: #fff;
+        box-shadow: none;
+    }
+</style>

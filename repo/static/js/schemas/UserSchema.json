@@ -1,0 +1,39 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "email": {
+        "type": "string",
+        "length": 255
+    },
+    "phone": {
+        "type": "string"
+    },
+    "password": {
+        "type": "string",
+        "length": 255
+    },
+    "salt": {
+        "type": "string"
+    },
+    "active": {
+        "type": "number",
+        "default": 0
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "roles": {
+        "type": "list"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

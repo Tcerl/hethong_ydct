@@ -1,0 +1,124 @@
+<div block-bind="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body">
+				<h3 class="page-title text-uppercase text-center text-primary">Thông tin phiếu chuyển kho</h3>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	<div class="card  card-small row">
+		<div class="card-body">
+
+			<div class="col-12">
+				<h4 class="header-title">Thông tin phiếu chuyển kho</h4>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-5 col-sm-12 col-12">Số phiếu chứng từ <span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:so_phieu_chungtu" placeholder="Nhập số phiếu chứng từ" required="" parsley-trigger="change">
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+						<div class="form-group row">
+							<label class="col-lg-4 col-md-5 col-sm-12 col-12">Thời gian chuyển kho <span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:thoigian_chuyenkho" placeholder="Nhập ngày chuyển kho" required="" parsley-trigger="change">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-5 col-sm-12 col-12">Chuyển từ kho <span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+								<input type="text" class="form-control " data-bind="dict:kho_chuyen" placeholder="Chọn kho nhận">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+						<div class="form-group row">
+							<label class="col-lg-4 col-md-5 col-sm-12 col-12">Chuyển đến kho <span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+								<input type="text" class="form-control " data-bind="dict:kho_tiepnhan" placeholder="Chọn kho nhận">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-5 col-sm-12 col-12">Ghi chú</label>
+							<textarea type="text" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:ghichu" placeholder="Ghi chú" required="" parsley-trigger="change" rows="3"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="col-12">
+				<div class="row form-group">
+					<div class="col-lg-12 col-xs-12">
+						<h4>
+							<a href="#taskcollapse2" data-toggle="collapse" aria-expanded="false"
+								class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách dược liệu</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+						</h4>
+						<button class="btn btn-sm btn-success btn-add-vattu mb-2">Thêm dược liệu</button>
+						<div class="collapse show" id="taskcollapse2">
+							<div class="table-responsive w-100 mb-3">
+								<table id="demo-foo-addrow" class="table table-centered table-striped table-bordered mb-0 toggle-circle table-vattu" data-page-size="7">
+									<thead>
+										<tr>
+											<th data-sort-initial="true" data-toggle="true" class="px-1">STT</th>
+											<th style="min-width: 220px;" class="px-1">Tên thuốc, Vật tư</th>
+											<th class="px-1">ĐVT</th>
+											<th class="px-1">Số lô</th>
+											<th class="px-1 text-center" style="width: 110px;">Đơn giá</th>
+											<th class="px-1">SL trong kho trước khi chuyển</th>
+											<th class="px-1">SL chuyển chứng từ</th>
+											<th class="px-1">SL chuyển thực tế</th>
+											<th class="px-1">SL trong kho sau khi chuyển</th>
+											<!-- <th style="min-width: 15%;" class="px-1">Ghi chú</th> -->
+											<th data-sort-ignore="true" class="min-width" style="width: 40px;" colspan="2" ></th>
+										</tr>
+										<tr>
+											
+										</tr>
+									</thead>
+									<tbody >
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="col-12">
+				<div class="form-group row">
+					<div class="col-lg-12 col-xs-12">
+						<h4>
+							<a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false"
+								class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách chứng từ
+									đính
+									kèm</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+						</h4>
+						<button class="btn btn-sm btn-success btn-add-file mb-2">Thêm chứng từ đính kèm</button>
+						<div class="collapse show" id="taskcollapse1">
+							<div class="table-responsive w-80 list-attachment">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="form-group row mx-0">
+		<div id="button-alway-show">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+		</div>
+
+	</div>
+</div>

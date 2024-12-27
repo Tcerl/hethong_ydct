@@ -1,0 +1,72 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ten": {
+        "type": "string",
+        "required": true
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "ma": {
+        "type": "string",
+        "required": true
+    },
+    "ngay_capphep": {
+        "type": "string"
+    },
+    "dienthoai": {
+        "type": "string"
+    },
+    "email": {
+        "type": "string"
+    },
+    "nguoilienlac_ten": {
+        "type": "string"
+    },
+    "nguoilienlac_dienthoai": {
+        "type": "string"
+    },
+    "xaphuong_id": {
+        "type": "string"
+    },
+    "xaphuong": {
+        "type": "json"
+    },
+    "quanhuyen_id": {
+        "type": "string"
+    },
+    "quanhuyen": {
+        "type": "json"
+    },
+    "tinhthanh_id": {
+        "type": "string"
+    },
+    "tinhthanh": {
+        "type": "json"
+    },
+    "quocgia_id": {
+        "type": "string"
+    },
+    "quocgia": {
+        "type": "json"
+    },
+    "sonha_tenduong": {
+        "type": "string"
+    },
+    "diachi": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

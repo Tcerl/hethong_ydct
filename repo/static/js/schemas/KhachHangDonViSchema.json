@@ -1,0 +1,49 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_coso": {
+        "type": "string",
+        "length": 255
+    },
+    "ten_coso": {
+        "type": "string"
+    },
+    "type": {
+        "type": "number"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "sogiayphep": {
+        "type": "string"
+    },
+    "hoten": {
+        "type": "string"
+    },
+    "dienthoai": {
+        "type": "string",
+        "length": 63
+    },
+    "email": {
+        "type": "string",
+        "length": 255
+    },
+    "diachi": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

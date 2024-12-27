@@ -1,0 +1,44 @@
+<div block-bind="content">
+	<div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Truy xuất</h4>
+            </div>
+        </div>
+    </div>
+	<div class="card mb-4 truyxuat">
+        <div class="card-body" style="min-height: 800px !important;">  
+            <div class="row px-2">
+                <div class="col-12 col-sm-10 col-lg-8 padding-custom">
+                    <div class="input-group mb-1">
+                        <div class="input-group-prepend div-control">
+                            <button class="btn btn-primary waves-effect waves-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cogs"></i> <i class="mdi mdi-chevron-down"></i></button>
+                            <div class="dropdown-menu list-search">
+                                <a class="dropdown-item" key ="ma" pre="0" href="javascript:void(0)">Mã dược liệu</a>
+                                <a class="dropdown-item" key ="ten" pre="0"  href="javascript:void(0)">Tên dược liệu</a>
+                                <a class="dropdown-item" key ="solo" pre="0"  href="javascript:void(0)">Số lô</a>
+                                <a class="dropdown-item" key ="nhapkhau" pre="0"  href="javascript:void(0)">Giấy phép nhập khẩu</a>
+                                <a class="dropdown-item" key ="co" pre="0"  href="javascript:void(0)">Số CO</a>
+                                <a class="dropdown-item" key ="cq" pre="0"  href="javascript:void(0)">Số COA</a>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control text-search" placeholder="Nhập từ khóa tìm kiếm">
+                    </div>
+                    <small class="filter">(Tìm kiếm theo: Mã dược liệu, Tên dược liệu, Số lô)</small>
+
+                </div>
+                <div class="col-3 col-lg-2 padding-custom">
+                    <button class="btn btn-sm btn-truyxuat btn-primary"><i class="fa fa-search"></i> Tìm kiếm</button>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-1">
+                <div class="col-12">
+                    <div class="list-results" style="border: none !important">
+
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>

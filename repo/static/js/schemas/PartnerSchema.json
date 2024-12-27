@@ -1,0 +1,43 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "fullname": {
+        "type": "string"
+    },
+    "unsigned_name": {
+        "type": "string"
+    },
+    "description": {
+        "type": "string"
+    },
+    "phone": {
+        "type": "string"
+    },
+    "email": {
+        "type": "string"
+    },
+    "address": {
+        "type": "string"
+    },
+    "user_name": {
+        "type": "string"
+    },
+    "password": {
+        "type": "string"
+    },
+    "salt": {
+        "type": "string"
+    },
+    "active": {
+        "type": "number",
+        "default": 1
+    }
+}

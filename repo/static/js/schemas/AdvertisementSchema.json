@@ -1,0 +1,65 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "name": {
+        "type": "string"
+    },
+    "unsigned_name": {
+        "type": "string"
+    },
+    "description": {
+        "type": "string"
+    },
+    "type_adv": {
+        "type": "string",
+        "default": "image"
+    },
+    "partner_name": {
+        "type": "string"
+    },
+    "partner_id": {
+        "type": "string"
+    },
+    "start_time": {
+        "type": "string"
+    },
+    "end_time": {
+        "type": "string"
+    },
+    "appear_frequency": {
+        "type": "string"
+    },
+    "link": {
+        "type": "string"
+    },
+    "content": {
+        "type": "string"
+    },
+    "price": {
+        "type": "number",
+        "default": 0
+    },
+    "price_unit_type": {
+        "type": "string",
+        "default": "time"
+    },
+    "price_unit": {
+        "type": "string"
+    },
+    "total_cost": {
+        "type": "number",
+        "default": 0
+    },
+    "status": {
+        "type": "number",
+        "default": 1
+    }
+}

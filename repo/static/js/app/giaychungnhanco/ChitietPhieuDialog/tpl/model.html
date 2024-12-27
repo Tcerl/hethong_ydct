@@ -1,0 +1,125 @@
+<div class="col-12">
+    <h3 class="page-title text-uppercase text-center text-primary mb-3">Chi tiết giấy chứng nhận nguồn gốc (CO)</h3>
+
+
+
+
+    <div class="row giayphepinfor d-none">
+        <label class="col">Theo GP nhập khẩu</label>
+        <div class="col-12">
+            <select class="form-control" id="selectize-sogiayphep"></select>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 ">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group  row ">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Tên dược liệu <span
+                                class="text-danger">*</span></label>
+                        <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                            <select id="selectize-programmatic" placeholder="Tìm kiếm và chọn dược liệu"
+                                class="form-control"></select>
+                            <div class="info_duoclieu"></div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Mã HS <span
+                                class="text-danger">*</span></label>
+                        <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                            <input type="text" class="form-control" data-bind="value:ma_HS" placeholder="Mã HS">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-12 pr-0">Tiêu chí xuất xứ <span
+                                class="text-danger">*</span></label>
+                        <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                            <input type="text" class="form-control" data-bind="value:tieuchi_xuatxu"
+                                placeholder="Tiêu chí xuất xứ">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Số lượng <span
+                                class="text-danger">*</span></label>
+                        <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                            <input type="number" class="form-control" data-bind="value:soluong" placeholder="Số lượng">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Tổng số lượng (bao gồm bì)</label>
+                        <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                            <input type="number" class="form-control" data-bind="value:tongsoluong" placeholder="Số lượng (bao gồm bì)">
+                        </div>
+                    </div>
+                    <div class="form-group row" id="donvitinh">
+                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Đơn vị tính <span
+                                class="text-danger">*</span></label>
+                        <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                            <input type="text" class="form-control" data-bind="value:donvitinh"
+                                placeholder="Đơn vị tính">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 border-left">
+
+            <div class="form-group row">
+                <label class="col-lg-3 col-md-3 col-sm-12 col-12">Số hóa đơn </label>
+                <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                    <input type="text" class="form-control" data-bind="value:so_hoadon"
+                        placeholder="Số hóa đơn">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-lg-3 col-md-3 col-sm-12 col-12">Loại đóng gói</label>
+                <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                    <input type="text" class="form-control" data-bind="value:loai_donggoi" placeholder="Loại đóng gói">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-lg-3 col-md-3 col-sm-12 col-12 pr-0">Số lượng đóng gói </label>
+                <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                    <input type="text" class="form-control" data-bind="value:soluong_donggoi"
+                        placeholder="Số lượng đóng gói">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-lg-3 col-md-3 col-sm-12 col-12">Mô tả</label>
+                <div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+                    <textarea rows="3" type="text" class="form-control" data-bind="value:mota_sanpham"
+                        placeholder="Mô tả"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-cq d-none">
+        <div class="d-flex justify-content-between  mt-3 my-2 align-items-center">
+            <h4 class="header-title">Thông tin phiếu kiểm nghiệm</h4>
+            <button class="btn btn-primary btn-sm btn-add-cq"><i class="fa fa-plus"></i> Thêm mới</button>
+        </div>
+    
+        <div class="form-group row">
+            <!-- <label class="col-lg-3 col-md-3 col-sm-12 col-12">Thông tin CQ</label> -->
+            <div class="col-12">
+                <select id="selectize-cq" class="form-control" placeholder="Tìm kiếm và chọn CQ"></select>
+                <div id="info_cq"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="form-group save-danhmuc_thuoc text-center col-12 col-md-12 mt-2">
+    <a class="btn btn-secondary btn-close"><i class="fas fa-arrow-circle-left"></i> Đóng </a>
+    <a class="btn btn-success width-sm btn-save ml-1"><i class="far fa-save"></i> Lưu </a>
+</div>
+<style>
+    .modal-lg {
+        max-width: 1040px !important;
+    }
+</style>

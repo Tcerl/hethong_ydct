@@ -1,0 +1,36 @@
+<div block-bind="content">
+	<div class="row">
+		<h4 id="title_page" class="page-title text-uppercase text-center text-primary w-100 py-2">Thông tin tiêu chuẩn
+		</h4>
+	</div>
+	<div class="form-horizontal" role="form">
+		<div class="">
+			<label class=" col-form-label" for="simpleinput">Mã</label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:ma_tieuchuan" placeholder="Mã tiêu chuẩn">
+			</div>
+		</div>
+		<div class="">
+			<label class=" col-form-label" for="simpleinput">Tên tiêu chuẩn</label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:ten_tieuchuan" placeholder="Tên tiêu chuẩn">
+			</div>
+		</div>
+		<div class="">
+			<label class=" col-form-label" for="simpleinput">Phân loại</label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:phanloai">
+			</div>
+		</div>
+		<div class="">
+			<label class=" col-form-label" for="simpleinput">Mô tả</label>
+			<div class="">
+				<textarea class="form-control" rows="2" data-bind="value:mota" placeholder="Mô tả tiêu chuẩn"></textarea>
+			</div>
+		</div>
+
+		<div class="form-group row mt-3">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+		</div>
+	</div>
+</div>

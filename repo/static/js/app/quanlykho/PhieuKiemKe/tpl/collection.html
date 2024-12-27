@@ -1,0 +1,46 @@
+<!-- Page Header -->
+<div class="row header">
+	<div class="card col-12">
+		<div class="card-body py-2 d-flex">
+			<h4 id="title_page" class="page-title text-uppercase text-left text-primary col-sm-6">Danh sách phiếu nhập kho</h4>
+			<div class="text-right col-sm-6">
+				<div block-bind="toolbar"></div>
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- End Page Header -->
+<div class="card">
+	<div class="card-body">
+		<div class="row col-12 mb-3 ">
+			<div class="w-25 d-flex mb-1">
+				<label for="" class="text-label-left">Từ ngày</label>
+				<div class="text-input-right">
+					<input type="text" id="tungay" class="form-control">
+				</div>
+			</div>
+			<div class="w-25 d-flex mb-1">
+				<label for="" class="text-label-left">Đến ngày</label>
+				<div class="text-input-right">
+					<input type="text" id="dengay" class="form-control">
+				</div>
+			</div>
+			<div class="w-30 d-flex mb-1">
+				<label for="" class="text-label-left">Số phiếu chứng từ</label>
+				<div class="text-input-right">
+					<input type="text" id="sophieuchungtu" class="form-control">
+				</div>
+			</div>
+			<div class="w-20">
+				<button class="btn btn-primary btn-sm btn-search"><i class="fa fa-search"></i> Tìm kiếm</button>
+				<button class="btn btn-danger btn-sm btn-clear ml-1"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+			</div>
+			<!-- <div class="col-12 text-center mt-2">
+				<button class="btn btn-primary btn-search">Tìm kiếm</button>
+			</div> -->
+		</div>
+        <div class="table-bordered table-hover" style="border: none !important;">
+            <div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+        </div>
+	</div>
+</div>

@@ -1,0 +1,80 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_cuakhau": {
+        "type": "string"
+    },
+    "ten_cuakhau": {
+        "type": "string",
+        "required": true
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "phanloai": {
+        "type": "number"
+    },
+    "kiemdichyte": {
+        "type": "boolean",
+        "default": true
+    },
+    "phongcachly": {
+        "type": "boolean",
+        "default": true
+    },
+    "nguoilienlac": {
+        "type": "string",
+        "length": 255
+    },
+    "sodienthoai": {
+        "type": "string"
+    },
+    "email": {
+        "type": "string"
+    },
+    "thutu": {
+        "type": "number"
+    },
+    "quocgia_tiepgiap": {
+        "type": "string"
+    },
+    "cuakhau_tiepgiap": {
+        "type": "string"
+    },
+    "xaphuong_id": {
+        "type": "string"
+    },
+    "xaphuong": {
+        "type": "json"
+    },
+    "quanhuyen_id": {
+        "type": "string"
+    },
+    "quanhuyen": {
+        "type": "json"
+    },
+    "tinhthanh_id": {
+        "type": "string"
+    },
+    "tinhthanh": {
+        "type": "json"
+    },
+    "sonha_tenduong": {
+        "type": "string"
+    },
+    "diachi": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

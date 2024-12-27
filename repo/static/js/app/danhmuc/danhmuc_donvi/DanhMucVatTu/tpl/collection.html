@@ -1,0 +1,27 @@
+
+<input type="file" class="form-control d-none" id="upload_files" lang="vi" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, .csv, application/vnd.ms-excel">
+<div class="row">
+	<div class="card col-12">
+		<div class="card-body py-2">
+			<h4 id="title_page" class="page-title text-uppercase text-center text-primary">Danh mục vật tư</h4>
+		</div>
+	</div>
+</div>
+<!-- End Page Header -->
+<div class="card">
+    <div class="card-body">
+        <div class="row mb-3">
+            <div class="col-md-3 col-sm-12">
+                <div block-bind="toolbar"></div>
+            </div>	
+            <div class="col-md-9 col-sm-12 row">
+                <div class="col-3">
+                    <select id="selectize-nhom-vattu" class="form-control" placeholder="Chọn nhóm vật tư"></select>
+                </div>
+                <div class="text-right col-9" id="grid_search">
+                </div>
+            </div>
+        </div>
+        <div id="grid" data-bind='collection:$collection'></div>
+    </div>
+</div>

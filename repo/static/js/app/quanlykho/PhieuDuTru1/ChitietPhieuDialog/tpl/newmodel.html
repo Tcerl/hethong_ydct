@@ -1,0 +1,78 @@
+
+<div class="col-12">
+    <h3 class="page-title text-uppercase text-primary mb-3">Phiếu dự trù chi tiết</h3>
+            <div class="form-group">
+                <label>Tên vật tư <span class="text-danger">*</span></label>
+                <select id="selectize-programmatic" placeholder="Chọn vật tư..."></select>
+                <small class="ma_vattu"></small>
+            </div>
+            <div class="row number-disabled d-none">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label >Số lượng tồn đầu kỳ</label>
+                        <input class="form-control" data-phieudutru_chitiet="value:ton_ky_truoc" style="pointer-events: none !important;">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label >Số lượng nhập trong kỳ </label>
+                        <input class="form-control" data-phieudutru_chitiet="value:nhap_trong_ky" style="pointer-events: none !important;" >
+                    </div>
+                </div>
+            </div>
+            <div class="row number-disabled d-none">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label >Số lượng xuất trong kỳ </label>
+                        <input class="form-control" data-phieudutru_chitiet="value:xuat_trong_ky" style="pointer-events: none !important;">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label >Số lượng tồn cuối kỳ </label>
+                        <input class="form-control" data-phieudutru_chitiet="value:tong_cuoi_ky" style="pointer-events: none !important;" >
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label >Số lượng dự trù <span class="text-danger">*</span></label>
+                        <input class="form-control" type="number" data-phieudutru_chitiet="value:so_luong_du_tru" placeholder="Nhập số lượng dự trù"/>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label >Số lượng duyệt dự trù <span class="text-danger">*</span></label>
+                        <input class="form-control" type="number" data-phieudutru_chitiet="value:so_luong_duyet_du_tru" placeholder="Nhập số lượng duyệt dự trù"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-none">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label >Số lượng kế hoạch <span class="text-danger">*</span></label>
+                        <input class="form-control" type="number" data-phieudutru_chitiet="value:so_luong_ke_hoach" placeholder="Nhập số lượng kế hoạch"/>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label >Đơn giá <span class="text-danger">*</span></label>
+                        <input class="form-control giatien" type="number"  data-phieudutru_chitiet="value:dongia" placeholder="Nhập đơn giá"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label >Ghi chú</label>
+                <textarea class="form-control" data-phieudutru_chitiet="value:ghichu" rows="2" placeholder="Ghi chú"></textarea>
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group save-danhmuc_thuoc text-center col-12 col-md-12 mt-2">
+        <a class="btn btn-secondary btn-close"> Đóng </a>
+        <a class="btn btn-success btn-save ml-1"> Lưu </a>
+    </div>
+</div>

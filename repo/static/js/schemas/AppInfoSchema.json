@@ -1,0 +1,49 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "appkey": {
+        "type": "string",
+        "required": true
+    },
+    "password": {
+        "type": "string",
+        "required": true
+    },
+    "salt": {
+        "type": "string",
+        "required": true
+    },
+    "name": {
+        "type": "string",
+        "required": true
+    },
+    "unsigned_name": {
+        "type": "string"
+    },
+    "description": {
+        "type": "string"
+    },
+    "organization_name": {
+        "type": "string",
+        "required": true
+    },
+    "status": {
+        "type": "number",
+        "default": 0
+    },
+    "type": {
+        "type": "number",
+        "default": 0
+    },
+    "url_connect": {
+        "type": "string"
+    }
+}

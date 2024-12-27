@@ -1,0 +1,36 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma": {
+        "type": "string",
+        "length": 255
+    },
+    "ten": {
+        "type": "string",
+        "length": 255
+    },
+    "ten_tieng_anh": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "xaphuong_id": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "xaphuong": {
+        "type": "dict"
+    }
+}

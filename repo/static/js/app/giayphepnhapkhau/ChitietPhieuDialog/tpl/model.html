@@ -1,0 +1,100 @@
+<div class="col-12">
+    <h3 class="page-title text-uppercase text-center text-primary mb-3">Chi tiết giấy phép</h3>
+    <div class="row">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="form-group ">
+                        <label>Tên dược liệu <span class="text-danger">*</span></label>
+                        <select id="selectize-programmatic" placeholder="Tìm kiếm và chọn dược liệu" class="form-control"></select>
+                        <div class="info_duoclieu"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 border-right">
+                    <div class="form-group ">
+                        <label>Bộ phận sử dụng</label>
+                        <input type="text" class="form-control" data-bind="value:bophan_sudung" placeholder="Bộ phận sử dụng">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group ">
+                        <label>Tiêu chuẩn chất lượng</label>
+                        <select type="text" class="form-control" id="tieuchuan_chatluong" placeholder="Tiêu chuẩn chất lượng"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-3 pr-1">
+                    <div class="form-group ">
+                        <label>Số lượng cấp phép</label>
+                        <input type="number" class="form-control" data-bind="value:soluong_capphep" placeholder="Số lượng cấp phép">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 pl-1">
+                    <div class="form-group ">
+                        <label>Đơn vị tính</label>
+                        <input type="text" class="form-control" data-bind="value:donvitinh" placeholder="Đơn vị tính">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 border-left">
+                    <div class="form-group" style="pointer-events: none;">
+                        <label>Số lượng đã nhập</label>
+                        <input type="number" class="form-control" data-bind="value:soluong_danhap" placeholder="Hệ thống tự tính">
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 pl-1">
+                    <div class="form-group" style="pointer-events: none;">
+                        <label>Đơn vị tính</label>
+                        <input type="text" class="form-control" data-bind="value:donvitinh" placeholder="Đơn vị tính">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 border-right">
+                    <div class="form-group ">
+                        <label>Cơ sở sản xuất</label>
+                        <input type="text" class="form-control" data-bind="value:ten_coso_sanxuat" placeholder="Cơ sở sản xuất">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group ">
+                        <label>Quốc gia sản xuất</label>
+                        <select class="form-control" id="selectize-quocgia-sanxuat" placeholder="Tìm kiếm và chọn quốc gia sản xuất"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 border-right">
+                    <div class="form-group ">
+                        <label>Cơ sở cung cấp</label>
+                        <input type="text" class="form-control" data-bind="value:ten_coso_cungcap" placeholder="Cơ sở cung cấp">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="form-group ">
+                        <label>Quốc gia cung cấp</label>
+                        <select class="form-control" id="selectize-quocgia-cungcap" placeholder="Tìm kiếm và chọn quốc gia cung cấp"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group ">
+                <label>Ghi chú</label>
+                <textarea class="form-control" data-bind="value:ghichu" placeholder="Ghi chú"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<div class="form-group save-danhmuc_thuoc text-center col-12 col-md-12 mt-2">
+    <a class="btn btn-secondary btn-close"><i class="fas fa-arrow-circle-left"></i>Đóng </a>
+    <a class="btn btn-success width-sm btn-save ml-1"><i class="far fa-save"></i> Lưu </a>
+</div>
+<style>
+    .modal-lg {
+        max-width: 1024px !important;
+    }
+</style>

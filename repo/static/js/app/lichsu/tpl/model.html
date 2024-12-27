@@ -1,0 +1,229 @@
+<div block-bind="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body py-1">
+				<h3 class="page-title text-uppercase text-center text-primary">Thông tin lịch sử sản phẩm</h3>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	<div class="card  card-small">
+		<div class="card-body">
+			<div class="row">
+
+				<div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 ">
+					<h4 class="header-title">Thông tin Giấy chứng nhận nguồn gốc</h4>
+					<div class="row">
+
+						<div class="col-lg-12">
+							<div class="form-group  row ">
+								<label class="col-lg-3 col-md-3 col-sm-12 col-12">Số CO <span
+										class="text-danger">*</span></label>
+								<div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+									<input type="text" class="form-control" data-bind="value:so_co" placeholder="Số CO">
+								</div>
+
+							</div>
+							<div class="form-group row">
+								<label class="col-lg-3 col-md-3 col-sm-12 col-12">Số giấy phép <span
+										class="text-danger">*</span></label>
+								<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+									<input type="text" class="form-control" data-bind="value:so_giay_phep"
+										placeholder="Số giấy phép">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-lg-3 col-md-3 col-sm-12 col-12">Ngày cấp CO <span
+										class="text-danger">*</span></label>
+								<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+									<input type="text" class="form-control" data-bind="value:thoigian_cap_co"
+										placeholder="Thời gian cấp CO">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-lg-3 col-md-3 col-sm-12 col-12">Ngày hiệu lực bắt đầu <span
+										class="text-danger">*</span></label>
+								<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+									<input type="text" class="form-control" data-bind="value:thoigian_hieuluc_batdau"
+										placeholder="Vui lòng chọn thời gian hiệu lực bắt đầu">
+								</div>
+							</div>
+							<div class="form-group row">
+								<label class="col-lg-3 col-md-3 col-sm-12 col-12">Ngày hiệu lực kết thúc <span
+										class="text-danger">*</span></label>
+								<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+									<input type="text" class="form-control" data-bind="value:thoigian_hieuluc_ketthuc"
+										placeholder="Vui lòng chọn thời gian hiệu lực kết thúc">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-6 col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 border-left">
+					<h4 class="header-title">Thông tin đơn vị cung cấp</h4>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Tên <span class="text-danger">*</span></label>
+						<div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control" data-bind="value:ten_donvi_cungcap"
+								placeholder="Tên đơn vị cung cấp">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Quốc gia <span
+								class="text-danger">*</span></label>
+						<div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control" data-bind="value:quocgia_donvi_cungcap"
+								placeholder="Quốc gia đơn vị cung cấp">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Địa chỉ </label>
+						<div class=" col-lg-9 col-md-9 col-sm-12 col-12">
+							<textarea rows="3" class="form-control" data-bind="value:diachi_donvi_cungcap"
+								placeholder="Địa chỉ đơn vị cung cấp"></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<hr>
+			<div class="row">
+
+				<div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 ">
+					<h4 class="header-title">Thông tin đơn vị tiếp nhận</h4>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Tên </label>
+						<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control " data-bind="value:ten_donvi_tiepnhan"
+								placeholder="Tên đơn vị tiếp nhận">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Tên người xác nhận </label>
+						<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control " data-bind="value:ten_nguoiky_xacnhan"
+								placeholder="Tên người xác nhận">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Quốc gia </label>
+						<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control " data-bind="value:ten_donvi_tiepnhan"
+								placeholder="Quốc gia đơn vị tiếp nhận">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Địa chỉ </label>
+						<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+							<textarea rows="3" class="form-control " data-bind="value:diachi_donvi_tiepnhan"
+								placeholder="Địa chỉ đơn vị tiếp nhận"></textarea>
+						</div>
+					</div>
+
+
+
+				</div>
+				<div class="col-6 col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 border-left">
+					<h4 class="header-title">Thông tin vận chuyển</h4>
+
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Ngày khởi hành </label>
+						<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control " data-bind="value:ngay_khoi_hanh"
+								placeholder="Ngày khởi hành">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Ngày nhập cảnh </label>
+						<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control " data-bind="value:ngay_nhap_canh"
+								placeholder="Ngày nhập cảnh">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Số hiệu phương tiện </label>
+						<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control " data-bind="value:so_hieu_phuongtien"
+								placeholder="Số hiệu phương tiện">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Tên phương tiện </label>
+						<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control " data-bind="value:ten_phuongtien"
+								placeholder="Tên phương tiện">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-12">Loại hình vận chuyển </label>
+						<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+							<input type="text" class="form-control" data-bind="value:loaihinh_vanchuyen"
+								placeholder="Loại hình vận chuyển">
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<hr>
+			<div class="row form-group">
+				<div class="col-lg-12 col-xs-12">
+					<h4>
+						<a href="#taskcollapse2" data-toggle="collapse" aria-expanded="false"
+							class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách vật
+								tư</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+					</h4>
+					<button class="btn btn-sm btn-success btn-add-vattu mb-2">Thêm vật tư</button>
+					<div class="collapse show" id="taskcollapse2">
+						<div class="table-responsive w-100 mb-3">
+							<table id="demo-foo-addrow"
+								class="table table-centered table-striped table-bordered mb-0 toggle-circle table-vattu"
+								data-page-size="7">
+								<thead>
+									<tr>
+										<th data-sort-initial="true" data-toggle="true" class="text-center">STT</th>
+										<th class="text-center">Tên dược liệu </th>
+										<th class="text-center">Mã hàng hoá</th>
+										<th class="text-center">Số hóa đơn</th>
+										<th class="text-center">Số lượng</th>
+										<th colspan="2"></th>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="form-group row">
+				<div class="col-lg-12 col-xs-12">
+					<h4>
+						<a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false"
+							class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách chứng từ
+								đính
+								kèm</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+					</h4>
+					<button class="btn btn-sm btn-success btn-add-file mb-2">Thêm chứng từ đính kèm</button>
+					<div class="collapse show" id="taskcollapse1">
+						<div class="table-responsive w-80 list-attachment">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form-group row mx-0">
+		<div id="button-alway-show">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+		</div>
+
+	</div>
+
+	<!-- </form> -->
+
+</div>
+</div>
+</div>

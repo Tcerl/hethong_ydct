@@ -1,0 +1,39 @@
+<div block-bind="content">
+	<div class="row">
+		<h4 class="page-title text-uppercase text-center text-primary w-100 py-2">Thông tin sản phẩm nhập khẩu</h4>
+	</div>
+	<div class="form-horizontal" role="form">
+		<div class="row">
+			<div class="col-sm-6 col-12">
+				<label class="col-form-label" for="simpleinput">Sản phẩm <span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" id="selectize_sanpham">
+				</div>
+
+				<label class="col-form-label" for="simpleinput">Nơi cung cấp <span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" id="selectize_noi_cungcap">
+				</div>
+			</div>
+			<div class="col-sm-6 col-12">
+				<label class="col-form-label" for="simpleinput">Tên sản phẩm <span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:ten_thuong_mai" placeholder="Nhập tên sản phẩm thương mại">
+				</div>
+
+				<label class="col-form-label" for="simpleinput">Mã sản phẩm <span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:ma_sanpham_donvi" placeholder="Nhập mã sản phẩm">
+				</div>
+			</div>
+		</div>
+		<div class="form-group row mt-3">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+		</div>
+	</div>
+</div>
+<style>
+	.modal-dialog.modal-lg {
+  		max-width: 1000px !important;
+	}
+</style>

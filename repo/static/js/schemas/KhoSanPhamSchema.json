@@ -1,0 +1,112 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_kho": {
+        "type": "string",
+        "required": true
+    },
+    "ten_kho": {
+        "type": "string"
+    },
+    "kho": {
+        "type": "json"
+    },
+    "id_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "sanpham": {
+        "type": "json"
+    },
+    "so_lo": {
+        "type": "string"
+    },
+    "loai_sanpham": {
+        "type": "string"
+    },
+    "soluong": {
+        "type": "number"
+    },
+    "dongia_ban": {
+        "type": "number"
+    },
+    "dongia_nhap": {
+        "type": "number"
+    },
+    "donvitinh": {
+        "type": "string"
+    },
+    "hansudung": {
+        "type": "string"
+    },
+    "ma_kiem_nghiem": {
+        "type": "string"
+    },
+    "phieu_kiem_nghiem_id": {
+        "type": "string"
+    },
+    "so_co": {
+        "type": "string"
+    },
+    "chungnhan_co_id": {
+        "type": "string"
+    },
+    "nguon_cungcap": {
+        "type": "number"
+    },
+    "danhsach_phieunhap": {
+        "type": "json"
+    },
+    "ten_goi_thau": {
+        "type": "string"
+    },
+    "ma_goi_thau": {
+        "type": "string"
+    },
+    "ma_don_vi_trung_thau": {
+        "type": "string"
+    },
+    "ten_don_vi_trung_thau": {
+        "type": "string"
+    },
+    "thoi_gian_dau_thau": {
+        "type": "string"
+    },
+    "hang_sanxuat": {
+        "type": "string"
+    },
+    "nuoc_sanxuat": {
+        "type": "string"
+    },
+    "nguon_kinh_phi": {
+        "type": "number"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

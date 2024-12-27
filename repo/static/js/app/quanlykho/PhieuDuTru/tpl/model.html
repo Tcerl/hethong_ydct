@@ -1,0 +1,155 @@
+<div block-bind="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body py-1">
+				<h3 class="page-title text-uppercase text-center text-primary">Thông tin phiếu dự trù</h3>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	<div class="card  card-small">
+		<div class="card-body">
+			
+
+			<!-- <form class="form-horizontal needs-validation container-fluid" novalidate> -->
+				<div class="row justify-content-end">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Ngày dự trù<span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:ngay_du_tru" placeholder="Nhập ngày dự trù" required="" parsley-trigger="change">
+							<div class="invalid-feedback">
+								Vui lòng ngày dự trù
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Loại dự trù<span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+									<input type="text" class="form-control " data-bind="value:loai_du_tru" placeholder="Chọn loại dự trù">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Kho dự trù</label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+								<input type="text" class="form-control " data-bind="dict:kho" placeholder="Chọn kho dự trù">
+							</div>
+						</div>
+					</div>
+					
+
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Loại kỳ dự trù<span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+								<input type="text" class="form-control " data-bind="value:loai_ky_du_tru" placeholder="Chọn loại kỳ dự trù">
+
+							</div>
+						</div>
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Hình thức dự trù</label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+								<input type="text" class="custom-control-input" data-bind="value:hinhthuc_dutru">
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row kydutru d-none">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Kỳ dự trù<span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+								<input type="text" class="form-control " data-bind="value:ky_du_tru" placeholder="Nhập kỳ dự trù">
+
+							</div>
+						</div>
+						<div class="form-group row namdutru  d-none">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12"> Năm dự trù<span class="text-danger">*</span> </label>
+							<input type="number" maxlength="4" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:nam_du_tru" placeholder="Nhập năm dự trù">
+						</div>
+						<div class="form-group row tungay  d-none">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Từ ngày<span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:ngay_bat_dau" placeholder="Nhập ngày bắt đầu">
+						</div>
+						<div class="form-group row denngay  d-none">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Đến ngày<span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:ngay_ket_thuc" placeholder="Nhập kết thúc">
+						</div>
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12"></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+									<input type="text" class="custom-control-input" data-bind="value:du_tru_tat_ca_kho">
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-lg-10 col-md-10 col-sm-10 col-10 ">
+						<select class="form-control" id="selectize-programmatic" placeholder="Tìm kiếm vật tư, thuốc..."></select>
+
+					</div>
+					<div class="col-2 col-lg-2 col-md-2 border-left">
+						<button type = "button" class="btn btn-sm btn-success btn-print mb-2">In Danh sách</button>
+
+					</div>
+					
+				</div>
+
+				<hr>
+				<div class="row form-group">
+					<div class="col-lg-12 col-xs-12">
+						<div class="table-responsive w-100 mb-3">
+							<table id="demo-foo-addrow" class="table table-centered table-striped table-bordered mb-0 toggle-circle table-vattu" data-page-size="7">
+								<thead>
+									<tr>
+										<th data-sort-initial="true" data-toggle="true" class="px-1">STT</th>
+										<th style="min-width: 220px;" class="px-1">Tên thuốc, Vật tư</th>
+										<th class="px-1">ĐVT</th>
+										<th class="px-1" style="width: 110px;">Đơn giá</th>
+										<th class="px-1">SL tồn đầu</th>
+										<th class="px-1">SL xuất</th>
+										<th class="px-1">Tồn cuối</th>
+										<th class="px-1" style="width: 100px;">Dự trù</th>
+										<th class="px-1" style="width: 100px;">Duyệt dự trù</th>
+										<th class="px-1" style="width: 100px;">SLKH</th>
+										<th style="min-width: 15%;" class="px-1">Ghi chú</th>
+										<th data-sort-ignore="true" class="min-width" style="width: 40px;" ></th>
+									</tr>
+									<tr>
+										
+									</tr>
+								</thead>
+								<tbody >
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+		
+					
+				</div>
+			</div>
+			<div class="form-group row mx-0" >
+				<div id="button-alway-show" >
+					<div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+				</div>
+				
+			</div>
+
+			<!-- </form> -->
+			
+		</div>
+	</div>
+</div>

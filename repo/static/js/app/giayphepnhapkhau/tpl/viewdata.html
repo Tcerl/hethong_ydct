@@ -1,0 +1,90 @@
+<div block-bind="content">
+    <!-- Page Header -->
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body py-1">
+                <h3 class="page-title text-uppercase text-center text-primary">Thông tin giấy phép nhập khẩu</h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Header -->
+    <div class="card card-small">
+        <div class="card-body view_co">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Số giấy phép </label>
+                        <span data-bind="text:so_giay_phep"></span>
+                    </div>
+                    <div class="form-group row" id="thoigian_capphep">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Ngày cấp phép</label>
+                        <span class="thoigian_capphep"></span>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Ngày hiệu lực bắt đầu</label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0" id="thoigian_hieuluc_batdau">
+                            <span class="thoigian_hieuluc_batdau"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="thoigian_hieuluc_ketthuc">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Ngày hiệu lực kết thúc</label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <span class="thoigian_hieuluc_ketthuc"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-lg-12 col-xs-12">
+                    <h4 class="text-primary">Danh sách dược liệu</h4>
+                    <div class="w-100 mb-3">
+                        <table id="demo-foo-addrow" class="table table-centered  table-bordered mb-0 toggle-circle table-vattu d-none" data-page-size="7">
+                            <thead>
+                                <tr>
+                                    <th data-sort-initial="true" data-toggle="true" class="px-1 text-center">STT</th>
+                                    <th style="width: 12%;" class="px-1">Tên dược liệu</th>
+                                    <th class="px-1">Tên khoa học</th>
+                                    <th class="px-1">Bộ phận dùng</th>
+                                    <th class="px-1 text-center">ĐVT</th>
+                                    <th class="px-1 text-center">SL cấp phép (Kg)</th>
+                                    <th class="px-1 text-center">SL đã nhập (Kg)</th>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-lg-12 col-xs-12">
+                    <h4 class="text-primary">Danh sách chứng từ đính kèm</h4>
+                    <div class="collapse show" id="taskcollapse1">
+                        <div class="table-responsive w-80 list-attachment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="form-group row mx-0">
+        <div id="button-alway-show">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+
+    </div>
+
+    <!-- </form> -->
+
+</div>
+</div>
+</div>
+
+
+

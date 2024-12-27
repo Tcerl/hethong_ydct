@@ -1,0 +1,69 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "id_sanpham_danhmuc": {
+        "type": "string",
+        "required": true
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "so_lo": {
+        "type": "string",
+        "required": true
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "hansudung": {
+        "type": "string"
+    },
+    "id_chungnhan_co": {
+        "type": "string"
+    },
+    "phieu_kiem_nghiem_id": {
+        "type": "string"
+    },
+    "donvi_sanxuat": {
+        "type": "string"
+    },
+    "donvi_cungung_bandau": {
+        "type": "string"
+    },
+    "id_donvi_cungung_bandau": {
+        "type": "string"
+    },
+    "id_giaynhapkhau": {
+        "type": "string"
+    },
+    "loai_sanpham_bandau": {
+        "type": "number"
+    },
+    "donvi_nhapkhau_phanphoi_thugom": {
+        "type": "string"
+    },
+    "thuhoach_nuoitrong_id": {
+        "type": "string"
+    },
+    "thuhoach_khaithac_id": {
+        "type": "string"
+    },
+    "thoigian_nhapkhau_thugom": {
+        "type": "string"
+    },
+    "lichsu": {
+        "type": "json"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

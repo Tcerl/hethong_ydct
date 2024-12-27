@@ -1,0 +1,102 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "giayphep_id": {
+        "type": "string"
+    },
+    "so_giay_phep": {
+        "type": "string",
+        "required": true
+    },
+    "thoigian_capphep": {
+        "type": "string",
+        "required": true
+    },
+    "thoigian_hieuluc_batdau": {
+        "type": "string"
+    },
+    "thoigian_hieuluc_ketthuc": {
+        "type": "string"
+    },
+    "id_sanpham": {
+        "type": "string"
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "loai_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "ten_khoahoc": {
+        "type": "string"
+    },
+    "sanpham": {
+        "type": "json"
+    },
+    "bophan_sudung": {
+        "type": "string"
+    },
+    "dongia": {
+        "type": "number"
+    },
+    "soluong_capphep": {
+        "type": "number"
+    },
+    "soluong_danhap": {
+        "type": "number"
+    },
+    "donvitinh": {
+        "type": "string"
+    },
+    "tieuchuan_chatluong_id": {
+        "type": "string"
+    },
+    "tieuchuan_chatluong": {
+        "type": "json"
+    },
+    "quocgia_sanxuat_id": {
+        "type": "string"
+    },
+    "quocgia_sanxuat": {
+        "type": "json"
+    },
+    "ten_coso_sanxuat": {
+        "type": "string"
+    },
+    "quocgia_cungcap_id": {
+        "type": "string"
+    },
+    "quocgia_cungcap": {
+        "type": "json"
+    },
+    "ten_coso_cungcap": {
+        "type": "string"
+    },
+    "chungtu_dinhkem": {
+        "type": "json"
+    },
+    "ghichu": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "giayphep": {
+        "type": "dict"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

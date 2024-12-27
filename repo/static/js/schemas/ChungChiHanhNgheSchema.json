@@ -1,0 +1,72 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "nguoi_hanhnghe_id": {
+        "type": "string",
+        "required": true
+    },
+    "nguoi_hanhnghe": {
+        "type": "json"
+    },
+    "so_giay_phep": {
+        "type": "string"
+    },
+    "co_quan_cap": {
+        "type": "string"
+    },
+    "ngay_hieu_luc": {
+        "type": "string"
+    },
+    "nam_cap": {
+        "type": "string"
+    },
+    "ngay_cap": {
+        "type": "string"
+    },
+    "noi_cap": {
+        "type": "string"
+    },
+    "ngay_het_han": {
+        "type": "string"
+    },
+    "noi_cong_tac": {
+        "type": "string"
+    },
+    "ma_vanbang_cm": {
+        "type": "string"
+    },
+    "ten_vanbang_cm": {
+        "type": "string"
+    },
+    "vanbang": {
+        "type": "json"
+    },
+    "phamvi_hanhnghe": {
+        "type": "json"
+    },
+    "vitri_hanhnghe": {
+        "type": "json"
+    },
+    "loai_chungchi": {
+        "type": "number",
+        "default": 1
+    },
+    "dinhkem_chungchi": {
+        "type": "json"
+    },
+    "dinhkem_vanbang_chuyenmon": {
+        "type": "json"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

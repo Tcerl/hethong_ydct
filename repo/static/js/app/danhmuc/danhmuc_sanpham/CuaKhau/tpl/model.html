@@ -1,0 +1,55 @@
+<div block-bind="content">
+	<div class="row">
+		<h4 id="title_page" class="page-title text-uppercase text-center text-primary w-100 pt-2">Thông tin cửa khẩu
+		</h4>
+
+	</div>
+	<div class="form-horizontal" role="form" id='#pointer-selectize'>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Mã</label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:ma_cuakhau" placeholder="Nhập mã cửa khẩu">
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Tên cửa khẩu</label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:ten_cuakhau" placeholder="Nhập tên cửa khẩu">
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Loại cửa khẩu</label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:phanloai" placeholder="Chọn loại cửa sổ">
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Tỉnh thành</label>
+			<div class="">
+				<input type="text" class="form-control" id="selectize-tinhthanh" placeholder="Tỉnh thành">
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Quận huyện</label>
+			<div class="">
+				<input type="text" class="form-control" id="selectize-quanhuyen" placeholder="Quận huyện" readonly>
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Xã phường</label>
+			<div class="">
+				<input type="text" class="form-control" id="selectize-xaphuong" placeholder="Xã phường" readonly>
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Số nhà, tên đường</label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:sonha_tenduong" placeholder="Nhập số nhà, tên đường">
+			</div>
+		</div>
+
+		<div class="form-group row mt-2">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+		</div>
+	</div>
+</div>

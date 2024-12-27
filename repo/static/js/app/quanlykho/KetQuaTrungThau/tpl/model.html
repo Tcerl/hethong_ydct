@@ -1,0 +1,126 @@
+<div block-bind="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body py-1">
+				<h3 class="page-title text-uppercase text-center text-primary">Thông tin Gói trúng thầu</h3>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	<div class="card  card-small">
+		<div class="card-body">
+			
+
+			<!-- <form class="form-horizontal needs-validation container-fluid" novalidate> -->
+				<div class="row justify-content-start">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row">
+							<label class="col-lg-2 col-md-2 col-sm-6 col-6">Mã gói thầu<span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-3 col-md-3 col-sm-6 col-6" data-bind="value:ma_goi_thau" placeholder="Nhập mã gói thầu" required="">
+							<div class="invalid-feedback">
+								Vui lòng nhập mã gói thầu
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-2 col-md-2 col-sm-12 col-12">Tên gói thầu<span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:ten_goi_thau" placeholder="Nhập tên gói thầu" required="">
+							<div class="invalid-feedback">
+								Vui lòng nhập tên gói thầu
+							</div>
+						</div>
+						<div class="form-group row ">
+							<label class="col-lg-2 col-md-2 col-sm-12 col-12">Thuộc gói thầu</label>
+							<textarea rows="2" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:thuoc_goi_thau" placeholder="Nhập tên gói thầu tổng"></textarea>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-2 col-md-2 col-sm-12 col-12">Loại gói thầu</label>
+							<input type="text" class="form-control col-lg-7 col-md-7 col-sm-12 col-12" data-bind="value:loai_goi_thau" placeholder="Chọn loại gói thầu">
+						</div>
+						<!-- <div class="form-group row">
+							<label class="col-lg-2 col-md-2 col-sm-12 col-12">Đơn vị cung ứng</label>
+							<select class="form-control col-lg-7 col-md-7 col-sm-12 col-12" id="selectize-donvi-cungung" placeholder="Đơn vị cung ứng"></select>
+						</div> -->
+						<div class="form-group row">
+							<label class="col-lg-2 col-md-2 col-sm-6 col-6">Ngày trúng thầu<span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-3 col-md-3 col-sm-6 col-6" data-bind="value:thoigian_trungthau" placeholder="Nhập ngày trúng thầu" required="" parsley-trigger="change">
+							<div class="invalid-feedback">
+								Vui lòng ngày trúng thầu
+							</div>
+						</div>
+						
+					</div>
+					
+					
+
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row tungay">
+							<label class="col-lg-2 col-md-2 col-sm-6 col-6">Thực hiện từ ngày<span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-3 col-md-3 col-sm-6 col-6" data-bind="value:thoigian_batdau" placeholder="Nhập ngày bắt đầu">
+						</div>
+						<div class="form-group row denngay ">
+							<label class="col-lg-2 col-md-2 col-sm-6 col-6">Thực hiện đến ngày<span class="text-danger">*</span></label>
+							<input type="text" class="form-control col-lg-3 col-md-3 col-sm-6 col-6" data-bind="value:thoigian_ketthuc" placeholder="Nhập kết thúc">
+						</div>
+						
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-lg-10 col-md-10 col-sm-10 col-10 ">
+						<select class="form-control" id="selectize-programmatic" placeholder="Tìm kiếm vật tư, thuốc..."></select>
+
+					</div>
+					<div class="col-2 col-lg-2 col-md-2 border-left">
+						<button class="btn btn-sm btn-success btn-print mb-2">In Danh sách</button>
+
+					</div>
+					
+				</div>
+
+				<hr>
+				<div class="row form-group">
+					<div class="col-lg-12 col-xs-12">
+						<div class="table-responsive w-100 mb-3">
+							<table id="demo-foo-addrow" class="table table-centered table-striped table-bordered mb-0 toggle-circle table-vattu" data-page-size="7">
+								<thead>
+									<tr>
+										<th data-sort-initial="true" data-toggle="true" class="px-1">STT</th>
+										<th style="min-width: 220px;" class="px-1">Tên thuốc, Vật tư</th>
+										<th class="px-1">ĐVT</th>
+										<th class="px-1" style="width: 110px;">Đơn giá</th>
+										<th class="px-1" style="width: 100px;">SL Kế hoạch</th>
+										<th class="px-1" style="width: 100px;">SL Thực tế</th>
+										<th class="px-1 text-center" style="min-width: 30%;">Đơn Vị Trúng Thầu</th>
+										<th style="min-width: 15%;" class="px-1">Ghi chú</th>
+										<th data-sort-ignore="true" class="min-width" style="width: 40px;" ></th>
+									</tr>
+									<tr>
+										
+									</tr>
+								</thead>
+								<tbody >
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				
+		
+					
+				</div>
+			</div>
+			<div class="form-group row mx-0" >
+				<div id="button-alway-show" >
+					<div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+				</div>
+				
+			</div>
+
+			<!-- </form> -->
+			
+		</div>
+	</div>
+</div>

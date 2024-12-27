@@ -1,0 +1,130 @@
+
+<div block-bind="content" id="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body">
+				<h3 class="page-title text-uppercase text-center text-primary">Thông tin đơn vị cung ứng</h3>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="row"> -->
+		<div class="card col-lg-12 col-xs-12">
+			<div class="card-body row">
+				<div class="col-lg-6 col-xs-12 border-right">
+					<!-- <div class="card">
+						<div class="card-body"> -->
+							<div class="d-flex mb-4">
+								<h4 class="header-title m-0">Thông tin hành chính</h4>
+								<button class="btn btn-sm btn-success btn-baocaokho ml-auto d-none">Báo cáo đơn vị</button>
+							</div>
+		
+							<form class="form-horizontal" role="form">
+								<div class="form-group row">
+									<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" for="simpleinput">Tên đơn vị <span class="text-danger">*</span></label>
+									<div class="col-lg-9 col-md-9 col-sm-12">
+										<input type="text" class="form-control" data-bind="value:ten">
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" for="simpleinput">Mã đơn vị/ Số ĐK kinh doanh</label>
+									<div class="col-lg-9 col-md-9 col-sm-12">
+										<input type="text" class="form-control" data-bind="value:ma_coso" >
+										<!-- <select class="form-control" id="selectize-programmatic" placeholder="Tìm kiếm đơn vị"></select> -->
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" for="simpleinput">Loại đơn vị</label>
+									<div class="col-lg-9 col-md-9 col-sm-12">
+										<input type="text"  class="form-control" data-bind="value:loai_donvi" >
+									</div>
+								</div>
+								<!-- <div class="form-group row">
+									<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" for="simpleinput">Tuyến đơn vị</label>
+									<div class="col-lg-9 col-md-9 col-sm-12">
+										<input type="text" id="tuyendonvi" class="form-control" data-bind="dict:tuyendonvi" >
+									</div>
+								</div> -->
+								<!-- <div class="form-group row donvicaptren">
+									<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" for="simpleinput">Đơn vị cấp trên</label>
+									<div class="col-lg-9 col-md-9 col-sm-12">
+										<input type="text" id="donvicaptren" class="form-control" data-bind="dict:captren" >
+									</div>
+								</div> -->
+								<div class="form-group row">
+									<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" for="simpleinput">Số điện thoại</label>
+									<div class="col-lg-9 col-md-9 col-sm-12">
+										<input type="number" maxlength="10" class="form-control" data-bind="value:sodienthoai" >
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" for="simpleinput">Email</label>
+									<div class="col-lg-9 col-md-9 col-sm-12">
+										<input type="text"  class="form-control" data-bind="value:email" >
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" for="simpleinput">Người đại diện</label>
+									<div class="col-lg-9 col-md-9 col-sm-12">
+										<input type="text"  class="form-control" data-bind="value:nguoidaidien" >
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" for="simpleinput">Số điện thoại người đại diện</label>
+									<div class="col-lg-9 col-md-9 col-sm-12">
+										<input type="number" maxlength="10" class="form-control" data-bind="value:nguoidaidien_dienthoai" >
+									</div>
+								</div>
+								
+								
+								
+							</form>
+						<!-- </div>
+					</div> -->
+				</div>
+				<div class="col-lg-6 col-xs-12">
+					<h4 class="header-title mb-4">Thông tin địa chỉ</h4>
+					
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" >Tỉnh/Thành phố</label>
+						<div class="col-lg-9 col-md-9 col-sm-12">
+							<input type="text" class="form-control" data-bind="dict:tinhthanh" >
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" >Quận/Huyện</label>
+						<div class="col-lg-9 col-md-9 col-sm-12">
+							<input type="text" class="form-control" data-bind="dict:quanhuyen" >
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" >Xã/Phường/Thị trấn</label>
+						<div class="col-lg-9 col-md-9 col-sm-12">
+							<input type="text" class="form-control" data-bind="dict:xaphuong" >
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-lg-3 col-md-3 col-sm-12 col-form-label" >Địa chỉ</label>
+						<div class="col-lg-9 col-md-9 col-sm-12">
+							<textarea rows="3" class="form-control" data-bind="value:diachi" ></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!-- </div> -->
+	<div class="form-group row mx-0" >
+        <div id="button-alway-show" >
+            <div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+        
+    </div>
+	<div class="card col-12 users">
+		<div class="card-body">
+			<h4 class="header-title mb-2">Danh sách người dùng</h4>
+			<button class="btn btn-primary btn-sm btn-add-user mb-3"> Thêm người dùng </button>
+			<div id="grid" class="row list-user danhsachdonvi">
+			</div>
+		</div>
+	</div>
+</div>

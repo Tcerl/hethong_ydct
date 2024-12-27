@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Truy xuất nguồn gốc dược liệu - mã QRCode</title>
+    <meta name="description" content="Hệ thống truy xuất nguồn gốc dược liệu, cung cấp thông tin chính thống từ Bộ Y tế về thông tin dược liệu, chứng nhận nguồn gốc, chất lượng của dược liệu">
+    <meta name="google-site-verification" content="qmpGyGnonSwhdUdp2i2-z3YjTT8JTpIwLtKAU2mqL9I" />
+    <meta name="keywords" content="truy xuat nguon goc duoc lieu, cocq duoc lieu, duoc lieu, truy xuat nguon goc" />
+	  <meta name="news_keywords" content="truy xuat nguon goc duoc lieu, cocq duoc lieu, duoc lieu, truy xuat nguon goc" />
+	
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="{{static_url}}/vendor/bootstrap4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/style_timeline.css" rel="stylesheet" type="text/css" />
+    <style>
+        *{
+            font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif!important;
+            font-size: 14px;
+        }
+        .padding-common{
+            margin: 2cm;
+        }
+    </style>
+</head>
+
+<body class="loading">
+<script>
+    var static_url = "static";
+</script>
+<div class="row">
+    <div class="card col-12" style="border: none !important;">
+      <h4 class="text-center mt-4 text-primary text-uppercase font-weight-bold">Truy xuất nguồn gốc, xuất xứ sản phẩm</h4>
+        <div class="card-body">
+            <div class="row">
+              <h4 class="ten_sanpham col-12 text-center"></h4>
+              <label class="col-12 text-center">Tên khoa học: <span class="font-weight-bold ten_khoa_hoc"></span></label>
+              <label class="col-12 text-center">Mã viết tắt: <span class="font-weight-bold ma_viettat"></span></label>
+            </div>
+
+            <ul class="timeline_cncc" id ="lichsu_sanpham">
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Thông báo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <textarea class="form-control lydo-huydon" rows="2" placeholder="Nhập lý do hủy đơn"></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+  </div>
+  </div>
+<script src="{{static_url}}/vendor/libtemplate1/js/vendor.js"></script>
+<script src="/static/js/truyxuat_nguongoc_qr.js?v={{current_time}}"></script>
+
+</body>
+
+
+</html>

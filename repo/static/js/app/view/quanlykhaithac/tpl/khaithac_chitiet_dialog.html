@@ -1,0 +1,56 @@
+<div class="content">
+	<div class="content-header py-1">
+        <h4>Chi tiết quá trình khai thác</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-12">
+            <div class="form-group">
+                <label> Thời gian<span class="text-danger">*</span></label>
+                <input type="text" data-bind="value:thoigian" class="form-control" />
+                </div>
+            <div class="form-group">
+                <label>Sản lượng khai thác <span class="text-danger">*</span></label>
+                <input type="number" data-bind="value:soluong" class="form-control" placeholder="Sản lượng khai thác (Kg)">
+            </div>
+
+
+        </div>
+        <div class="col-md-6 col-sm-12 col-12">
+            <div class="form-group">
+                <label>Chất lượng sản phẩm <span class="text-danger">*</span></label>
+                <input type="text" data-bind="value:chatluong" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Vị trí khai thác </label>
+                <select id ="vitri" class="form-control"></select>
+                <!-- <textarea type="text" data-bind="value:vitri" class="form-control" ></textarea> -->
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Mô tả chi tiết</label>
+        <textarea type="text" data-bind="value:mota" class="form-control" placeholder="Mô tả chi tiết quá trình khai thác"></textarea>
+    </div>
+    <div class="row>">                                                      
+        <div class="col-lg-12 col-xs-12 px-0">
+            <h4>
+                <a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false"
+                    class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách hình ảnh, video trong quá trình khai thác</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+            </h4>
+            <button class="btn btn-sm btn-success btn-add-file mb-2"><i class="fa fa-plus"></i> Thêm hình ảnh</button>
+            <div class="collapse show" id="taskcollapse1">
+                <div class="table-responsive  w-80 list-attachment">
+                </div>
+            </div>
+        </div>                                                               
+    </div>
+    <div class="row py-2 mt-3 justify-content-center">
+        <div block-bind="toolbar"></div>
+    </div>
+</div>
+
+<style>
+	.modal-lg {
+		max-width: 700px !important;
+	}
+</style>

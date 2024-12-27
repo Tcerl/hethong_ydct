@@ -1,0 +1,34 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "survey_name": {
+        "type": "string",
+        "required": true
+    },
+    "survey_title": {
+        "type": "string"
+    },
+    "survey_type": {
+        "type": "string"
+    },
+    "start_time": {
+        "type": "number"
+    },
+    "end_time": {
+        "type": "number"
+    },
+    "status": {
+        "type": "number"
+    },
+    "survey_detail": {
+        "type": "list"
+    }
+}

@@ -1,0 +1,140 @@
+{
+    "created_at": {
+        "type": "number"
+    },
+    "created_by": {
+        "type": "string"
+    },
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "deleted": {
+        "type": "boolean",
+        "default": false
+    },
+    "deleted_by": {
+        "type": "string"
+    },
+    "deleted_at": {
+        "type": "number"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_coso": {
+        "type": "string",
+        "length": 255
+    },
+    "ten_coso": {
+        "type": "string",
+        "length": 255
+    },
+    "ten": {
+        "type": "string",
+        "required": true,
+        "length": 255
+    },
+    "sogiayphep": {
+        "type": "string"
+    },
+    "ngaycapphep": {
+        "type": "number"
+    },
+    "sodienthoai": {
+        "type": "string",
+        "length": 63
+    },
+    "email": {
+        "type": "string",
+        "length": 255
+    },
+    "website": {
+        "type": "string"
+    },
+    "loaihinh_hoatdong": {
+        "type": "string"
+    },
+    "loai_donvi": {
+        "type": "number"
+    },
+    "lich_lamviec": {
+        "type": "number"
+    },
+    "gioithieu": {
+        "type": "string"
+    },
+    "nguoidaidien": {
+        "type": "string"
+    },
+    "nguoidaidien_dienthoai": {
+        "type": "string"
+    },
+    "thumbnail_url": {
+        "type": "string"
+    },
+    "banner_url": {
+        "type": "string"
+    },
+    "xaphuong_id": {
+        "type": "string"
+    },
+    "quanhuyen_id": {
+        "type": "string"
+    },
+    "tinhthanh_id": {
+        "type": "string"
+    },
+    "quocgia_id": {
+        "type": "string"
+    },
+    "diachi": {
+        "type": "string"
+    },
+    "tuyendonvi_id": {
+        "type": "string"
+    },
+    "coquanchuquan": {
+        "type": "string"
+    },
+    "captren_id": {
+        "type": "string"
+    },
+    "captren_name": {
+        "type": "string"
+    },
+    "active": {
+        "type": "boolean",
+        "default": false
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "xaphuong": {
+        "type": "dict"
+    },
+    "quanhuyen": {
+        "type": "dict"
+    },
+    "tinhthanh": {
+        "type": "dict"
+    },
+    "quocgia": {
+        "type": "dict"
+    },
+    "tuyendonvi": {
+        "type": "dict"
+    },
+    "users": {
+        "type": "list"
+    },
+    "children": {
+        "type": "list"
+    },
+    "captren": {
+        "type": "dict"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_tieuchuan": {
+        "type": "string",
+        "length": 255
+    },
+    "ten_tieuchuan": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "phanloai": {
+        "type": "number",
+        "default": 1
+    },
+    "mota": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

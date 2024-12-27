@@ -1,0 +1,84 @@
+
+<div block-bind="content">
+	<div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin cơ sở y tế</h4>
+            </div>
+        </div>
+    </div>
+	<div class="card  card-small mb-4">
+		<div class="card-body">
+			<form class="form-horizontal row" role="form">
+				<div class="col-12 col-md-6 border-right-5">
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Mã cơ sở y tế <span class="text-danger">*</span></label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:ma_coso">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Tên cơ sở y tế <span class="text-danger">*</span></label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" data-bind="value:ten">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Hình thức tổ chức</label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:hinhthuc_tochuc">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Email</label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:email">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Số điện thoại</label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="value:dienthoai">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Tỉnh/Thành phố</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" data-bind="dict:tinhthanh">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Quận/Huyện </label>
+						<div class="col-sm-9">
+							<input type="text"  class="form-control" data-bind="dict:quanhuyen">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-sm-3 col-form-label" for="simpleinput">Xã/Phường</label>
+						<div class="col-sm-9">
+							<input type="text" class="form-control" data-bind="dict:xaphuong">
+						</div>
+					</div>
+					<div class="form-group row">
+						<!-- diachi -->
+						<label class="col-sm-3 col-form-label" for="simpleinput">Địa chỉ</label>
+						<div class="col-sm-9">
+							<textarea rows="2" data-bind="dict:diachi" class="form-control"></textarea>
+						</div>
+					</div>
+
+				</div>
+				
+				
+                
+			</form>
+		</div>
+	</div>
+	<div class="form-group row mx-0" >
+        <!-- <div id="button-alway-show" > -->
+            <div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        <!-- </div> -->
+    </div>
+</div>

@@ -1,0 +1,59 @@
+{
+    "ma_bhyt": {
+        "type": "string"
+    },
+    "organization": {
+        "type": "dict"
+    },
+    "organization_id": {
+        "type": "string"
+    },
+    "gender": {
+        "type": "number"
+    },
+    "birthday": {
+        "type": "datetime"
+    },
+    "address": {
+        "type": "string"
+    },
+    "name": {
+        "type": "string"
+    },
+    "email": {
+        "type": "string"
+    },
+    "phone": {
+        "type": "string"
+    },
+    "xaphuong_id": {
+        "type": "string"
+    },
+    "quanhuyen_id": {
+        "type": "string"
+    },
+    "tinhthanh_id": {
+        "type": "string"
+    },
+    "xaphuong": {
+        "type": "dict"
+    },
+    "quanhuyen": {
+        "type": "dict"
+    },
+    "tinhthanh": {
+        "type": "dict"
+    },
+    "ma_kcbbd": {
+        "type": "string"
+    },
+    "accountName": {
+        "type": "string"
+    },
+    "password": {
+        "type": "string"
+    },
+    "confirm_password": {
+        "type": "string"
+    }
+}

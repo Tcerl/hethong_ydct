@@ -1,0 +1,26 @@
+
+<!-- Page Header -->
+<div class="row">
+    <div class="card col-12">
+        <div class="card-body">
+            <h3 class="page-title text-uppercase text-center text-primary">Danh sách đơn vị cung ứng</h3>
+        </div>
+    </div>
+</div>
+  <!-- End Page Header -->
+	  
+  <div class="card">
+	  <div class="card-body danhsachdonvi">
+		  <div class="row mb-3">
+			  <div class="col-md-5 col-sm-12">
+				  <div block-bind="toolbar"></div>
+			  </div>	
+			  <div class="col-md-7 col-sm-12">
+				  <div class="form-group text-right" id="grid_search">
+				  </div>
+			  </div>
+		  </div>
+		  <div id="grid" data-bind='collection:$collection'></div>
+	  </div>
+  </div>
+  

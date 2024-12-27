@@ -1,0 +1,107 @@
+<div class="col-12">
+    <h3 class="page-title text-uppercase text-primary mb-3">Phiếu nhập chi tiết</h3>
+    <div class="row">
+        <div class="col-12 pr-1">
+            <div class="form-group">
+                <div class="form-group d-flex mb-1">
+                    <label>Tên dược liệu <span class="text-danger">*</span></label>
+                    <button class="btn btn-sm btn-primary ml-auto btn-add-duoclieu"><i class="fa fa-plus"></i> Thêm dược liệu</button>
+                </div>
+                <select id="selectize-programmatic" placeholder="Tìm kiếm và chọn dược liệu"></select>
+                <small class="ma_sanpham"></small>
+            </div>
+        </div>
+    </div>
+    <div class="row chungnhanco d-none">
+        <div class="col-12">
+            <div class="form-group">
+                <div class="form-group d-flex mb-0">
+                    <label>Chứng nhận nguồn gốc (C0)</label>
+                    <button class="btn btn-sm btn-primary btn-new-co ml-auto mb-1"><i class="fa fa-plus"></i> Thêm mới</button>
+                </div>
+                <select id="selectize-co" class="form-control" placeholder="Tìm kiếm và chọn CO"></select>
+                <small id="view-co" style="cursor: pointer !important;" class="text-primary d-none">Nhấn vào để xem chi tiết giấy chứng nhận nguồn gốc CO</small>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <div class="form-group d-flex mb-0">
+                <label>Phiếu kiểm nghiệm </label>
+                <button class="btn btn-sm btn-primary btn-new-cq ml-auto mb-1"><i class="fa fa-plus"></i> Thêm mới</button>
+            </div>
+            <select id="selectize-cq" class="form-control" placeholder="Tìm kiếm và chọn phiếu kiểm nghiệm (COA)"></select>
+            <small id="view-cq" style="cursor: pointer !important;" class="text-primary d-none">Nhấn vào để xem chi tiết phiếu  kiểm nghiệm (COA)</small>
+        </div>
+        <div class="form-group col-6">
+            <label class="mb-2" id ="so_lo">Số lô</label>
+            <input class="form-control align-self-end" data-phieunhapkho_chitiet="value:so_lo" placeholder="Nhập số lô" />
+        </div>
+    </div>
+    <div class="row thongtincungung d-none">
+        <div class="form-group col-6">
+            <label>Tên cơ sở cung ứng <span class="text-danger">*</span></label>
+            <input class="form-control" data-phieunhapkho_chitiet="value:ten_coso_cungung"
+                placeholder="Nhập tên cơ sở cung ứng" />
+        </div>
+        <div class="form-group col-6">
+            <label>Loại nguồn dược liệu <span class="text-danger">*</span></label>
+            <input class="form-control" data-phieunhapkho_chitiet="value:loai_nguon_duoc_lieu"
+                placeholder="Nhập mã cơ sở cung ứng" />
+        </div>
+    </div>
+    <div class="row thongtincungung d-none">
+        <div class="col-12">
+            <div class="form-group">
+                <label>Địa chỉ cơ sở cung ứng <span class="text-danger">*</span></label>
+                <textarea class="form-control" data-phieunhapkho_chitiet="value:diachi_coso_cungung"
+                    placeholder="Nhập địa chỉ cơ sở cung ứng" rows="2"></textarea>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-group">
+                <label>Vị trí thu hái <span class="text-danger">*</span></label>
+                <textarea class="form-control" data-phieunhapkho_chitiet="value:vi_tri_thu_hai"
+                    placeholder="Nhập vị trí thu hái" rows="2"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <label>Số lượng thực nhập<span class="text-danger">*</span></label>
+            <input class="form-control" data-phieunhapkho_chitiet="value:soluong_thucte" type="number"
+                placeholder="Nhập số lượng thực tế" />
+        </div>
+        <div class="form-group col-6">
+            <label>Số lượng chứng từ </label>
+            <input class="form-control" data-phieunhapkho_chitiet="value:soluong_chungtu" type="number"
+                placeholder="Nhập số lượng theo chứng từ" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-6">
+            <label>Hạn sử dụng</label>
+            <input class="form-control" data-phieunhapkho_chitiet="value:hansudung" />
+        </div>
+        <div class="col-6 form-group">
+            <label>Đơn giá (VND) </label>
+            <input class="form-control giatien" type="number" data-phieunhapkho_chitiet="value:dongia" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label>Tổng tiền: <span class="gia_thanhtoan"></span> VND</label>
+    </div>
+</div>
+</div>
+<div class="form-group button-chitiet text-center col-12 col-md-12 mt-2">
+    <a class="btn btn-secondary btn-close"><i class="fas fa-arrow-circle-left"></i> Đóng </a>
+    <a class="btn btn-success width-sm btn-save ml-1"><i class="far fa-save"></i> Lưu </a>
+</div>
+</div>
+<style>
+    .modal-lg {
+        max-width: 1200px !important;
+    }
+</style>

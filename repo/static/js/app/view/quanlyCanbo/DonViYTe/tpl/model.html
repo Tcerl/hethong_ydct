@@ -1,0 +1,131 @@
+<div block-bind="content" id="content">
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body">
+                <h3 class="page-title text-uppercase text-center text-primary">Thông tin chi tiết</h3>
+            </div>
+        </div>
+    </div>
+    <div class="card col-lg-12 col-xs-12">
+        <div class="card-body">
+            <div class="row">
+                <h4 class="text-uppercase col-12 p-2">Thông tin đơn vị</h4>
+                <div class="col-md-6 col-sm-12 col-12 border-right">
+                    <div class="form-group required">
+                        <label>Tên đơn vị<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control text-uppercase" data-bind="value:ten_coso"
+                            placeholder="Nhập đơn vị">
+                    </div>
+                    <div class="form-group">
+                        <label>Mã đơn vị</label>
+                        <input type="text" class="form-control" data-bind="value:ma_coso"
+                            placeholder="Nhập mã đơn vị">
+                    </div>
+                    <div class="form-group">
+                        <label>Tỉnh/Thành phố</label>
+                        <input id="selectize-tinhthanh" type="text" placeholder="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Quận/Huyện</label>
+                        <input id="selectize-quanhuyen" type="text" placeholder="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Xã/Phường</label>
+                        <input id="selectize-xaphuong" type="text" placeholder="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Địa chỉ (số nhà, tên đường, thôn/xóm)</label>
+                        <textarea rows="2" data-bind="value:sonha_tenduong" placeholder="Nhập địa chỉ"
+                            class="form-control"></textarea>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-sm-12 col-12">
+                    <div class="form-group required">
+                        <label>Tuyến đơn vị<span class="text-danger">*</span></label>
+                        <input type="text" id="selectize-tuyendonvi" placeholder="" class="form-control">
+                    </div>
+                    <div class="form-group parent_donvi">
+                        <label>Đơn vị cấp trên<span class="text-danger">*</span></label>
+                        <input id="selectize-donvi-captren" type="text" placeholder="Chọn đơn vị cấp trên" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Số điện thoại liên hệ</label>
+                        <input type="text" data-bind="value:dienthoai"
+                            placeholder="Nhập số điện thoại liên hệ của đơn vị" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" data-bind="value:email" placeholder="Nhập email liên hệ của đơn vị"
+                            class="form-control text-lowercase">
+                    </div>
+                    <div class="form-group">
+                        <label>Website</label>
+                        <input type="text" data-bind="value:website" placeholder="website.com"
+                            class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả/giới thiệu về đơn vị</label>
+                        <textarea rows="2" data-bind="value:gioithieu" placeholder="Nhập giới thiệu đơn vị" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group row pt-2 chophep_ketnoi">
+                        <!-- <label>Website</label> -->
+                        <div class="col-6 my-auto">
+                            <input type="text" data-bind="value:chophep_ketnoi" placeholder="website.com"
+                            class="form-control">
+                        </div>
+                        <!-- <div class="col-6 text-right d-none">
+                            <button class="btn btn-sm btn-info btn-connect-appinfo">Cập nhật tài khoản kết nối</button>
+                        </div> -->
+                    </div>
+                    <div class="form-group el-appinfo">
+                        <h4>Thông tin tài khoản kết nối nền tảng</h4>
+                        <div class="form-group">
+                            <label class="">Tên tài khoản kết nối <span class="text-danger">*</span></label>
+                            <div class="">
+                                <input class="form-control" type="text" id="appinfo-name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="">Appkey</label>
+                            <div class="d-flex">
+                                <div class="w-100">
+                                    <input class="form-control" type="text" id="appkey" disabled="disabled">
+                                </div>
+                                <button class="btn btn-info btn-copy btn-sm">Copy</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="">Mật khẩu <span class="text-danger">*</span></label>
+                            <div class="">
+                                <input class="form-control" type="password" id="appinfo-password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="">Mô tả</label>
+                            <div class="">
+                                <textarea class="form-control" rows="2" type="text" id="appinfo-description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row mx-0">
+        <div id="button-alway-show">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* .selectize-control .selectize-input.disabled {
+        opacity: 1;
+    } */
+    .form-control:disabled, .form-control[readonly] {
+        background-color: #fff;
+        opacity: 1;
+    }
+</style>

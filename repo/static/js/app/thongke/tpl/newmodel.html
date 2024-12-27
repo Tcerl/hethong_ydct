@@ -1,0 +1,228 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			<!-- <div class="page-title-box page-title-box-alt"> -->
+				<h4 class="page-title">THỐNG KÊ DƯỢC LIỆU</h4>
+			<!-- </div> -->
+		</div>
+	</div>
+
+
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row px-1">
+                <div class="col-6 col-sm-6 col-md-3 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Từ ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:tungay" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Đến ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:denngay" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Tìm kiếm dược liệu</label>
+                        <div id="thongke-duoclieu-custom">
+                            <select id="chonduoclieu" class="form-control" placeholder="Tìm kiếm theo tên, mã"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg padding-custom timkiem-donvi-baocao">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Tìm kiếm đơn vị</label>
+                        <div id="thongke-donvi-custom">
+                            <select id="donvi-board" class="form-control timkiem-donvi" placeholder="Nhập tên đơn vị tìm kiếm"></select>								
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg align-self-end padding-custom">
+                    <div class="form-group d-flex">
+                        <button class="btn btn-sm btn-primary btn-search m-thongke" style="margin-right: 0.2rem !important;"><i class="fa fa-search"></i> Tìm kiếm</button>
+                        <button class="btn btn-sm btn-danger btn-clean m-thongke"><i class="fa fa-times"></i>  Xóa bộ lọc</button>
+                    </div>
+                </div>
+			</div>
+			
+            <div class="row px-1">
+                <div class="col-12 col-sm-4 col-lg padding-custom">
+                    <div class="card overview-item--c1">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center soluong_nhapkhau board-custom">
+                                <div class="knob-chart" dir="ltr">
+                                    <img class="img-fluid" width="70px" height="70px" src="static/images_template/linhchi.png" alt="user-image" class="rounded-circle">
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="mb-1 mt-0"> <span data-plugin="counterup" class="text-white nhapkhau">0</span> </h3>
+                                    <a href="javascript:void(0)"><p class="mb-0 text-white">Tổng nhập khẩu(KG)</p></a>					
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+        
+                <div class="col-12 col-sm-4 col-lg padding-custom">
+                    <div class="card overview-item--c2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center soluong_muaban board-custom">
+                                <div class="knob-chart" dir="ltr">
+                                    <img  class="img-fluid"  width="70px" height="70px" src="static/images_template/4.png" alt="user-image" class="rounded-circle">
+                                </div>
+                                <div class="text-right">
+                                    <h3 class="mb-1 mt-0"> <span data-plugin="counterup"  class="text-white muaban">0</span> </h3>
+                                    <a href="javascript:void(0)"><p class="mb-0 text-white">Tổng phân phối (KG)</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+        
+                <div class="col-12 col-sm-4 col-lg padding-custom">
+                    <div class="card overview-item--c3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center soluong_thugom board-custom">
+                                <div class="knob-chart" dir="ltr">
+                                    <img class="img-fluid"  width="70px" height="70px" src="static/images_template/3.png" alt="user-image" class="rounded-circle">
+                                </div>
+                                <div class="text-right text-white">
+                                    <h3 class="mb-1 mt-0"><span data-plugin="counterup" class="text-white thugom">0</span> </h3>
+                                    <a href="javascript:void(0)"><p class="mb-0 text-white">Tổng thu gom (KG)</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+        
+                <div class="col-12 col-sm-6 col-lg padding-custom">
+                    <div class="card overview-item--c4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center soluong_nuoitrong board-custom">
+                                <div class="knob-chart" dir="ltr">
+                                    <img class="img-fluid"  width="70px" height="70px" src="static/images_template/5.png" alt="user-image" class="rounded-circle">
+                                </div>
+                                <div class="text-right text-white">
+                                    <h3 class="mb-1 mt-0"> <span data-plugin="counterup" class="text-white nuoitrong">0</span> </h3>
+                                    <a href="javascript:void(0)"><p class="mb-1 text-white">Tổng nuôi trồng (KG)</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+        
+                <div class="col-12 col-sm-6 col-lg padding-custom">
+                    <div class="card overview-item--c5">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center soluong_khaithac board-custom">
+                                <div class="knob-chart" dir="ltr">
+                                    <img class="img-fluid"  width="70px" height="70px" src="static/images_template/2.png" alt="user-image" class="rounded-circle">
+                                </div>
+                                <div class="text-right text-white">
+                                    <h3 class="mb-1 mt-0"> <span data-plugin="counterup" class="text-white khaithac">0</span> </h3>
+                                    <a href="javascript:void(0)"><p class="mb-1 text-white">Tổng khai thác (KG)</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end col -->
+            </div>
+        </div>
+    </div>
+
+
+	<div class="row">
+		<div class="col-12">
+			<div class="card" dir="ltr">
+				<div class="card-body">
+					
+					<div class="row px-1">
+						<h4 class="header-title py-3 col-lg-3 col-md-3 col-sm-12 col-12">Biểu đồ báo cáo xuất nhập tồn </h4>
+						<div class="col-lg-5 col-md-5 col-sm-12 col-12 padding-custom">
+							<div class="form-group">
+								<label class="font-weight-bold">Tìm kiếm theo dược liệu</label>
+								<select id="duoclieu-chart" class="form-control" placeholder="Chọn dược liệu"></select>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-12 timkiem-donvi-chart padding-custom">
+							<div class="form-group">
+                                <label class="font-weight-bold">Tìm kiếm theo đơn vị</label>
+								<select id="donvi-chart" class="form-control timkiem-chart" placeholder="Nhập tên đơn vị tìm kiếm"></select>
+							</div>
+						</div>
+
+					</div>
+					
+					<div class="text-center">
+						<p class="text-muted font-15 font-family-secondary mb-0">
+							<span class="mx-2"><i class="mdi mdi-checkbox-blank-circle text-primary"></i> SL Nhập</span>
+							<span class="mx-2"><i class="mdi mdi-checkbox-blank-circle text-success"></i> SL Xuất</span>
+							<span class="mx-2"><i class="mdi mdi-checkbox-blank-circle text-muted"></i> SL Tồn</span>
+						</p>
+					</div>
+					<div id="morris-bar-stacked" style="height: 350px; position: relative;" class="morris-chart" data-colors="#009688,#0056c1,#e3eaef">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			<div class="card">
+				<div class="card-body">
+                    <h4 class="col-12 padding-custom mb-3">Biểu đồ báo cáo thống kê số lượng dược liệu</h4>
+
+					<div class="row px-1">
+                        <div class="col-lg-2 col-md-6 col-12 padding-custom">
+                            <div class="form-group">
+                                <label>Loại tìm kiếm</label>
+                                <select id="loai_thongke" class="form-control browser-default custom-select">
+                                    <option selected value="10">Tất cả</option>
+                                    <option value="1">Nhập khẩu</option>
+                                    <option value="3">Thu gom</option>
+                                    <option value="4">Nuôi trồng</option>
+                                    <option value="5">Khai thác</option>
+                                </select>
+                            </div>
+                        </div>
+						<div class="col-lg-3 col-md-6 col-sm-12 col-12 padding-custom">
+							<div class="form-group">
+								<label class="font-weight-bold">Tìm kiếm theo dược liệu</label>
+								<select id="duoclieu-chart-detail" class="form-control" placeholder="Tìm kiếm và chọn dược liệu"></select>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-12 col-12 timkiem-donvi-chart padding-custom">
+							<div class="form-group">
+                                <label class="font-weight-bold">Tìm kiếm theo đơn vị</label>
+								<select id="donvi-chart-detail" class="form-control timkiem-chart" placeholder="Tìm kiếm và chọn đơn vị"></select>
+							</div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col d-flex padding-custom">
+                            <div class="form-group align-self-end" style="margin-bottom: 0.6rem !important;">
+                                <button class="btn btn-sm btn-primary btn-search-detail"><i class="fa fa-search"></i> Tìm kiếm</button>
+                                <button class="btn btn-sm btn-danger btn-clear-detail"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+                            </div>
+                        </div>
+
+					</div>
+
+					<div class="row px-1">
+						<div class="col-12 padding-custom">
+							<div id="chart-detail">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>

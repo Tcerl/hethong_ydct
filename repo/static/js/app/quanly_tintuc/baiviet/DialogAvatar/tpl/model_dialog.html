@@ -1,0 +1,34 @@
+<div class="row text-center py-2" style="justify-content: center;">
+    <h4 class="page-title text-uppercase text-center text-primary">Chọn ảnh avatar</h4>
+</div>
+<div class="card col-lg-12 col-xs-12 px-0">
+    <div class="card-body">
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" id="btn_insert_computer">Chọn ảnh từ máy tính</button>
+        </div>
+        <p class="text-center pt-2">Hoặc</p>
+        
+        <div class="text-center">
+            <button type="button" class="btn btn-success" id="btn_insert_cloud">Chọn ảnh từ thư viện</button>
+        </div>
+        <p class="text-center pt-2">Hoặc</p>
+
+        <div class="text-center">
+            <input type="text" class="form-control" placeholder="Nhập đường dẫn ảnh" id="link_url_image">
+
+            <button type="button" class="btn btn-info mt-1" id="btn_insert_link_image">Chọn ảnh</button>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+        </div>
+    </div>
+</div>
+<style>
+    @media (min-width: 576px) {
+        .modal-sm {
+            max-width: 350px;
+          }
+    }
+</style>

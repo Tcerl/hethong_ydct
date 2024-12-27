@@ -1,0 +1,24 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "type": {
+        "type": "string"
+    },
+    "path": {
+        "type": "string"
+    },
+    "count": {
+        "type": "number"
+    },
+    "donvi_id": {
+        "type": "string"
+    }
+}

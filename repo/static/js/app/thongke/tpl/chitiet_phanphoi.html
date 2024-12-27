@@ -1,0 +1,74 @@
+<div class="content">
+	<div class="content-header py-2">
+        <h4 class="content-title text-center text-​uppercase">THỐNG KÊ PHÂN PHỐI DƯỢC LIỆU</h4>
+    </div>
+
+    <div class="row px-1">
+        <div class="col-6 col-sm-6 col-md-3 col-lg padding-custom time-custom">
+            <div class="form-group">
+                <label class="font-weight-bold">Từ ngày</label>
+                <div class="">
+                    <input type="text" class="form-control" data-bind="value:tungay" >
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-3 col-lg padding-custom time-custom">
+            <div class="form-group">
+                <label class="font-weight-bold">Đến ngày</label>
+                <div class="">
+                    <input type="text" class="form-control" data-bind="value:denngay" >
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg padding-custom">
+            <div class="form-group">
+                <label class="font-weight-bold">Tìm kiếm dược liệu</label>
+                <div id="thongke-duoclieu-custom">
+                    <select id="chonduoclieu" class="form-control" placeholder="Tìm kiếm và chọn dược liệu"></select>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg padding-custom timkiem-donvi-baocao">
+            <div class="form-group">
+                <label class="font-weight-bold">Tìm kiếm đơn vị</label>
+                <div id="thongke-donvi-custom">
+                    <select id="donvi-board" class="form-control timkiem-donvi" placeholder="Tìm kiếm và chọn đơn vị"></select>								
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-3 col-lg align-self-end padding-custom">
+            <div class="form-group d-flex">
+                <button class="btn btn-sm btn-primary btn-search m-thongke" style="margin-right: 0.2rem !important;"><i class="fa fa-search"></i> Tìm kiếm</button>
+                <button class="btn btn-sm btn-danger btn-clean m-thongke" style="margin-right: 0.2rem !important;"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+                <button class="btn btn-sm btn-success btn-excel m-thongke"><i class="fas fa-file-excel"></i> Xuất excel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class=" tablesaw-bar tablesaw-mode-stack thongkebaocao-xuatnhapton table-responsive table-bordered">
+        <table class="table mb-0" data-tablesaw-mode="stack" id="tablesaw-9517">
+            <thead class="">
+            <tr>
+                <th style="width: 250px;" class="font-weight-bold">Tên Đơn Vị</th>
+                <th class="font-weight-bold">Tên dược liệu</th>
+                <th  class="text-center font-weight-bold">SL Tồn Đầu Kỳ (Kg)</th>
+                <th  class="text-center font-weight-bold">SL Nhập Trong Kỳ (Kg)</th>
+                <th class="text-center font-weight-bold">SL Xuất Trong Kỳ (Kg)</th>
+                <th class="text-center  font-weight-bold">SL Tồn Cuối Kỳ (Kg)</th>
+                <th class="font-weight-bold">Đơn vị cung ứng</th>
+            </tr>
+            </thead>
+            <tbody class="body-data">
+                
+                
+            </tbody>
+        </table>
+    </div>
+
+</div>
+<style>
+	.modal-lg {
+        max-width: 1500px !important;
+        padding-left: 12px !important;
+	}
+</style>

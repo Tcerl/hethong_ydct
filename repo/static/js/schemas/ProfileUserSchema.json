@@ -1,0 +1,68 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma": {
+        "type": "string"
+    },
+    "hoten": {
+        "type": "string",
+        "required": true
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "macongdan": {
+        "type": "string",
+        "length": 200
+    },
+    "email": {
+        "type": "string",
+        "length": 255
+    },
+    "dienthoai": {
+        "type": "string",
+        "length": 20
+    },
+    "diachi": {
+        "type": "string"
+    },
+    "vaitro": {
+        "type": "json"
+    },
+    "chucvu": {
+        "type": "string"
+    },
+    "chungchi": {
+        "type": "string"
+    },
+    "chungchi_url": {
+        "type": "string"
+    },
+    "phamvi_hanhnghe": {
+        "type": "string"
+    },
+    "gioithieu": {
+        "type": "string"
+    },
+    "avatar_url": {
+        "type": "string"
+    },
+    "active": {
+        "type": "number",
+        "default": 1
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

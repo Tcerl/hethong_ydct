@@ -1,0 +1,73 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			<!-- <div class="page-title-box page-title-box-alt"> -->
+				<h4 class="page-title">BÁO CÁO SỬ DỤNG PHẦN MỀM</h4>
+			<!-- </div> -->
+		</div>
+	</div>
+    <div class="card">
+        <div class="card-body">
+            <div class="row px-2">
+                <div class="col-6 col-sm-6 col-md-3 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Từ ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control tungay" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Đến ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control denngay" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg padding-custom timkiem-donvi-baocao d-none">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Tìm kiếm đơn vị</label>
+                        <div id="thongke-donvi-custom">
+                            <select id="donvi-board" class="form-control timkiem-donvi" placeholder="Nhập tên đơn vị tìm kiếm"></select>								
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg align-self-end padding-custom">
+                    <div class="form-group d-flex">
+                        <button class="btn btn-sm btn-primary btn-search m-thongke" style="margin-right: 0.2rem !important;">Tìm kiếm</button>
+                    </div>
+                </div>
+			</div>
+			
+
+
+	<div class="row">
+		<div class="col-12">
+			<!-- <div class="card" dir="ltr">
+				<div class="card-body"> -->
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link " id="donvi-sudung-tab" data-toggle="pill" href="#donvi-sudung" role="tab" aria-controls="donvi-sudung" aria-selected="false">Đơn vị sử dụng</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="donvi-khong-sudung-tab" data-toggle="pill" href="#donvi-khong-sudung" role="tab" aria-controls="donvi-khong-sudung" aria-selected="true">Đơn vị không sử dụng</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade" id="donvi-sudung" role="tabpanel" aria-labelledby="donvi-sudung-tab">
+                    <div id="grid-donvi-sudung"></div>
+                </div>
+                <div class="tab-pane fade show active" id="donvi-khong-sudung" role="tabpanel" aria-labelledby="donvi-khong-sudung-tab">
+                    <div id="grid-khong-donvi-sudung"></div>
+                </div>
+            </div>
+					
+				<!-- </div>
+			</div> -->
+		</div>
+	</div>
+
+
+
+</div>

@@ -1,0 +1,33 @@
+<div class="row header">
+	<div class="card col-12">
+		<div class="card-body py-2">
+			<h4 class="page-title text-uppercase text-center text-primary">Danh sách tác giả</h4>
+		</div>
+	</div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-12 mb-2 select-donvi d-none">
+                <div class="d-flex flex-wrap align-items-center">
+                    <label style="width: 50px;">Đơn vị</label>
+                    <div class="my-auto" style="width: calc(100% - 50px);">
+                        <input type="text" class="form-control" id="selectize_donvi">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-4 col-12 mb-2">
+                <div class="d-flex flex-wrap">
+                    <div class="text-right w-100" id="grid_search">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-3 col-md-4 col-12 mb-2">
+                <div class="btn-toolbar">
+                    <div block-bind="toolbar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+    </div>
+</div>

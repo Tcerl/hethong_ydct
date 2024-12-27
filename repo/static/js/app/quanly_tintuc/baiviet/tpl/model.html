@@ -1,0 +1,291 @@
+
+<div block-bind="content">
+	<div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h3 id="title_page" class="page-title text-uppercase text-center text-primary">Chi tiết bài viết</h3>
+            </div>
+        </div>
+    </div>
+    <div class="left-sidenav">
+        <span class="open-nav d-none" id="left_nav">&#9776;</span>
+        <a href="javascript:void(0)" class="closebtn-left" id="closebtn_left" title="Đóng">&times;</a>
+        <div class="" id="content_left">
+            <h5 class="text-uppercase text-center">CHỌN CHUYÊN MỤC <span class="text-danger">*</span></h5>
+            <div class="col-12">
+                <input type="text"  class="form-control" id="category_parent" placeholder="Chọn chuyên mục">
+            </div>
+            <hr class="solid">
+            <h5 class="text-uppercase text-center">CHỌN TIN LIÊN QUAN</h5>
+            <button id="btn_related_news" type="button" class="btn btn-secondary waves-effect" title="Chọn tin liên quan"><i class="fas fa-plus fa-lg" style="color: rgba(0, 0, 0, 0.2);"></i></button>
+            <div id="related_news">
+                <ul class="blog" id="list_post">
+                </ul>
+            </div>
+        </div>
+    </div>
+	<div class="card  card-small mb-4" id="custom_editor">
+		<div class="card-body px-2">
+            <div class="col-md-12 col-sm-12 px-0">
+                <div class="form-group hide_post crawl-data d-none">
+                    <button type="button" class="btn btn-primary" id="btn_crawl_data">Sao chép bài tự động</button>
+                </div>
+                <div class="form-group hide_post">
+                    <label class="col-form-label">Tiêu đề bài viết <span class="text-danger">*</span></label>
+                    <textarea rows="2" class="form-control w-100" id="title" placeholder="Nhập tiêu đề bài viết"></textarea>
+                </div>
+                <div class="form-group hide_post">
+                    <label class="col-form-label">Mô tả/ Tóm tắt bài viết</label>
+                    <textarea rows="3" class="form-control w-100" id="description" placeholder="Mô tả bài viết"></textarea>
+                </div>
+            </div>
+            <label>Nội dung đầy đủ <span class="text-danger">*</span></label>
+            <textarea id="tinymce_editor">
+                
+            </textarea>
+		</div>
+	</div>
+    <div class="right-sidenav">
+        <div id="right_side">
+            <span class="open-nav" id="right_nav">&#9776;</span>
+        </div>
+        <div id="right_side_ext">
+            <span class="closebtn-right" title="Đóng"></span>
+            <div id="content_right">
+                <div id="info_post">
+                    <div class="title-right-sidenav" id="title_info">
+                        <h4 class="text-uppercase text-center text-title">Thông tin cơ bản</h4>
+                    </div>
+                    <div id="content_info">
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Hình đại diện <span class="text-danger">*</span></label>
+                            <div class="avatar" id="image_thumbnail" data-tooltip="Avatar thường" data-tooltip-position="top">
+                                <i class="fas fa-times-circle remove" id="remove_image_thumbnail" title="Xóa"></i>
+                                <i class="fas fa-upload upload"></i>
+                            </div>
+                            <div class="avatar d-none" id="avatar_vuong" data-tooltip="Avatar vuông" data-tooltip-position="middle">
+                                <i class="fas fa-times-circle remove" id="remove_avatar_vuong" title="Xóa"></i>
+                                <i class="fas fa-upload upload"></i>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Hiển thị avatar trang chi tiết</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:is_show_avatar">
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Chú thích avatar</label>
+                            <textarea rows="2" class="form-control w-100 col-12 custom-ml-post" data-bind="value:avatar_caption"></textarea>
+                        </div> -->
+                        <!-- <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Dạng bài</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:style_display">
+                            </div>
+                        </div> -->
+                        <!-- <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Hiển thị icon</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:is_show_icon">
+                            </div>
+                        </div> -->
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Đường dẫn bài viết</label>
+                            <textarea rows="2" class="form-control col-12 custom-ml-post" data-bind="value:detail_path" placeholder="VD: Sữa mẹ giúp phát triển não bộ trẻ sơ sinh đẻ non"></textarea>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <input type="text" class="custom-control-input" data-bind="value:default_path">
+                        </div>
+                        <div class="col-12 mt-2 box-copy-link d-none">
+                            <button class="btn btn-sm btn-primary" id="btn_copy_link">Copy link</button>
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Chọn tác giả</label>
+                            <input type="text" class="form-control col-12 custom-ml-post" id="selectize_author">
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Tên tác giả (Bút danh) <span class="text-danger">*</span></label>
+                            <input type="text" data-bind="value:tac_gia" class="form-control col-12 custom-ml-post" placeholder="Nhập tên tác giả">
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Chức danh tác giả</label>
+                            <input type="text" data-bind="value:chuc_danh_tac_gia" class="form-control col-12 custom-ml-post" placeholder="Nhập chức danh tác giả">
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-12 col-form-label">Thời gian xuất bản</label>
+                            <div class="row col-12 custom-ml-post">
+                                <input type="text" class="form-control col-6 mr-1" data-bind="value:publish_time">
+                                <div class="input-group clockpicker custom-clockpicker" data-placement="left" data-autoclose="true">
+                                    <input type="text" class="form-control" id="hour_time" placeholder="hh:mm">
+                                    <span class="input-group-addon-custom">
+                                        <span class="glyphicon-custom glyphicon-time-custom"></span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Ghi chú</label>
+                            <textarea rows="2" class="form-control w-100 col-12 custom-ml-post" data-bind="value:note"></textarea>
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Nguồn tin</label>
+                            <input type="text" data-bind="value:news_source" class="form-control col-12 custom-ml-post">
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Link bài gốc</label>
+                            <input type="text" data-bind="value:link_original_post" class="form-control col-12 custom-ml-post">
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Chuyên gia</label>
+                            <input type="text" class="form-control col-12 custom-ml-post" placeholder="Nhập tên chuyên gia">
+                        </div>
+                        <div class="col-12 mt-2 row tags">
+                            <label class="col-form-label col-12">Từ khóa(Tags) (Cách nhau bởi dấu phẩy)</label>
+                            <input type="text" class="form-control col-12 custom-ml-post mb-3" id="selectize-tags" placeholder="VD: Dinh dưỡng, Bảo quản">
+                        </div>
+                    </div>
+                </div>
+                <div id="setting_post">
+                    <div class="title-right-sidenav" id="title_setting">
+                        <h4 class="text-uppercase text-center text-title">Cài đặt phân phối</h4>
+                    </div>
+                    <div id="content_setting">
+                        <div class="col-12 mt-2 row tags">
+                            <label class="col-form-label col-12">Chuyên mục liên quan</label>
+                            <input type="text" class="form-control col-12 custom-ml-post" id="selectize-related_category">
+                        </div>
+                        <!-- <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Chủ đề</label>
+                            <input type="text" class="form-control col-12 custom-ml-post" id="selectize_topic">
+                        </div> -->
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Bài video</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:is_post_video">
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Bài nhạy cảm</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:is_sensitive">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Đề xuất hiển thị</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:show_suggestion">
+                            </div>
+                        </div> -->
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Cho phép hiển thị bình luận</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:show_comment">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Cho phép bình luận</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:allowed_comment">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Cho phép hiển thị lên trang chủ</label>
+                            <div class="col-12 custom-mr-post mb-3">
+                                <input type="text" data-bind="value:is_show">
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Tin tiêu điểm trang Home</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:is_highlights_home">
+                            </div>
+                        </div> <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Tin tiêu điểm trang chuyên mục</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:is_highlights_category">
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Bài PR</label>
+                            <div class="col-12 custom-mr-post mb-3">
+                                <input type="text" data-bind="value:is_post_pr">
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="notify_post">
+                    <div class="title-right-sidenav" id="title_notify">
+                        <h4 class="text-uppercase text-center text-title">Thông báo sổ BMTE</h4>
+                    </div>
+                    <div id="content_notify">
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Cho phép gửi thông báo tới sổ</label>
+                            <div class="col-12 custom-mr-post">
+                                <input type="text" data-bind="value:allow_send_notify" id="allow_send_notify">
+                            </div>
+                            <small class="mt-1 col-12 text-danger">(Thiết lập chỉ dành cho thư ký tòa soạn)</small>
+                        </div>
+                        <div class="col-12 mt-2 row tags">
+                            <label class="col-form-label col-12">Nhóm tuổi</label>
+                            <input type="text" class="form-control col-12 custom-ml-post" id="selectize-age_group">
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Tỉnh/thành phố</label>
+                            <input type="text" class="form-control col-12 custom-ml-post" id="tinhthanh">
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Quận/Huyện</label>
+                            <input type="text" class="form-control col-12 custom-ml-post" id="quanhuyen">
+                        </div>
+                        <div class="col-12 mt-2 row  mb-3">
+                            <label class="col-form-label col-12">Xã/Phường</label>
+                            <input type="text" class="form-control col-12 custom-ml-post" id="xaphuong">
+                        </div>
+                    </div>
+                </div>
+                <div id="seo_post">
+                    <div class="title-right-sidenav" id="title_seo">
+                        <h4 class="text-uppercase text-center text-title">Cài đặt seo</h4>
+                    </div>
+                    <div id="content_seo">
+                        <div class="col-12 mt-2 row tags">
+                            <label class="col-form-label col-12">Từ khóa (Cách nhau bởi dấu phẩy)</label>
+                            <input type="text" class="form-control col-12 custom-ml-post" id="selectize-tags-search" placeholder="VD: Dinh dưỡng, Bảo quản">
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Tiêu đề hiển thị trên Google</label>
+                            <textarea rows="2" class="form-control w-100 col-12 custom-ml-post" id="title_google"></textarea>
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Mô tả hiển thị trên Google</label>
+                            <textarea rows="2" class="form-control w-100 col-12 custom-ml-post" id="description_google"></textarea>
+                        </div>
+                        <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Preview</label>
+                            <div class="seo-preview col-12">
+                                <div class="title">Preview title</div>
+                                <div class="bread-crumb">https://somevabe.suckhoedoisong.vn</div>
+                                <div class="sapo">Preview description</div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 mt-2 row">
+                            <label class="col-form-label col-12">Từ khóa chủ đạo (Tối thiểu 5 ký tự)</label>
+                            <input type="text" data-bind="value:link_original_post" class="form-control col-12 custom-ml-post mb-3" placeholder="Từ khóa quan trong nhất bài">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row" >
+        <div id="button-alway-show" style="width: 103% !important; border-top: 1px solid #DCDCDC; background: #f0f0f0;">
+            <div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+    </div>
+</div>
+<style>
+    #link_post {
+        width: calc(100% - 70px) !important;
+    }
+</style>

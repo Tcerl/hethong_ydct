@@ -1,0 +1,35 @@
+<div block-bind="content">
+	<div class="row">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary w-100 py-2">Thông tin bộ phận dược liệu</h4>
+          
+    </div>
+			<div class="form-horizontal" role="form">
+				<div class="form-group">
+					<label class="col-form-label" for="simpleinput">Mã</label>
+					<div class="">
+						<input type="text" class="form-control" data-bind="value:ma_bophan" placeholder="Nhập mã bộ phận">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-form-label" for="simpleinput">Tên bộ phận</label>
+					<div class="">
+						<input type="text"  class="form-control" data-bind="value:ten_bophan" placeholder="Nhập tên bộ phận">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-form-label" for="simpleinput">Mô tả</label>
+					<div class="">
+						<textarea class="form-control" data-bind="value:mota" rows="2" placeholder="Nhập mô tả"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-form-label" for="simpleinput">Công dụng</label>
+					<div class="">
+						<textarea class="form-control" data-bind="value:congdung" rows="2" placeholder="Nhập công dụng"></textarea>
+					</div>
+                </div>
+				<div class="form-group">
+					<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+				</div>
+			</div>
+</div>

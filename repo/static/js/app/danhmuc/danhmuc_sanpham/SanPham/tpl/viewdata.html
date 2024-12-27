@@ -1,0 +1,109 @@
+<div block-bind="content">
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin dược liệu</h4>
+            </div>
+        </div>
+    </div>
+    <div class="card card-small mb-4">
+        <div class="container" style="max-width: 1024px !important;">
+            <div class="card-body">
+
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-5 image_duoclieu">
+    
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-7">
+                        <h3 class="text-primary" data-bind="text:ten_sanpham"></h3>
+                        <hr style="margin-top: 0 !important; margin-bottom: 1.2rem !important;"> 
+                        <div class="form-group" data-bind="text:thuoc_ho"></div>
+                    </div>
+                </div>
+    
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <ul class="ul-duoclieu">
+                            <li>
+                                <a><span>Chi tiết dược liệu</span></a> 
+                            </li>
+                        </ul>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Tên khoa học: </label>
+                            <span data-bind="text:ten_khoa_hoc"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Mã dược liệu: </label>
+                            <span data-bind="text:ma_sanpham"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Mô tả: </label>
+                            <span class="mota"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Bộ phận dùng: </label>
+                            <span data-bind="text:bophan_sudung"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Bột: </label>
+                            <span data-bind="text:bot"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Định tính: </label>
+                            <span data-bind="text:dinh_tinh"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Độ ẩm: </label>
+                            <span data-bind="text:do_am"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Tro toàn phần: </label>
+                            <span data-bind="text:tro_toanphan"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Tạp chất: </label>
+                            <span data-bind="text:tap_chat"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Định lượng: </label>
+                            <span data-bind="text:dinh_luong"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Chế biến: </label>
+                            <span data-bind="text:che_bien"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Bảo quản: </label>
+                            <span data-bind="text:bao_quan"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Tính vị: </label>
+                            <span data-bind="text:tinh_vi_quy_kinh"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Công năng: </label>
+                            <span data-bind="text:congnang_chutri"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Cách dùng,liều lượng: </label>
+                            <span data-bind="text:cachdung_lieuluong"></span>
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-bold">Kiêng kỵ: </label>
+                            <span data-bind="text:kieng_ky"></span>
+                        </div>
+                    </div>
+
+    
+                </div>
+    
+                <div class="form-group row mx-0">
+                    <div id="button-alway-show">
+                        <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

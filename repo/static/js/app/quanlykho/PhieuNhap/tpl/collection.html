@@ -1,0 +1,59 @@
+<!-- Page Header -->
+<div class="row header">
+	<div class="card col-12">
+		<div class="card-body py-2 d-flex">
+			<h4 id="title_page" class="page-title text-uppercase text-left text-primary col-sm-6">Danh sách phiếu nhập
+				kho</h4>
+		</div>
+	</div>
+</div>
+<!-- End Page Header -->
+<div class="card">
+	<div class="card-body">
+		<div class="row col-12">
+			<div class="w-30 d-flex mb-1">
+				<label for="" class="text-label-left">Từ ngày</label>
+				<div class="text-input-right">
+					<input type="text" id="tungay" class="form-control">
+				</div>
+			</div>
+			<div class="w-30 d-flex mb-1">
+				<label for="" class="text-label-left">Đến ngày</label>
+				<div class="text-input-right">
+					<input type="text" id="denngay" class="form-control">
+				</div>
+			</div>
+			<div class="w-40 d-flex mb-1">
+					<label for="" class="text-label-left w-40">Đơn vị cung ứng</label>
+					<div class="text-donvicungung-right">
+						<!-- <input type="text" id="donvi_cungung" class="form-control"> -->
+						<select id = "donvi_cungung" placeholder="Tìm kiếm và chọn đơn vị cung ứng" class="form-control"></select>
+					</div>
+			</div>
+
+		</div>
+		<div class="row col-12 mb-3 ">
+			<div class="w-30 d-flex">
+				<label for="" class="text-label-left">Số phiếu</label>
+				<div class="text-input-right">
+					<input type="text" id="sophieu" class="form-control">
+				</div>
+			</div>
+			<div class="w-30 d-flex">
+				<label for="" class="text-label-left">Số hóa đơn</label>
+				<div class="text-input-right">
+					<input type="text" id="sohoadon" class="form-control">
+				</div>
+			</div>
+			<div class="w-40 d-flex">
+				<button class="btn btn-primary btn-sm btn-search"><i class="fa fa-search"></i> Tìm kiếm</button>
+				<button class="btn btn-danger btn-sm btn-clear ml-1"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+				<button class="btn btn-primary btn-sm btn-new-px ml-1"><i class="far fa-copy"></i> Nhập kho từ mã phiếu</button>
+				<button class="btn btn-primary btn-sm btn-new ml-auto"><i class="fa fa-plus"></i> Tạo phiếu mới</button>
+			</div>
+		</div>
+        <div class="table-bordered table-hover" style="border: none !important;">
+            <div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+        </div>
+	</div>
+</div>

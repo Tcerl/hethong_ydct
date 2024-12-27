@@ -1,0 +1,81 @@
+<!-- Page Header -->
+<div class="row header">
+    <div class="card col-12">
+        <div class="container-fluid">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Quản Lý Nguồn Gốc-CO</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Header --> 
+<div class="card">
+    <div class="card-body">
+        <div class="col-12 mb-3 ">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Từ ngày</label>
+                        <input class="form-control" id="tungay" type="text">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Đến ngày</label>
+                        <input class="form-control" id="denngay" type="text">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Trạng thái</label>
+                        <select class="browser-default custom-select form-control" id ="trangthai">
+                            <option value="10" selected>Tất cả</option>
+                            <option value="1">Tạo mới</option>
+                            <option value="2">Chờ duyệt</option>
+                            <option value="3">Đã duyệt</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Tìm kiếm theo đơn vị</label>
+    					<select id="donvi" class="form-control" placeholder="Tìm kiếm và chọn đơn vị"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Số CO</label>
+                        <input type="text" id="so_co" class="form-control">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Đơn vị chứng nhận</label>
+                        <input type="text" id="donvicap" class="form-control">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Loại CO</label>
+                        <select id="loai_co" class="form-control browser-default custom-select">
+                            <option value="10">Tất cả</option>
+                            <option value="1">Ngoài nước</option>
+                            <option value="2">Trong nước</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 padding-custom d-flex">
+                    <div class="form-group align-self-end">
+                        <button class="btn btn-primary btn-sm btn-search "><i class="fa fa-search"></i>  Tìm kiếm</button>
+                        <button class="btn btn-danger btn-sm btn-clear"><i class="fa fa-times"></i>  Xóa bộ lọc</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-bordered" style="border: none !important;">
+            <div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+        </div>
+    </div>
+</div>

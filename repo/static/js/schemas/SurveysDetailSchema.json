@@ -1,0 +1,44 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "name": {
+        "type": "string"
+    },
+    "type": {
+        "type": "number",
+        "default": 0
+    },
+    "placeholder": {
+        "type": "string"
+    },
+    "data_answer": {
+        "type": "json"
+    },
+    "is_other": {
+        "type": "boolean",
+        "default": false
+    },
+    "required": {
+        "type": "boolean"
+    },
+    "priority": {
+        "type": "number",
+        "default": 0
+    },
+    "steps_id": {
+        "type": "string",
+        "required": true
+    },
+    "survey_id": {
+        "type": "string",
+        "required": true
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma": {
+        "type": "string",
+        "length": 255
+    },
+    "ten": {
+        "type": "string",
+        "length": 255
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "ten_tieng_anh": {
+        "type": "string"
+    },
+    "loai": {
+        "type": "number"
+    },
+    "quocgia_id": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "quocgia": {
+        "type": "dict"
+    }
+}

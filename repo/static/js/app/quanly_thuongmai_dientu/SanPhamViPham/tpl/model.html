@@ -1,0 +1,46 @@
+<div block-bind="content">
+	<div class="row">
+		<h4 class="page-title text-uppercase text-center text-primary w-100 py-2">Thông tin sản phẩm vi phạm</h4>
+	</div>
+	<div class="form-horizontal" role="form">
+		<div class="row">
+			<div class="col-sm-6 col-12">
+				<label class="col-form-label" for="simpleinput">Nhà cung cấp <span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" id="selectize_donvi_cungung">
+				</div>
+				<label class="col-form-label" for="simpleinput">Sản phẩm <span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" id="selectize_sanpham">
+				</div>
+				<!-- <label class="col-form-label" for="simpleinput">Mã sản phẩm <span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" id="ma_sanpham" data-bind="value:ma_sanpham" placeholder="Nhập mã sản phẩm">
+				</div> -->
+			</div>
+			<div class="col-sm-6 col-12">
+				<label class="col-form-label" for="simpleinput">Nội dung vi phạm</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:noidung_vipham" placeholder="Nhập nội dung vi phạm">
+				</div>
+				<label class="col-form-label" for="simpleinput">Thời gian vi phạm</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:thoigian_vipham">
+				</div>
+
+				<label class="col-form-label" for="simpleinput">Quyết định xử phạt số</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:soquyetdinh" placeholder="Nhập quyết định xử phạt số">
+				</div>
+			</div>
+		</div>
+		<div class="form-group row mt-3">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+		</div>
+	</div>
+</div>
+<style>
+	.modal-dialog.modal-lg {
+  		max-width: 1000px !important;
+	}
+</style>

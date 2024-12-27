@@ -1,0 +1,65 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_goi_thau": {
+        "type": "string"
+    },
+    "ten_goi_thau": {
+        "type": "string"
+    },
+    "loai_goi_thau": {
+        "type": "string"
+    },
+    "thuoc_goi_thau": {
+        "type": "string"
+    },
+    "thoigian_trungthau": {
+        "type": "string"
+    },
+    "thoigian_batdau": {
+        "type": "string"
+    },
+    "thoigian_ketthuc": {
+        "type": "string"
+    },
+    "nam_ke_hoach": {
+        "type": "number"
+    },
+    "mota": {
+        "type": "string"
+    },
+    "ghichu": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "ten_nguoi_lap_phieu": {
+        "type": "string"
+    },
+    "ma_nguoi_lap_phieu": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "donvi": {
+        "type": "dict"
+    },
+    "chitiet_sanpham": {
+        "type": "list"
+    }
+}

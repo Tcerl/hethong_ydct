@@ -1,0 +1,371 @@
+<div block-bind="content" id="content">
+    <!-- Page Header -->
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body">
+                <h3 class="page-title text-uppercase text-center text-primary">Thông tin chi tiết</h3>
+            </div>
+        </div>
+    </div>
+    <div class="row khaithac_tunhien">
+        <div class="card col-12">
+            <div class="card-body">
+                <ul class="timeline_cncc" id='pointer-selectize'>
+                    <li>
+                        <div class="form-group row">
+                            <div class="col-12 col-md-6">
+                                <h4 class="">Thông tin dược liệu</h4>
+                                <div class="form-group row mb-0">
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-12 pr-1">
+                                        <select id="sanpham" class="form-control" placeholder="Tìm kiếm và chọn dược liệu" ></select>
+                                    </div>
+                                    <div class="col-3 col-lg-3 pl-0">
+                                        <button class="btn btn-sm btn-success btn-add-duoclieu float-right"><i class="fa fa-plus"></i> Thêm mới</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 border-left">
+                                <h4 class="">Theo giấy chứng nhận GACP</h4>
+                                <div class="form-group row mb-0">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12 pr-1">
+                                        <select id="chungnhangacp" class="form-control" placeholder="Tìm kiếm theo tên dược liệu, số giấy chứng nhận" ></select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-12 pl-2">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span>Tên khoa học: </span>
+                                                <span class="ten_khoa_hoc font-weight-bold"></span>
+                                            </div>
+                                            <div class="col-12">
+                                                <span>Mã viết tắt: </span>
+                                                <span class="ma_viet_tat font-weight-bold"></span>
+                                            </div>
+                                            <div class="col-12">
+                                                <span>Bộ phận sử dụng: </span>
+                                                <span class="bo_phan_su_dung font-weight-bold"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 border-left">
+                                <div class="row">
+                                    <div class="col-12 pl-2">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <span>Tên dược liệu: </span>
+                                                <span class="ten_sanpham font-weight-bold"></span>
+                                            </div>
+                                            <div class="col-12">
+                                                <span>Thời gian bắt đầu hiệu lực: </span>
+                                                <span class="thoigian_batdau_hieuluc font-weight-bold"></span>
+                                            </div>
+                                            <div class="col-12">
+                                                <span>Thời gian kết thúc hiệu lực: </span>
+                                                <span class="thoigian_ketthuc_hieuluc font-weight-bold"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <h4>Quá trình khai thác</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="co_giay_phep">
+                                            <label class="custom-control-label" for="co_giay_phep">Có giấy phép khai thác dược liệu</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row" style="margin-top: 1rem !important;">
+                                    <label class="col-lg-3 col-md-3 col-sm-12 col-12">Diện tích khai thác <span class="text-danger">*</span></label>
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                        <input type="number" class="form-control" data-bind="value:dientich_khaithac"
+                                            placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-md-3 col-sm-12 col-12">Đơn vị diện tích <span class="text-danger">*</span></label>
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                        <input type="text" class="form-control" data-bind="value:donvi_dientich"
+                                            placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-md-3 col-sm-12 col-12">Vị trí địa điểm <span class="text-danger">*</span></label>
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                        <textarea type="text" class="form-control" data-bind="value:mota_vitri_diadiem"
+                                            placeholder="Mô tả vị trí địa điểm khai thác"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-md-3 col-sm-12 col-12">Thời gian bắt đầu <span class="text-danger">*</span></label>
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                        <input type="text" class="form-control" data-bind="value:thoigian_batdau_khaithac"
+                                            placeholder="">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-md-3 col-sm-12 col-12">Tổng TG khai thác <span class="text-danger">*</span></label>
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                        <input class="form-control" type="number" data-bind="value:tong_thoigian_khaithac" placeholder="Tổng thời gian khai thác theo ngày">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-md-3 col-sm-12 col-12">Bộ phận khai thác</label>
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                        <input class="form-control" type="text" data-bind="value:bo_phan_khaithac" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-md-3 col-sm-12 col-12">Kế hoạch khai thác</label>
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                        <textarea class="form-control" type="text" data-bind="value:mota_kehoach_khaithac" placeholder="Mô tả kế hoạch khai thác" ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3 mb-3">
+                            <div class="col-md-6 col-12">
+                                <h4>
+                                    <a href="#taskcollapse2" data-toggle="collapse" aria-expanded="false"
+                                        class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm giấy phép khai thác</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                                </h4>
+                                <button class="btn btn-sm btn-success btn-add-file-giayphep mb-2"><i class="fa fa-plus"></i> Thêm đính kèm</button>
+                                <div class="collapse show" id="taskcollapse2">
+                                    <div class="table-responsive w-80 list-attachment-giayphep">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <h4>
+                                    <a href="#taskcollapse3" data-toggle="collapse" aria-expanded="false"
+                                        class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm kế hoạch khai thác</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                                </h4>
+                                <button class="btn btn-sm btn-success btn-add-file-kehoach mb-2"><i class="fa fa-plus"></i> Thêm đính kèm</button>
+                                <div class="collapse show" id="taskcollapse3">
+                                    <div class="table-responsive w-80 list-attachment-kehoach">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <h5>Chi tiết quá trình khai thác</h5>
+                        <button type="button" class="btn btn-success btn-sm btn-add-khaithac"><i class="fa fa-plus"></i> Thêm chi tiết</button>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <ul class="timeline_cncc khaithac">
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                    </li>
+                    <hr>
+                    <li>
+                        <h4 class="">Quá trình thu hoạch</h4>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Tổng sản lượng khai thác thô</label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                        <input class="form-control" type="number" data-bind="value:tong_soluong_khaithac_tho" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Đơn vị tính số lượng</label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                        <input class="form-control" type="text" data-bind="value:donvi_tinh_soluong" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Tổng sản lượng sau sơ chế</label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                        <input class="form-control" type="number" data-bind="value:tong_soluong_thanhpham" placeholder="Tổng sản lượng thành phẩm sau khi sơ chế">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group row">
+                                    <label class="col-lg-3 col-md-3 col-sm-12 col-12">Quá trình sơ chế</label>
+                                    <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                        <textarea class="form-control" type="text" data-bind="value:mota_qtrinh_so_che" placeholder="Mô tả chi tiết quá trình làm sạch, sơ chế dược liệu" ></textarea>
+                                    </div>
+                                </div>
+                            </div>       
+                        </div>
+                        <hr>
+                        <h5>Quy trình đóng gói, bảo quản</h5>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12 border-right">
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Hình thức đóng gói </label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                        <input class="form-control" type="text" data-bind="value:hinhthuc_dong_goi" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Số lượng kiện đóng gói</label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                        <input class="form-control" type="number" data-bind="value:soluong_kien_dong_goi" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Thời gian nhập kho </label>
+                                    <div class="col-lg-7 col-md-9 cl-sm-12 col-12">
+                                        <input class="form-control" type="text" data-bind="value:thoigian_nhap_kho" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Nhiệt độ kho</label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                        <input class="form-control" type="number" data-bind="value:nhiet_do_kho_bao_quan" placeholder="Nhiệt độ kho bảo quản (độ C)">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Áp suất kho</label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                        <input class="form-control" type="text" data-bind="value:apsuat_kho_bao_quan" placeholder="Ấp suất kho bảo quản">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Diện tích kho</label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                        <input class="form-control" type="number" data-bind="value:dientich_kho" placeholder="Tính theo đơn vị m2">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Đánh giá nội bộ</label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-1">
+                                        <input class="form-control" type="text" data-bind="value:danhgia_noibo" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-5 col-md-5 col-sm-12 col-12">Mục đích sử dụng</label>
+                                    <div class="col-lg-7 col-md-7 col-sm-12 col-1">
+                                        <input class="form-control" type="text" data-bind="value:mucdich_sudung" >
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-12">Quy trình đóng gói</label>
+                            <div class="col-12">
+                                <textarea class="form-control" type="text" data-bind="value:mota_quy_trinh_dong_goi" rows="3" placeholder="Mô tả chi tiết quy trình đóng gói"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-12">Chi tiết đánh giá</label>
+                            <div class="col-12">
+                                <textarea class="form-control" type="text" data-bind="value:mota_danhgia_noibo" rows="3" placeholder="Mô tả chi tiết đánh giá nội bộ"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <h4>
+                                    <a href="#taskcollapse2" data-toggle="collapse" aria-expanded="false"
+                                        class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm chứng nhận kiểm nghiểm</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                                </h4>
+                                <button class="btn btn-sm btn-success btn-add-file-kiemnghiem mb-2"><i class="fa fa-plus"></i> Thêm đính kèm</button>
+                                <div class="collapse show" id="taskcollapse2">
+                                    <div class="table-responsive w-80 list-attachment-kiemnghiem">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <h4>
+                                    <a href="#taskcollapse3" data-toggle="collapse" aria-expanded="false"
+                                        class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm đánh giá nội bộ</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                                </h4>
+                                <button class="btn btn-sm btn-success btn-add-file-danhgia mb-2"><i class="fa fa-plus"></i> Thêm đính kèm</button>
+                                <div class="collapse show" id="taskcollapse3">
+                                    <div class="table-responsive w-80 list-attachment-danhgia">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <h4>Tạo phiếu nhập trên hệ thống</h4>
+                        <button type="button" class="btn btn-success btn-sm btn-add-phieunhap mb-2"><i class="fa fa-plus"></i> Thêm phiếu nhập</button>
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-bordered table-centered table-phieunhap d-none">
+                                    <thead>
+                                        <tr>
+                                            <th>Mã phiếu</th>
+                                            <th>Tên dược liệu</th>
+                                            <th class="text-center">Số lô</th>
+                                            <th>ĐVT</th>
+                                            <th class="text-right">Số lượng</th>
+                                            <th class="text-right">Thời gian nhập kho</th>
+                                            <th>Tên kho</th>
+                                            <th style="width: 80px;"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="gird-phieunhap"> 
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row mx-0">
+        <div id="button-alway-show">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cảnh báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Sau khi xóa dữ liệu sẽ không thể khôi phục lại được, bạn có muốn tiếp tục không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary btn-deleted-continue" data-dismiss="modal">Tiếp
+                    tục</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,105 @@
+<style>
+    .modal-dialog.modal-lg {
+        max-width: 1200px !important;
+    }
+	.label-custom {
+		width: 155px;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	.div-input-custom {
+		width: calc(100% - 155px);
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+</style>
+<div block-bind="content">
+	<div class="row py-2" style="justify-content:center">
+        <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin tác giả</h4>
+    </div>
+	<div class="col-12 py-2">
+		<div class="row">
+			<div class="col-lg-6 col-xs-12 border-right">
+				<h4 class="header-title mb-4 text-uppercase">Thông tin hành chính</h4>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Tên tác giả <span class="text-danger">*</span></label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:name" placeholder="Nhập tên tác giả">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Ngày sinh</label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:birthday">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="label-custom" for="simpleinput">Giới tính</label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:gender">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Điện thoại</label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:phone" placeholder="Nhập số điện thoại">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Email</label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:email" placeholder="Nhập email">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Địa chỉ</label>
+					<div class="div-input-custom">
+						<textarea rows="1" class="form-control" data-bind="value:address" placeholder="Nhập địa chỉ"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-xs-12">
+				<h4 class="header-title mb-4 text-uppercase">Thông tin cấu hình</h4>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Bút danh <span class="text-danger">*</span></label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:alias_name" placeholder="Nhập bút danh tác giả">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Chức danh</label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:job_title" placeholder="Nhập chức danh tác giả">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Lĩnh vực hoạt động</label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:field_of_activity" placeholder="Nhập lĩnh vực hoạt động">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Số năm kinh nghiệm</label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:years_of_experience" placeholder="Nhập số năm kinh nghiệm">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Nơi làm việc</label>
+					<div class="div-input-custom">
+						<input type="text" class="form-control" data-bind="value:workplace" placeholder="Nhập nơi làm việc">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-form-label label-custom" for="simpleinput">Giới thiệu về tác giả</label>
+					<div class="div-input-custom">
+						<textarea rows="1" class="form-control" data-bind="value:introduce" placeholder="Nhập giới thiệu"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form-group my-3">
+		<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+	</div>
+</div>

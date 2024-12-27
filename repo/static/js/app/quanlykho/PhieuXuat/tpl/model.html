@@ -1,0 +1,355 @@
+<div block-bind="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body py-1 d-flex justify-content-center">
+				<h3 class="page-title text-center text-uppercase text-primary">Thông tin phiếu Xuất Kho</h3>
+				<div class="ml-auto" id ="qrcode">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	<div class="card  card-small row">
+		<div class="card-body">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-5 col-sm-12 col-12">Mã phiếu</label>
+							<div class="col-lg-9 col-md-7 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:id"
+									placeholder="Hệ thống tự sinh" disabled>
+							</div>
+						</div>
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-3 col-md-5 col-sm-12 col-12">Thời gian xuất kho<span
+									class="text-danger">*</span></label>
+							<div class="col-lg-9 col-md-7 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:thoigian_xuat"
+									placeholder="Nhập thời gian xuất kho">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-5 col-sm-12 col-12">Hình thức xuất <span
+									class="text-danger">*</span></label>
+							<div class="col-lg-9 col-md-7 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:loai_xuat_ban"
+									placeholder="Nhập hình thức xuất">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6 border-left">
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-5 col-sm-12 col-12">Số phiếu chứng từ</label>
+							<div class="col-lg-9 col-md-7 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:so_phieu_chungtu"
+									placeholder="Nhập mã số phiếu chứng từ">
+							</div>
+						</div>
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-3 col-md-5 col-sm-12 col-12">Số hóa đơn</label>
+							<div class="col-lg-9 col-md-7 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:so_hoa_don"
+									placeholder="Nhập số hóa đơn">
+							</div>
+						</div>
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-3 col-md-5 col-sm-12 col-12">Hình thức giao dịch</label>
+							<div class="col-lg-9 col-md-7 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:hinhthuc_giaodich"
+									placeholder="Hình thức giao dịch">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12">
+				<hr>
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 ">
+						<h4 class="header-title">Thông tin xuất kho</h4>
+
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Kho xuất<span
+									class="text-danger">*</span></label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<select id="chonkho" class="form-control" placeholder="Tìm kiếm và chọn kho"></select>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Loại xuất kho</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12"><input type="text" class="form-control"
+									data-bind="value:loai_xuat" placeholder="Chọn loại xuất kho"></div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Lý do xuất</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:lydo_xuat"
+									placeholder="Nhập lý do xuất">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Ghi chú</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<textarea rows="2" class="form-control" data-bind="value:ghichu"
+									placeholder="Nhập ghi chú"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 border-left">
+						<h4 class="d-inline-block">Thông tin đơn vị tiếp nhận</h4>
+						<button class="btn btn-sm inline-block float-right btn-success btn-add-donvi"><i class="fa fa-plus"></i> Thêm mới</button>
+						<div class="form-group row donvi_tiepnhan d-none">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12 text-donvi_tiepnhan">Tìm kiếm đơn vị</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<select id="selectize-donvi_tiepnhan" class="form-control"
+									placeholder="Tìm kiếm theo tên"></select>
+							</div>
+						</div>
+						<div class="form-group row ten_donvi_tiepnhan">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Tên đơn vị</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<div class="donvi_tiepnhan" data-bind="text:ten_donvi_tiepnhan"></div>
+							</div>
+						</div>
+						<!-- <div class="form-group row sogiayphep">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Mã doanh nghiệp</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<div class="donvi_tiepnhan" id ="sogiayphep"></div>
+							</div>
+						</div> -->
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Người nhận</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<div class="nguoi_tiepnhan" data-bind="text:ten_nguoinhan"></div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Số điện thoại</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<div class="donvi_tiepnhan" data-bind="text:dienthoai_nguoinhan"></div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Địa chỉ</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<div class="donvi_tiepnhan" data-bind="text:diachi_nguoinhan"></div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-12 thongtinvanchuyen">
+				<hr>
+				<h4 class="header-title">Thông tin đơn vị vận chuyển</h4>
+				<div class="row">
+
+					<div class="col-6 col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3">
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Mã đơn vị</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:ma_donvi_vanchuyen"
+									placeholder="Nhập mã đơn vị vận chuyển">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Tên đơn vị</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:ten_donvi_vanchuyen"
+									placeholder="Nhập tên đơn vị vận chuyển">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Số hiệu phương tiện</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input class="form-control " data-bind="value:sohieu_phuongtien_vanchuyen"
+									placeholder="Nhập số hiệu phương tiện ">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Hình thức</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input class="form-control" data-bind="value:loaihinh_vanchuyen"
+									placeholder="Nhập mã lượt vận chuyển">
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 border-left">
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Thời gian bắt đầu</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input class="form-control " data-bind="value:thoigian_batdau_vanchuyen"
+									placeholder="Nhập ghi chú cho phiếu nhập hàng">
+							</div>
+
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Thời gian kết thúc</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input class="form-control " data-bind="value:thoigian_ketthuc_vanchuyen"
+									placeholder="Nhập ghi chú cho phiếu nhập hàng">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Người giao hàng</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="text" class="form-control " data-bind="value:nguoi_vanchuyen"
+									placeholder="Nhập tên người giao hàng">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Điện thoại</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="number" maxlength="10" class="form-control "
+									data-bind="value:dienthoai_nguoi_vanchuyen"
+									placeholder="Nhập số điện thoại người giao hàng">
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+			<div class="col-12">
+				<hr>
+				<div class="row form-group">
+					<div class="col-lg-12 col-xs-12">
+						<h4 class="text-primary">
+							Danh sách dược liệu
+						</h4>
+						<button type="button" class="btn btn-sm btn-success btn-add-vattu mb-2"><i class="fa fa-plus"></i> Thêm dược liệu</button>
+						<button class="btn btn-primary btn-sm btn-download mb-2"><i class="fas fa-download"></i> Tải file mẫu</button>
+						<button class="btn btn-success btn-sm btn-import mb-2"><i class="fas fa-file-excel"></i> Import Excel</button>
+						<input class="form-control search clearable mb-2 d-none" placeholder="Tìm kiếm dược liệu theo tên dược liệu, mã dược liệu dùng chung (phân biệt hoa thường)">
+						<div class="collapse show" id="taskcollapse2">
+							<div class="table-responsive w-100 mb-3">
+								<table id="demo-foo-addrow"
+									class="table table-centered  table-bordered mb-0 toggle-circle table-vattu d-none"
+									data-page-size="7">
+									<thead>
+										<tr>
+											<th data-sort-initial="true" data-toggle="true" rowspan="2">STT</th>
+											<th data-hide="phone" rowspan="2">Số Lô</th>
+											<th style="min-width: 267px;" rowspan="2">Tên dược liệu</th>
+											<th data-hide="phone" colspan="2" class="text-center">Số lượng</th>
+											<th data-hide="phone" rowspan="2">Đơn giá (VND)</th>
+											<th data-hide="phone" rowspan="2">Thành tiền (VND)</th>
+											<th data-sort-ignore="true" class="min-width" style="width: 120px;"
+												rowspan="2" colspan="2"></th>
+										</tr>
+										<tr>
+											<th data-hide="phone">Chứng từ</th>
+											<th data-hide="phone">Thực Xuất</th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="9" class="title-tongtien">Tổng tiền: <span
+													class="tongtien-vattu">0</span> VND</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<hr>
+				<div class="form-group row">
+					<div class="col-lg-12 col-xs-12">
+						<h4 class="text-primary">
+							Danh sách chứng từ đính kèm
+						</h4>
+						<button class="btn btn-sm btn-success btn-add-file mb-2"><i class="fa fa-plus"></i> Thêm chứng từ đính kèm</button>
+						<div class="collapse show" id="taskcollapse1">
+							<div class="table-responsive w-80 list-attachment">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="form-group row mx-0">
+		<div id="button-alway-show">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+		</div>
+
+	</div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cảnh báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Sau khi xóa dữ liệu sẽ không thể khôi phục lại được, bạn có muốn tiếp tục không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary btn-deleted-continue" data-dismiss="modal">Tiếp
+                    tục</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cảnh báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+				Sau khi xóa dữ liệu sẽ không thể khôi phục lại được, bạn có muốn tiếp tục không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"> Hủy</button>
+                <button type="button" class="btn btn-primary btn-item-deleted-continue" data-dismiss="modal">Tiếp
+                    tục</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    /**
+ * Clearable text inputs
+ */
+function tog(v){return v ? "addClass" : "removeClass";} 
+$(document).on("input", ".clearable", function(){
+    $(this)[tog(this.value)]("x");
+}).on("mousemove", ".x", function( e ){
+    $(this)[tog(this.offsetWidth-18 < e.clientX-this.getBoundingClientRect().left)]("onX");
+}).on("touchstart click", ".onX", function( ev ){
+    ev.preventDefault();
+    $(this).removeClass("x onX").val("").keyup();
+});
+
+// $('.clearable').trigger("input");
+// Uncomment the line above if you pre-fill values from LS or server
+</script>

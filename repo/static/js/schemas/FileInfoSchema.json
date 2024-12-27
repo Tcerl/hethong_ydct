@@ -1,0 +1,56 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "sha256": {
+        "type": "string",
+        "required": true
+    },
+    "user_name": {
+        "type": "string"
+    },
+    "user_id": {
+        "type": "string",
+        "required": true
+    },
+    "name": {
+        "type": "string"
+    },
+    "extname": {
+        "type": "string"
+    },
+    "link": {
+        "type": "string"
+    },
+    "description": {
+        "type": "string"
+    },
+    "attrs": {
+        "type": "json"
+    },
+    "size": {
+        "type": "string"
+    },
+    "kind": {
+        "type": "string"
+    },
+    "type": {
+        "type": "number"
+    },
+    "unsigned_name": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

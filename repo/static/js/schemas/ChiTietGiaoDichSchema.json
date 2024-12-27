@@ -1,0 +1,95 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "id_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ma_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "ma_donvi_xuat": {
+        "type": "string",
+        "required": true
+    },
+    "ten_donvi_xuat": {
+        "type": "string"
+    },
+    "donvi_xuat": {
+        "type": "json"
+    },
+    "loai_giaodich": {
+        "type": "number"
+    },
+    "thoigian_xuat": {
+        "type": "string"
+    },
+    "diachi_xuat": {
+        "type": "string"
+    },
+    "trangthai_hang_xuat": {
+        "type": "string"
+    },
+    "dinhkem_xuat": {
+        "type": "json"
+    },
+    "ma_donvi_vanchuyen": {
+        "type": "string"
+    },
+    "ten_donvi_vanchuyen": {
+        "type": "string"
+    },
+    "donvi_vanchuyen": {
+        "type": "json"
+    },
+    "hinhthuc_vanchuyen": {
+        "type": "number"
+    },
+    "thoigian_batdau_chuyen": {
+        "type": "string"
+    },
+    "thoigian_ketthuc_chuyen": {
+        "type": "string"
+    },
+    "dinhkem_vanchuyen": {
+        "type": "json"
+    },
+    "ma_donvi_nhan": {
+        "type": "string",
+        "required": true
+    },
+    "ten_donvi_nhan": {
+        "type": "string"
+    },
+    "donvi_nhan": {
+        "type": "json"
+    },
+    "thoigian_nhan": {
+        "type": "string"
+    },
+    "diachi_nhan": {
+        "type": "string"
+    },
+    "dinhkem_nhan": {
+        "type": "json"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_baithuoc": {
+        "type": "string",
+        "length": 255
+    },
+    "ten_baithuoc": {
+        "type": "string"
+    },
+    "tacgia_ten": {
+        "type": "string"
+    },
+    "tacgia_dienthoai": {
+        "type": "string"
+    },
+    "cong_dung": {
+        "type": "string"
+    },
+    "thanh_phan": {
+        "type": "string"
+    },
+    "hdsd": {
+        "type": "string"
+    },
+    "mota_baithuoc": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "ngay_congbo": {
+        "type": "string"
+    },
+    "nguoi_congbo": {
+        "type": "string"
+    },
+    "tacgia_xaphuong_id": {
+        "type": "string"
+    },
+    "tacgia_xaphuong": {
+        "type": "json"
+    },
+    "tacgia_quanhuyen_id": {
+        "type": "string"
+    },
+    "tacgia_quanhuyen": {
+        "type": "json"
+    },
+    "tacgia_tinhthanh_id": {
+        "type": "string"
+    },
+    "tacgia_sonha_tenduong": {
+        "type": "string"
+    },
+    "tacgia_tinhthanh": {
+        "type": "json"
+    },
+    "tacgia_diachi": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

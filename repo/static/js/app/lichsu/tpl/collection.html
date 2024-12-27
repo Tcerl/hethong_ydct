@@ -1,0 +1,56 @@
+<!-- Page Header -->
+<div class="row header">
+    <div class="card col-12">
+        <div class="container-fluid">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Lịch sử dược liệu</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Header --> 
+<div class="card">
+    <div class="card-body">
+        <div class="col-12 mb-3 ">
+            <div class="row">
+                <div class="w-30 d-flex mb-1">
+                    <label for="" class="text-label-left">Id dược liệu</label>
+                    <div class="text-input-right">
+                        <input type="text" id="id_sanpham" class="form-control">
+                    </div>
+                </div>
+                <div class="w-30 d-flex mb-1">
+                    <label for="" class="text-label-left">Số lô </label>
+                    <div class="text-input-right">
+                        <input type="text" id="so_lo" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="w-30 d-flex">
+                    <label for="" class="text-label-left">Số CO</label>
+                    <div class="text-input-right">
+                        <input type="text" id="so_co" class="form-control">
+                    </div>
+                </div>
+                <div class="w-30 d-flex">
+                    <label for="" class="text-label-left">Số CQ</label>
+                    <div class="text-input-right">
+                        <input type="text" id="so_cq" class="form-control">
+                    </div>
+                </div>
+                <div class="w-40  row">
+
+                    <div class="col-8">
+                        <button class="btn btn-primary btn-sm btn-search">Tìm kiếm</button>
+                        <button class="btn btn-success btn-sm btn-clear ml-2">Xóa bộ lọc</button>
+                    </div>
+                    <div class="col-4 text-right pr-0">
+                        <div block-bind="toolbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+    </div>
+</div>

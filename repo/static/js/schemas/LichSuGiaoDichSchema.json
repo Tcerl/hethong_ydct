@@ -1,0 +1,44 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "id_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ma_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "loai_giaodich": {
+        "type": "number"
+    },
+    "ma_giaodich_chitiet": {
+        "type": "string",
+        "required": true
+    },
+    "thoigian_giaodich": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

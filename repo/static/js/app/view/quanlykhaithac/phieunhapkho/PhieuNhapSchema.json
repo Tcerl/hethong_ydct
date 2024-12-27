@@ -1,0 +1,99 @@
+{
+    "id" : {
+        "type" : "string",
+        "primary": true
+    },
+    "so_phieu": {
+        "type": "string"
+    },
+    "nguon_cungcap": {
+        "type": "number"
+    },
+    "ma_tu_sinh": {
+        "type": "string"
+    },
+    "thuhoach_khaithac_id": {
+        "type": "string"
+    },
+    "thuhoach_khaithac": {
+        "type": "json"
+    },
+    "so_chungnhan_co": {
+        "type": "string"
+    },
+    "chungnhan_co_id": {
+        "type": "string"
+    },
+    "chungnhan_co_chitiet_id":{
+        "type":"string"
+    },
+    "thoigian_taophieu": {
+        "type": "string"
+    },
+    "thoigian_nhap": {
+        "type": "string"
+    },
+    "ma_kho": {
+        "type": "string",
+        "required": true
+    },
+    "ten_kho": {
+        "type": "string"
+    },
+    "kho": {
+        "type": "json"
+    },
+    "ma_nguoi_lap_phieu": {
+        "type": "string"
+    },
+    "ten_nguoi_lap_phieu": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "donvi": {
+        "type": "dict"
+    },
+    "id_sanpham": {
+        "type": "string"
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "loai_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "sanpham": {
+        "type": "json"
+    },
+    "so_lo": {
+        "type": "string"
+    },
+    "soluong_chungtu": {
+        "type": "number"
+    },
+    "soluong_thucte": {
+        "type": "number"
+    },
+    "dongia": {
+        "type": "number",
+        "default": 0
+    },
+    "so_chungnhan_cq": {
+        "type": "string"
+    },
+    "donvitinh":{
+        "type" : "string"
+    },
+    "chungnhan_cq_id": {
+        "type": "string"
+    },
+    "hansudung":{
+        "type":"string"
+    }
+}

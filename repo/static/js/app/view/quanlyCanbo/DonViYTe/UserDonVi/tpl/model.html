@@ -1,0 +1,56 @@
+<!-- Page Header -->
+<div class="row">
+    <div class="col-12 py-2">
+        <h3 class="page-title text-uppercase text-center text-primary">Thông tin tài khoản quản lý đơn vị</h3>
+    </div>
+</div>
+<!-- <div class="row"> -->
+<div class="row">
+    <div class="col-12">
+        <div class="form-group row align-items-center">
+            <label class="col-sm-3 col-form-label" for="simpleinput">Họ và tên <span class="text-danger">*</span></label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control text-uppercase" data-user="value:hoten" placeholder="Nhập họ tên">
+            </div>
+        </div>
+        <div class="form-group row align-items-center">
+            <label class="col-sm-3 col-form-label" for="simpleinput">Số điện thoại</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" data-user="value:dienthoai" placeholder="Nhập số điện thoại">
+            </div>
+        </div>
+        <div class="form-group row align-items-center">
+            <label class="col-sm-3 col-form-label" for="simpleinput">Email <span class="text-danger">*</span></label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control text-lowercase" data-user="value:email" placeholder="Nhập email">
+            </div>
+        </div>
+        <div class="form-group row align-items-center roless">
+            <label class="col-sm-3 col-form-label" for="simpleinput">Vai trò <span class="text-danger">*</span></label>
+            <div class="col-sm-9">
+                <select class="form-control" id="vaitro"></select>
+            </div>
+        </div>
+        <div class="form-group row align-items-center">
+            <label class="col-sm-3 col-form-label" for="simpleinput">Mật khẩu <span class="text-danger">*</span></label>
+            <div class="col-sm-9">
+                <input autocomplete="new-password" type="password" class="form-control matkhau" id="password" placeholder="Nhập mật khẩu">
+            </div>
+        </div>
+        <div class="form-group row align-items-center">
+            <label class="col-sm-3 col-form-label" for="simpleinput">Xác nhận mật khẩu</label>
+            <div class="col-sm-9">
+                <input type="password" class="form-control" id="confirm_password" placeholder="Nhập mật khẩu">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .modal-dialog {
+        max-width: 600px !important;
+    }
+</style>

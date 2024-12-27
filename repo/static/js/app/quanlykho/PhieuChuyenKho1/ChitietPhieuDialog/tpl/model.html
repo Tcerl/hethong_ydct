@@ -1,0 +1,51 @@
+<div class="col-12">
+    <h3 class="page-title text-uppercase text-primary mb-3">Phiếu chuyển kho chi tiết</h3>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group">
+                <label>Tên dược liệu <span class="text-danger">*</span></label>
+                <select id="selectize-programmatic" placeholder="Chọn dược liệu, thuốc..."></select>
+                <small class="ma_sanpham"></small>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <label>Thời gian chuyển kho</label>
+            <input class="form-control" data-phieuchuyenkho_chitiet="value:thoigian_chuyenkho" />
+        </div>
+        <div class="form-group col-6">
+            <label>Hạn sử dụng</label>
+            <input class="form-control" data-phieuchuyenkho_chitiet="value:hansudung" />
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <label>Số lượng chứng từ <span class="text-danger">*</span></label>
+            <input class="form-control" data-phieuchuyenkho_chitiet="value:soluong_chungtu" type="number"
+                placeholder="Nhập số lượng theo chứng từ" />
+        </div>
+        <div class="form-group col-6">
+            <label>Số lượng thực chuyển<span class="text-danger">*</span></label>
+            <input class="form-control" data-phieuchuyenkho_chitiet="value:soluong_thucte" type="number"
+                placeholder="Nhập số lượng thực tế" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Đơn giá (VND) <span class="text-danger">*</span></label>
+        <input class="form-control giatien" type="number" data-phieuchuyenkho_chitiet="value:dongia" />
+    </div>
+</div>
+</div>
+<div class="form-group save-danhmuc_thuoc text-center col-12 col-md-12 mt-2">
+    <a class="btn btn-secondary btn-close"> Đóng </a>
+    <a class="btn btn-success btn-save ml-1"> Lưu </a>
+</div>
+</div>
+<style>
+    .modal-lg {
+        max-width: 600px !important;
+    }
+</style>

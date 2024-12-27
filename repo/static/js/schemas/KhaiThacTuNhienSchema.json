@@ -1,0 +1,129 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "id_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "ten_khoa_hoc": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "sanpham": {
+        "type": "json"
+    },
+    "co_giay_phep": {
+        "type": "number"
+    },
+    "dinhkem_giayphep": {
+        "type": "json"
+    },
+    "mota_vitri_diadiem": {
+        "type": "string"
+    },
+    "dientich_khaithac": {
+        "type": "number"
+    },
+    "donvi_dientich": {
+        "type": "number"
+    },
+    "mota_kehoach_khaithac": {
+        "type": "string"
+    },
+    "dinhkem_kehoach_khaithac": {
+        "type": "json"
+    },
+    "thoigian_batdau_khaithac": {
+        "type": "string"
+    },
+    "tong_thoigian_khaithac": {
+        "type": "number"
+    },
+    "bo_phan_khaithac": {
+        "type": "string"
+    },
+    "mota_qtrinh_khaithac": {
+        "type": "json"
+    },
+    "tong_soluong_khaithac_tho": {
+        "type": "number"
+    },
+    "donvi_tinh_soluong": {
+        "type": "number"
+    },
+    "mota_qtrinh_so_che": {
+        "type": "string"
+    },
+    "thoigian_nhap_kho": {
+        "type": "string"
+    },
+    "hinhthuc_dong_goi": {
+        "type": "string"
+    },
+    "mota_quy_trinh_dong_goi": {
+        "type": "string"
+    },
+    "soluong_kien_dong_goi": {
+        "type": "number"
+    },
+    "danhgia_noibo": {
+        "type": "number"
+    },
+    "mota_danhgia_noibo": {
+        "type": "string"
+    },
+    "dinhkem_danhgia_noibo": {
+        "type": "json"
+    },
+    "dinhkem_chungnhan_kiemnghiem": {
+        "type": "json"
+    },
+    "nhiet_do_kho_bao_quan": {
+        "type": "number"
+    },
+    "apsuat_kho_bao_quan": {
+        "type": "string"
+    },
+    "tong_soluong_thanhpham": {
+        "type": "number"
+    },
+    "dientich_kho": {
+        "type": "number"
+    },
+    "mucdich_sudung": {
+        "type": "number"
+    },
+    "chungnhangacp_id": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "chungnhangacp": {
+        "type": "dict"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

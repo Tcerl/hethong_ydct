@@ -1,0 +1,199 @@
+<div class="row">
+  <div class="card col-12 profile-title">
+    <div class="card-body">
+      <h3 class="page-title text-uppercase text-center text-primary">
+        Tạo đơn vị và tài khoản sử dụng
+      </h3>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-5 col-sm-12"></div>
+      <div class="col-md-7 col-sm-12">
+        <div class="text-right" id="grid_search"></div>
+      </div>
+    </div>
+    <div class="row">
+      <h4 class="text-uppercase col-md-12 p-2">Thông tin đơn vị</h4>
+      <div class="col-md-6 col-sm-12 col-12 border-right">
+        <div class="form-group required">
+          <label>Tên đơn vị<span class="text-danger">*</span></label>
+          <input
+            type="text"
+            class="form-control text-uppercase"
+            data-bind="value:ten_coso"
+            placeholder="Nhập đơn vị"
+          />
+        </div>
+        <div class="form-group">
+          <label>Tỉnh/Thành phố<span class="text-danger">*</span></label>
+          <input
+            id="selectize-tinhthanh"
+            type="text"
+            placeholder=""
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label>Quận/Huyện</label>
+          <input
+            id="selectize-quanhuyen"
+            type="text"
+            placeholder=""
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label>Xã/Phường</label>
+          <input
+            id="selectize-xaphuong"
+            type="text"
+            placeholder=""
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label>Địa chỉ (số nhà, tên đường, thôn/xóm)</label>
+          <input
+            type="text"
+            data-bind="value:sonha_tenduong"
+            placeholder="Nhập số nhà, tên đường, thôn/xóm"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12 col-12">
+        <div class="form-group">
+          <label>Mã đơn vị</label>
+          <input
+            type="text"
+            class="form-control"
+            data-bind="value:ma_coso"
+            placeholder="Nhập mã đơn vị"
+          />
+        </div>
+        <div class="form-group required">
+          <label>Tuyến đơn vị<span class="text-danger">*</span></label>
+          <input
+            type="text"
+            id="selectize-tuyendonvi"
+            placeholder=""
+            class="form-control"
+          />
+        </div>
+        <div class="form-group parent_donvi">
+          <label>Đơn vị cấp trên<span class="text-danger">*</span></label>
+          <input
+            id="selectize-donvi-captren"
+            type="text"
+            placeholder="Chọn đơn vị cấp trên"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label>Số điện thoại liên hệ</label>
+          <input
+            type="text"
+            data-bind="value:dienthoai"
+            placeholder="Nhập số điện thoại liên hệ của đơn vị"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input
+            type="text"
+            data-bind="value:email"
+            placeholder="Nhập email liên hệ của đơn vị"
+            class="form-control text-lowercase"
+          />
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <h4 class="text-uppercase col-md-12 p-2">
+        Thông tin tài khoản đăng nhập
+      </h4>
+      <div class="col-md-4 col-12">
+        <div class="form-group required">
+          <label>Họ và tên người dùng <span class="text-danger">*</span></label>
+          <input
+            type="text"
+            data-bind="value:hoten"
+            placeholder="Nhập họ tên người dùng"
+            class="form-control text-uppercase"
+          />
+        </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="form-group required">
+          <label>Số điện thoại </label>
+          <input
+            type="text"
+            data-bind="value:phone"
+            placeholder="Nhập số điện thoại người dùng"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="form-group required mb-0">
+          <label>Email <span class="text-danger">*</span></label>
+          <input
+            type="text"
+            autocomplete="new-password"
+            data-bind="value:user_email"
+            placeholder="Nhập email người dùng"
+            class="form-control text-lowercase"
+          />
+          <small class="text-danger"
+            >Email sử dụng làm tài khoản đăng nhập và lấy lại mật khẩu</small
+          >
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-12">
+        <div class="form-group required">
+          <label>Mật khẩu <span class="text-danger">*</span></label>
+          <input
+            type="password"
+            autocomplete="new-password"
+            data-bind="value:password"
+            placeholder="Nhập mật khẩu đăng nhập"
+            class="form-control"
+          />
+        </div>
+      </div>
+      <div class="col-md-4 col-12">
+        <div class="form-group required">
+          <label>Xác nhận mật khẩu <span class="text-danger">*</span></label>
+          <input
+            type="password"
+            autocomplete="new-password"
+            data-bind="value:cfpassword"
+            placeholder="Nhập lại mật khẩu đăng nhập"
+            class="form-control"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div id="button-alway-show">
+      <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+    </div>
+  </div>
+</div>
+<style>
+  .selectize-control .selectize-input.disabled {
+    opacity: 1;
+  }
+  .form-control:disabled,
+  .form-control[readonly] {
+    background-color: #fff;
+  }
+</style>

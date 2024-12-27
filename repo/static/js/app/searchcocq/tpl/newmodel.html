@@ -1,0 +1,226 @@
+<div block-bind="content">
+	<div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Tìm kiếm</h4>
+            </div>
+        </div>
+    </div>
+	<div class="card mb-4 search">
+		<div class="card-body" style="min-height: 800px !important;">  
+            
+            <div class="row mt-2 px-1">
+                <div class="col-12 col-sm-4 col-lg-3 search-filter-customs padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Chọn bộ lọc tìm kiếm</label>
+                        <div>
+                            <input class="form-control" type="text" data-bind="value:loai_timkiem" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-lg-9 padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Tìm kiếm theo đơn vị</label>
+                        <div>
+                            <select id = "donvi" class="form-control" placeholder="Tìm kiếm theo tên đơn vị"></select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row nhapkhau px-1">
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Từ ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:tungay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Đến ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:denngay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Trạng thái</label>
+                        <div class="">
+                            <select id="trangthai-nk" class="form-control browser-default custom-select">
+                                <option selected value="10">Tất cả trạng thái</option>
+                                <option value="2">Chờ duyệt</option>
+                                <option value="3">Đã duyệt</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-8 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Số giấy phép</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:so_giay_phep" placeholder="Tìm kiếm theo số giấy phép">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg align-self-end padding-custom">
+                    <div class="form-group d-flex search-button-custom">
+                        <button type="button" class="btn btn-sm btn-primary btn-search-nk"><i class="fa fa-search"></i> Tìm kiếm</button>
+                        <button type="button" class="btn btn-sm btn-danger btn-clear-nk"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row co d-none px-1">
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Từ ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:tungay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Đến ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:denngay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Trạng thái</label>
+                        <div class="">
+                            <select id="trangthai-co" class="form-control browser-default custom-select">
+                                <option selected value="10">Tất cả trạng thái</option>
+                                <option value="2">Chờ duyệt</option>
+                                <option value="3">Đã duyệt</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Số CO</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:so_co" placeholder="Tìm kiếm theo số chứng nhận CO">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg align-self-end padding-custom">
+                    <div class="form-group d-flex search-button-custom">
+					    <button type="button" class="btn btn-sm btn-primary btn-search-co"><i class="fa fa-search"></i> Tìm kiếm</button>
+                        <button type="button" class="btn btn-sm btn-danger btn-clear-co"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row cq d-none px-1">
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Từ ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:tungay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Đến ngày</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:denngay">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Trạng thái</label>
+                        <div class="">
+                            <select id="trangthai-cq" class="form-control browser-default custom-select">
+                                <option selected value="10">Tất cả trạng thái</option>
+                                <option value="2">Chờ duyệt</option>
+                                <option value="3">Đã duyệt</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Mã kiểm nghiệm</label>
+                        <div class="">
+                            <input type="text" class="form-control" data-bind="value:ma_kiem_nghiem" placeholder="Tìm kiếm theo mã kiểm nghiệm">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-6 col-sm-4 col-lg align-self-end padding-custom">
+                    <div class="form-group d-flex search-button-custom">
+    					<button type="button" class="btn btn-sm btn-primary btn-search-cq"><i class="fa fa-search"></i> Tìm kiếm</button>
+                        <button type="button" class="btn btn-sm btn-danger btn-clear-cq"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row duoclieu d-none px-1">
+                <div class="col-12 col-sm-4 col-lg-3 padding-custom search-filter-customs">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Số lô</label>
+                        <div class="">
+    						<input class="form-control" data-bind="value:so_lo" placeholder="Tìm kiếm theo số lô">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-2 padding-custom search-filter-customs">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Mã phiếu</label>
+                        <div class="">
+    						<input class="form-control" data-bind="value:ma_phieu" placeholder="Tìm kiếm theo mã phiếu">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-8 col-lg-5 padding-custom">
+                    <div class="form-group">
+                        <label class="font-weight-bold">Tìm kiếm dược liệu</label>
+                        <div class="">
+        					<select class="form-control" placeholder="Tìm kiếm theo tên, mã dược liệu" id ="chonduoclieu"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4 col-lg-2 align-self-end padding-custom search-filter-customs">
+                    <div class="form-group">
+    					<button type="button" class="btn btn-sm btn-primary btn-search-sanpham"><i class="fa fa-search"></i> Tìm kiếm</button>
+                        <button type="button" class="btn btn-sm btn-danger btn-clear-sanpham"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+                    </div>
+                </div>
+            </div>
+
+
+			<div class="mt-1 row justify-content-center">
+				<div class="col-12 results">
+                    <h4 class="results-title text-center d-none">Danh sách giấy phép nhập khẩu</h4>
+
+                    <div class="list-nhapkhau table table-centered table-striped table-bordered d-none" style="border: none !important">
+
+                    </div>
+
+                    <div class="list-co table table-centered table-striped table-bordered d-none" style="border: none !important">
+
+                    </div>
+
+                    <div class="list-cq table table-centered table-striped table-bordered d-none" style="border: none !important">
+
+                    </div>
+
+                    <div class="list-duoclieu table table-centered table-striped table-bordered d-none" style="border: none !important">
+
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

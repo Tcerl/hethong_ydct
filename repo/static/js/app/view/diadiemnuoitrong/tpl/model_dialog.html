@@ -1,0 +1,137 @@
+<div block-bind="content">
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin chi tiết địa điểm</h4>
+            </div>
+        </div>
+    </div>
+    <div class="card  card-small mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 borderd-right">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-md-3 col-12" for="simpleinput">Tên địa điểm <span class="text-danger">*</span></label>
+                        <div class="col-sm-9 col-md-9 col-12">
+                            <input type="text" class="form-control" data-bind="value:ten_diadiem">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-md-3 col-12" for="simpleinput">Diện tích <span class="text-danger">*</span></label>
+                        <div class="col-sm-9 col-md-9 col-12">
+                            <div class="row">
+                                <div class="col-6 pr-0">
+                                    <input type="text" class="form-control" data-bind="value:dien_tich">
+                                </div>
+                                <div class="col-6 pl-1">
+                                    <input type="text" class="form-control" data-bind="value:donvitinh_dientich">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-md-3 col-12" for="simpleinput">Vĩ độ/Kinh độ</label>
+                        <div class="col-sm-9 col-md-9 col-12">
+                            <div class="row">
+                                <div class="col-6 pr-0">
+                                    <input type="text" class="form-control" placeholder="Nhập vĩ độ" data-bind="value:lat">
+                                </div>
+                                <div class="col-6 pl-1">
+                                    <input type="text" class="form-control" placeholder="Nhập kinh độ" data-bind="value:long">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3" for="simpleinput">Mô tả</label>
+                        <div class="col-sm-9">
+                            <textarea type="text" class="form-control" rows="3" data-bind="value:mo_ta"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="form-group row">
+                        <label class="col-sm-3" for="simpleinput">Tỉnh thành <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="tinhthanh" placeholder="Tỉnh thành">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3" for="simpleinput">Quận huyện <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="quanhuyen" placeholder="Quận huyện"
+                                readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3" for="simpleinput">Xã phường <span class="text-danger">*</span></label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="xaphuong" placeholder="Xã phường"
+                                readonly>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3" for="simpleinput">Địa chỉ chi tiết</label>
+                        <div class="col-sm-9">
+                            <textarea type="text" class="form-control" data-bind="value:diachi_chitiet"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row d-none">
+                <div class="col-12">
+                    <h4>
+                        <a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false"
+                            class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm chứng từ xác nhận
+                            </label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                    </h4>
+                    <button class="btn btn-sm btn-success btn-add-file mb-2"><i class="fa fa-plus"></i> Thêm đính kèm </button>
+                    <div class="collapse show" id="taskcollapse1">
+                        <div class="table-responsive w-80 list-attachment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row khaithac d-none">
+                <div class="col-12">
+                    <h4>
+                        <a href="#taskcollapse2" data-toggle="collapse" aria-expanded="false"
+                            class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm giấy phép khai thác
+                                
+                            </label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                    </h4>
+                    <button class="btn btn-sm btn-success btn-add-file-khaithac mb-2"><i class="fa fa-plus"></i> Thêm đính kèm </button>
+                    <div class="collapse show" id="taskcollapse2">
+                        <div class="table-responsive w-80 list-attachment-khaithac">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row nuoitrong d-none">
+                <div class="col-12">
+                    <h4>
+                        <a href="#taskcollapse3" data-toggle="collapse" aria-expanded="false"
+                            class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm giấy tờ chứng nhận vùng trồng/khai thác
+                                
+                            </label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                    </h4>
+                    <button class="btn btn-sm btn-success btn-add-file-nuoitrong mb-2"> <i class="fa fa-plus"></i>Thêm đính kèm </button>
+                    <div class="collapse show" id="taskcollapse3">
+                        <div class="table-responsive w-80 list-attachment-nuoitrong">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row py-2 mt-3 justify-content-center">
+        <div block-bind="toolbar"></div>
+    </div>
+
+
+</div>

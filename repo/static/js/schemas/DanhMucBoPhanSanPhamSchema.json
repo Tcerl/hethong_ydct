@@ -1,0 +1,35 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_bophan": {
+        "type": "string",
+        "required": true
+    },
+    "ten_bophan": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "mota": {
+        "type": "string"
+    },
+    "congdung": {
+        "type": "string"
+    },
+    "ghichu": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_caythuoc": {
+        "type": "string",
+        "length": 255
+    },
+    "ten_caythuoc": {
+        "type": "string"
+    },
+    "ten_khoa_hoc": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "ten_ho": {
+        "type": "string"
+    },
+    "ten_chi": {
+        "type": "string"
+    },
+    "ten_loai": {
+        "type": "string"
+    },
+    "dac_tinh": {
+        "type": "string"
+    },
+    "bophan_sudung": {
+        "type": "string"
+    },
+    "cong_dung": {
+        "type": "string"
+    },
+    "hinh_anh": {
+        "type": "json"
+    },
+    "mota": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

@@ -1,0 +1,427 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "id_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ma_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "ten_khoa_hoc": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "ten_thuong_mai": {
+        "type": "string"
+    },
+    "bophan_sudung": {
+        "type": "string"
+    },
+    "so_giay_chungnhan": {
+        "type": "string"
+    },
+    "dientich": {
+        "type": "number"
+    },
+    "donvi_dientich": {
+        "type": "number"
+    },
+    "diadiem": {
+        "type": "string"
+    },
+    "ten_coso": {
+        "type": "string"
+    },
+    "diachi_coso": {
+        "type": "string"
+    },
+    "thoigian_batdau_hieuluc": {
+        "type": "string"
+    },
+    "thoigian_ketthuc_hieuluc": {
+        "type": "string"
+    },
+    "mucdo_tuanthu_gacp": {
+        "type": "number"
+    },
+    "loai_nuoitrong_khaithac": {
+        "type": "number"
+    },
+    "chon_giong": {
+        "type": "number"
+    },
+    "chon_giong_ghichu": {
+        "type": "string"
+    },
+    "lai_lich_thuc_vat": {
+        "type": "number"
+    },
+    "lai_lich_thuc_vat_ghichu": {
+        "type": "string"
+    },
+    "hat_giong_vatlieu": {
+        "type": "number"
+    },
+    "hat_giong_vatlieu_ghichu": {
+        "type": "string"
+    },
+    "diadiem_trongtrot": {
+        "type": "number"
+    },
+    "diadiem_trongtrot_ghichu": {
+        "type": "string"
+    },
+    "moitruong_sinhthai": {
+        "type": "number"
+    },
+    "moitruong_sinhthai_ghichu": {
+        "type": "string"
+    },
+    "khi_hau": {
+        "type": "number"
+    },
+    "khi_hau_ghichu": {
+        "type": "string"
+    },
+    "tho_nhuong": {
+        "type": "number"
+    },
+    "tho_nhuong_ghichu": {
+        "type": "string"
+    },
+    "phan_bon": {
+        "type": "number"
+    },
+    "phan_bon_ghichu": {
+        "type": "string"
+    },
+    "tuoi_nuoc_thoat_nuoc": {
+        "type": "number"
+    },
+    "tuoi_nuoc_thoat_nuoc_ghichu": {
+        "type": "string"
+    },
+    "chamsoc_baove": {
+        "type": "number"
+    },
+    "chamsoc_baove_ghichu": {
+        "type": "string"
+    },
+    "thu_hoach": {
+        "type": "number"
+    },
+    "thu_hoach_ghichu": {
+        "type": "string"
+    },
+    "giayphep_khaithac": {
+        "type": "number"
+    },
+    "giayphep_khaithac_ghichu": {
+        "type": "string"
+    },
+    "khong_trong_danhmuc_cam": {
+        "type": "number"
+    },
+    "khong_trong_danhmuc_cam_ghichu": {
+        "type": "string"
+    },
+    "kehoach_khaithac": {
+        "type": "number"
+    },
+    "kehoach_khaithac_ghichu": {
+        "type": "string"
+    },
+    "diadiem_khaithac": {
+        "type": "number"
+    },
+    "diadiem_khaithac_ghichu": {
+        "type": "string"
+    },
+    "kythuat_khaithac_theo_nguyentac": {
+        "type": "number"
+    },
+    "kythuat_khaithac_theo_nguyentac_ghichu": {
+        "type": "string"
+    },
+    "thu_hoach_bao_quan": {
+        "type": "number"
+    },
+    "thu_hoach_bao_quan_ghichu": {
+        "type": "string"
+    },
+    "dientich_kho": {
+        "type": "number"
+    },
+    "dientich_kho_ghichu": {
+        "type": "string"
+    },
+    "khuvuc_xuly": {
+        "type": "number"
+    },
+    "khuvuc_xuly_ghichu": {
+        "type": "string"
+    },
+    "hoso_dieukien_lamkho": {
+        "type": "number"
+    },
+    "hoso_dieukien_lamkho_ghichu": {
+        "type": "string"
+    },
+    "kientruc_kho_dambao": {
+        "type": "number"
+    },
+    "kientruc_kho_dambao_ghichu": {
+        "type": "string"
+    },
+    "nhiet_do_do_am_kho": {
+        "type": "number"
+    },
+    "nhiet_do_do_am_kho_ghichu": {
+        "type": "string"
+    },
+    "bao_duong_vesinh_kho": {
+        "type": "number"
+    },
+    "bao_duong_vesinh_kho_ghichu": {
+        "type": "string"
+    },
+    "thietbi_sanxuat": {
+        "type": "number"
+    },
+    "thietbi_sanxuat_ghichu": {
+        "type": "string"
+    },
+    "be_mat_thietbi_tiepxuc": {
+        "type": "number"
+    },
+    "be_mat_thietbi_tiepxuc_ghichu": {
+        "type": "string"
+    },
+    "vatlieu_dungcu_sanxuat": {
+        "type": "number"
+    },
+    "vatlieu_dungcu_sanxuat_ghichu": {
+        "type": "string"
+    },
+    "kiemdinh_thietbi": {
+        "type": "number"
+    },
+    "kiemdinh_thietbi_ghichu": {
+        "type": "string"
+    },
+    "nuoc_rua_duoclieu": {
+        "type": "number"
+    },
+    "nuoc_rua_duoclieu_ghichu": {
+        "type": "string"
+    },
+    "nuoc_chietxuat_duoclieu": {
+        "type": "number"
+    },
+    "nuoc_chietxuat_duoclieu_ghichu": {
+        "type": "string"
+    },
+    "phanloai_donggoi": {
+        "type": "number"
+    },
+    "phanloai_donggoi_ghichu": {
+        "type": "string"
+    },
+    "vatdung_baobi_donggoi": {
+        "type": "number"
+    },
+    "vatdung_baobi_donggoi_ghichu": {
+        "type": "string"
+    },
+    "co_the_kho": {
+        "type": "number"
+    },
+    "co_the_kho_ghichu": {
+        "type": "string"
+    },
+    "quycach_donggoi": {
+        "type": "number"
+    },
+    "quycach_donggoi_ghichu": {
+        "type": "string"
+    },
+    "quydinh_ghinhan": {
+        "type": "number"
+    },
+    "quydinh_ghinhan_ghichu": {
+        "type": "string"
+    },
+    "phan_lo_duoclieu": {
+        "type": "number"
+    },
+    "phan_lo_duoclieu_ghichu": {
+        "type": "string"
+    },
+    "khaibao_xuatxu": {
+        "type": "number"
+    },
+    "khaibao_xuatxu_ghichu": {
+        "type": "string"
+    },
+    "phuongtien_vanchuyen": {
+        "type": "number"
+    },
+    "phuongtien_vanchuyen_ghichu": {
+        "type": "string"
+    },
+    "thietlap_hethong_quanly_chatluong": {
+        "type": "number"
+    },
+    "thietlap_hethong_quanly_chatluong_ghichu": {
+        "type": "string"
+    },
+    "sop_quydinh_phancong_kiemtra_chatluong": {
+        "type": "number"
+    },
+    "sop_quydinh_phancong_kiemtra_chatluong_ghichu": {
+        "type": "string"
+    },
+    "yeucau_chatluong_nguyenlieu": {
+        "type": "number"
+    },
+    "yeucau_chatluong_nguyenlieu_ghichu": {
+        "type": "string"
+    },
+    "yeucau_chatluong_sanpham_trung_gian": {
+        "type": "number"
+    },
+    "yeucau_chatluong_sanpham_trung_gian_ghichu": {
+        "type": "string"
+    },
+    "yeucau_chatluong_thanhpham_dong_goi": {
+        "type": "number"
+    },
+    "yeucau_chatluong_thanhpham_dong_goi_ghichu": {
+        "type": "string"
+    },
+    "phuhop_tieuchuan_duocdien": {
+        "type": "number"
+    },
+    "phuhop_tieuchuan_duocdien_ghichu": {
+        "type": "string"
+    },
+    "co_thietbi_hoso_theodoi_kho": {
+        "type": "number"
+    },
+    "co_thietbi_hoso_theodoi_kho_ghichu": {
+        "type": "string"
+    },
+    "gioihan_hoachat_trong_duoclieu": {
+        "type": "number"
+    },
+    "gioihan_hoachat_trong_duoclieu_ghichu": {
+        "type": "string"
+    },
+    "co_hoso_donggoi": {
+        "type": "number"
+    },
+    "co_hoso_donggoi_ghichu": {
+        "type": "string"
+    },
+    "hoso_donggoi_kiemtra_nguyenlieu": {
+        "type": "number"
+    },
+    "hoso_donggoi_kiemtra_nguyenlieu_ghichu": {
+        "type": "string"
+    },
+    "hoso_donggoi_thu_nghiem_thuoc_tru_sau": {
+        "type": "number"
+    },
+    "hoso_donggoi_thu_nghiem_thuoc_tru_sau_ghichu": {
+        "type": "string"
+    },
+    "hoso_donggoi_lo_sanpham": {
+        "type": "number"
+    },
+    "hoso_donggoi_lo_sanpham_ghichu": {
+        "type": "string"
+    },
+    "hoso_sanpham_chitiet": {
+        "type": "number"
+    },
+    "hoso_sanpham_chitiet_ghichu": {
+        "type": "string"
+    },
+    "daotao_antoan_laodong": {
+        "type": "number"
+    },
+    "daotao_antoan_laodong_ghichu": {
+        "type": "string"
+    },
+    "quydinh_antoan_laodong": {
+        "type": "number"
+    },
+    "quydinh_antoan_laodong_ghichu": {
+        "type": "string"
+    },
+    "hethong_phongchay_chuachay": {
+        "type": "number"
+    },
+    "hethong_phongchay_chuachay_ghichu": {
+        "type": "string"
+    },
+    "chuongtrinh_kiemtra_noibo": {
+        "type": "number"
+    },
+    "chuongtrinh_kiemtra_noibo_ghichu": {
+        "type": "string"
+    },
+    "luu_bienban_kiemtra_noibo": {
+        "type": "number"
+    },
+    "luu_bienban_kiemtra_noibo_ghichu": {
+        "type": "string"
+    },
+    "khacphuc_khiem_khuyet": {
+        "type": "number"
+    },
+    "khacphuc_khiem_khuyet_ghichu": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "nguoi_duyet_id": {
+        "type": "string"
+    },
+    "nguoi_duyet_ten": {
+        "type": "string"
+    },
+    "thoigian_duyet": {
+        "type": "string"
+    },
+    "thoigian_guiduyet": {
+        "type": "string"
+    },
+    "dinhkem_chungnhan": {
+        "type": "json"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

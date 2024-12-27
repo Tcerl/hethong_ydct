@@ -1,0 +1,34 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ten_donvi": {
+        "type": "string"
+    },
+    "ma_donvi": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "diachi": {
+        "type": "string"
+    },
+    "quocgia_id": {
+        "type": "string"
+    },
+    "quocgia": {
+        "type": "json"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

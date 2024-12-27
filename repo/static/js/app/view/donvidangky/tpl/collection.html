@@ -1,0 +1,40 @@
+<!-- Page Header -->
+<div class="row">
+    <div class="card col-12">
+        <div class="card-body">
+            <h3 class="page-title text-uppercase text-center text-primary">Danh sách đơn vị đăng ký</h3>
+        </div>
+    </div>
+</div>
+<!-- End Page Header -->
+
+<div class="card">
+    <div class="card-body danhsachdonvi">
+        <div class="row mb-3">
+            <div class="col-md-5 col-sm-12">
+                <div block-bind="toolbar"></div>
+            </div>
+            <div class="col-md-7 col-sm-12">
+                <div class="row">
+                    <div class="col-4 px-0">
+                        <select class="form-control browser-default custom-select" id="trangthai">
+                            <option selected value="10">Tất cả</option>
+                            <option value="1">Đang chờ duyệt</option>
+                            <option value="2">Đã duyệt</option>
+                            <option value="3">Đã hủy</option>
+                        </select>
+                    </div>
+                    <div class="col-8 pl-0 pl-1">
+                        <div class="form-group text-right" id="grid_search">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="table-bordered table-hover" style="border: none !important;">
+            <div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,166 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_coso": {
+        "type": "string",
+        "length": 255
+    },
+    "ten_coso": {
+        "type": "string",
+        "required": true
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "sogiayphep": {
+        "type": "string"
+    },
+    "ngaycapphep": {
+        "type": "string"
+    },
+    "dienthoai": {
+        "type": "string",
+        "length": 63
+    },
+    "email": {
+        "type": "string",
+        "length": 255
+    },
+    "website": {
+        "type": "string"
+    },
+    "loaihinh_hoatdong": {
+        "type": "string"
+    },
+    "loai_donvi": {
+        "type": "number"
+    },
+    "lich_lamviec": {
+        "type": "number"
+    },
+    "gioithieu": {
+        "type": "string"
+    },
+    "nguoidaidien": {
+        "type": "string"
+    },
+    "nguoidaidien_dienthoai": {
+        "type": "string"
+    },
+    "thumbnail_url": {
+        "type": "string"
+    },
+    "banner_url": {
+        "type": "string"
+    },
+    "xaphuong_id": {
+        "type": "string"
+    },
+    "xaphuong": {
+        "type": "json"
+    },
+    "quanhuyen_id": {
+        "type": "string"
+    },
+    "quanhuyen": {
+        "type": "json"
+    },
+    "tinhthanh_id": {
+        "type": "string"
+    },
+    "tinhthanh": {
+        "type": "json"
+    },
+    "quocgia_id": {
+        "type": "string"
+    },
+    "quocgia": {
+        "type": "json"
+    },
+    "sonha_tenduong": {
+        "type": "string"
+    },
+    "diachi": {
+        "type": "string"
+    },
+    "tuyendonvi_id": {
+        "type": "string"
+    },
+    "captren_id": {
+        "type": "string"
+    },
+    "captren_name": {
+        "type": "string"
+    },
+    "dinhkem_giayphep_dkkd": {
+        "type": "json"
+    },
+    "dinhkem_sodo_nhansu": {
+        "type": "json"
+    },
+    "dinhkem_chungnhan_daotao": {
+        "type": "json"
+    },
+    "danhsach_nhanvien_daotao": {
+        "type": "json"
+    },
+    "dinhkem_thuyetminh_quytrinh": {
+        "type": "json"
+    },
+    "dinhkem_chungnhan_gacp": {
+        "type": "json"
+    },
+    "loai_chungnhan_gacp": {
+        "type": "number"
+    },
+    "so_chungnhan_gacp": {
+        "type": "string"
+    },
+    "duyet_thongtin": {
+        "type": "number",
+        "default": 1
+    },
+    "nguoi_duyet_ten": {
+        "type": "string"
+    },
+    "nguoi_duyet_id": {
+        "type": "string"
+    },
+    "thoigian_duyet": {
+        "type": "string"
+    },
+    "chophep_ketnoi": {
+        "type": "boolean",
+        "default": false
+    },
+    "appinfo_id": {
+        "type": "string"
+    },
+    "active": {
+        "type": "boolean",
+        "default": false
+    },
+    "tuyendonvi": {
+        "type": "dict"
+    },
+    "appinfo": {
+        "type": "dict"
+    },
+    "users": {
+        "type": "list"
+    },
+    "children": {
+        "type": "list"
+    },
+    "captren": {
+        "type": "dict"
+    }
+}

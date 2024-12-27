@@ -1,0 +1,36 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "placement_id": {
+        "type": "string",
+        "required": true
+    },
+    "advertisement_id": {
+        "type": "string",
+        "required": true
+    },
+    "total_view": {
+        "type": "number",
+        "default": 0
+    },
+    "total_click": {
+        "type": "number",
+        "default": 0
+    },
+    "total_like": {
+        "type": "number",
+        "default": 0
+    },
+    "total_share": {
+        "type": "number",
+        "default": 0
+    }
+}

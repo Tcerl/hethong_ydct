@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Truy xuất nguồn gốc dược liệu</title>
+    <meta name="description" content="Hệ thống truy xuất nguồn gốc dược liệu, cung cấp thông tin chính thống từ Bộ Y tế về thông tin dược liệu, chứng nhận nguồn gốc, chất lượng của dược liệu">
+    <meta name="google-site-verification" content="qmpGyGnonSwhdUdp2i2-z3YjTT8JTpIwLtKAU2mqL9I" />
+    <meta name="keywords" content="truy xuat nguon goc duoc lieu, cocq duoc lieu, duoc lieu, truy xuat nguon goc" />
+	<meta name="news_keywords" content="truy xuat nguon goc duoc lieu, cocq duoc lieu, duoc lieu, truy xuat nguon goc" />
+	
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{{static_url}}/images_template/default2.png">
+
+    <!-- App css -->
+    <link href="{{static_url}}/vendor/libtemplate1/css/bootstrap-material.min.css" rel="stylesheet" type="text/css"/>
+    <link href="{{static_url}}/vendor/libtemplate1/css/app-material.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- <link href="../assets/css/bootstrap-material-dark.min.css" rel="stylesheet" type="text/css" id="bs-dark-stylesheet" />
+    <link href="../assets/css/app-material-dark.min.css" rel="stylesheet" type="text/css" id="app-dark-stylesheet" /> -->
+
+    <!-- icons -->
+    <link href="{{static_url}}/vendor/libtemplate1/css/icons.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="loading" data-layout-mode="horizontal" data-layout='{"mode": "light", "width": "fluid", "menuPosition": "fixed", "topbar": {"color": "dark"}, "showRightSidebarOnPageLoad": true}'>
+<script>
+    var static_url = "/static";
+</script>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center text-uppercase font-weight-bold my-4 text-primary">Truy xuất nguồn gốc, xuất xứ sản phẩm</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="timeline" dir="ltr">
+
+                <article class="row">
+                    <div class="col-12  text-center">
+                        <a href="javascript:;" class="btn btn-primary width-lg">
+                            {% if sanpham != None and sanpham.ten_sanpham != None%}
+                                <span class="font-20">{{sanpham.ten_sanpham}}</span>
+                            {% endif %}
+                            {% if sanpham != None and sanpham.ten_sanpham_khoahoc != None%}
+                                <br>{{sanpham.ten_sanpham_khoahoc}}
+                            {% endif %}
+                        </a>
+                        
+                    </div>
+                </article>
+
+                <article class="timeline-item timeline-item-left">
+                    <div class="timeline-desk">
+                        <div class="timeline-box">
+                            <span class="arrow-alt"></span>
+                            <span class="timeline-icon"><i class="mdi mdi-adjust"></i></span>
+                            <h4 class="mt-0 font-16 text-primary">Thông tin sản phẩm</h4>
+                            
+                                
+                                {% if sanpham != None and sanpham.id_giaynhapkhau != None%}
+                                <p>
+                                    Hàng nhập khẩu từ <span class="text-primary">{{sanpham.donvi_sanxuat}}</span>
+                                </p>
+                                {% if sanpham.so_giay_phep_nhapkhau != None%}
+                                <p>
+                                    Số giấy phép nhập khẩu: <span class="text-primary">{{sanpham.so_giay_phep_nhapkhau}}</span>
+                                </p>
+                                {% endif %}
+                                {% if sanpham.thoigian_nhapkhau_thugom != None%}
+                                <p>
+                                    Ngày nhập khẩu(thu gom): <span class="text-primary">{{sanpham.thoigian_nhapkhau_thugom}}</span>
+                                </p>
+                                {% endif %}
+                                    
+                                <p>
+                                    {% if sanpham.donvi_cungung_bandau != None%}
+                                        Đơn vị nhập khẩu: <span class="text-primary">{{sanpham.donvi_cungung_bandau}}</span>
+                                    {% endif %}
+                                </p>
+                                    
+                                {% endif %}
+                                
+                                    {% if sanpham.id_chungnhan_co != None%}
+                                        <p>Số chứng nhận nguồn gốc: <span class="text-primary">{{sanpham.so_co}}</span></p>
+                                        <p>Đơn vị chứng nhận: <span class="text-primary">{{sanpham.donvi_chungnhan_co}}</span></p>
+                                    {% endif %}
+                                
+                                
+                                    {% if sanpham.ma_kiem_nghiem != None%}
+                                        <p>Số chứng nhận đảm bảo chất lượng: <span class="text-primary">{{sanpham.ma_kiem_nghiem}}</span></p>
+                                        <p>Đơn vị chứng nhận: <span class="text-primary">{{sanpham.ten_donvi_cap_cq}}</span></p>
+                                    {% endif %}
+                                
+                                <p>
+                                        {% if sanpham.hansudung != None and sanpham.hansudung != ""%}
+                                        Hạn sử dụng: <span class="text-primary">{{sanpham.hansudung}}</span>
+                                        {% endif %}
+                                </p>
+                                
+                            
+                            <p class="mb-0"> </p>
+                        </div>
+                    </div>
+                </article>
+                {% for item in lichsu %}
+                    {% if item.stt%2 == 0 %}
+                        <article class="timeline-item timeline-item-left">
+                    {% elif item.stt%2 != 0 %}
+                        <article class="timeline-item">
+                    {% endif %}
+                    
+                        <div class="timeline-desk">
+                            <div class="timeline-box">
+                                <span class="arrow"></span>
+                                <span class="timeline-icon"><i class="mdi mdi-adjust"></i></span>
+                                <h4 class="mt-0 font-16  text-primary">{{item.thoigian}}</h4>
+                                <p class=" text-muted">
+                                    <small>
+                                    {% if item.loai_giaodich == "nhap"%}
+                                        Loại hoạt động: Mua/Nhập sản phẩm
+                                    {% elif item.loai_giaodich == "xuat" %}
+                                        Loại hoạt động: Bán/Xuất sản phẩm
+                                    {% endif %}
+                                    </small>
+                                </p>
+                                
+                                    {% if item.donvi_cungung != None and item.donvi_cungung.ten_donvi!=None %} 
+                                    <p class="mb-0">Đơn vị cung ứng: <span class="text-primary">{{item.donvi_cungung.ten_donvi}} </span>
+                                        {% if item.donvi_cungung.diachi != None and item.donvi_cungung.diachi != "" %}  
+                                        <span class="text-primary d-block">{{item.donvi_cungung.diachi}} </span>
+                                        {% endif %}
+                                    </p>
+                                    {% endif %}
+
+                                
+                                
+                                        {% if item.donvi_tiepnhan != None %} 
+                                        <p class="mb-0"> Đơn vị tiếp nhận: <span class="text-primary">{{item.donvi_tiepnhan.ten_donvi}} </span>
+                                            {% if item.donvi_tiepnhan.diachi != None and item.donvi_tiepnhan.diachi != "" %}  
+                                            <span class="text-primary d-block">{{item.donvi_tiepnhan.diachi}} </span>
+                                            {% endif %}
+                                        </p>
+                                        {% endif %}
+                                        
+    
+                                    
+                                    
+                                        {% if  nguoi_tiepnhan in item and item.nguoi_tiepnhan != None and item.nguoi_tiepnhan != "" %} 
+                                        <p> Người tiếp nhận: <span class="text-primary">{{item.nguoi_tiepnhan}} </span></p>
+                                        {% endif %}
+                                    
+                            </div>
+                        </div>
+                    </article>
+                {% endfor %}
+                
+
+            </div>
+            <!-- end timeline -->
+        </div> <!-- end col -->
+    </div>
+    <footer class="footer footer-alt mt-5">
+        <script>document.write(new Date().getFullYear())</script> &copy;  <a href="http://ydct.moh.gov.vn/">CỤC QUẢN LÝ Y, DƯỢC CỔ TRUYỀN - BỘ Y TẾ</a> 
+    </footer>
+
+<script src="{{static_url}}/vendor/libtemplate1/js/vendor.js"></script>
+
+<script src="{{static_url}}/vendor/libtemplate1/js/app.min.js"></script>
+</body>
+
+
+</html>

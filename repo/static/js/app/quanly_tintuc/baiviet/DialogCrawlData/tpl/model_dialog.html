@@ -1,0 +1,26 @@
+<div class="row text-center py-2" style="justify-content: center;">
+    <h4 class="page-title text-uppercase text-center text-primary">Lấy dữ liệu bài viết</h4>
+</div>
+<div class="card col-lg-12 col-xs-12 px-0">
+    <div class="card-body">
+        <div class="">
+            <input type="text" class="form-control" placeholder="Nhập đường dẫn bài viết" id="url_post">
+            <div class="form-check mt-2">
+                <input class="form-check-input" type="checkbox" id="save_link" name="save_link">
+                <label class="form-check-label custom-label-checkbox" for="save_link">Giữ các liên kết</label>
+            </div> 
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+        </div>
+    </div>
+</div>
+<style>
+    @media (min-width: 992px) {
+        body[data-layout-mode="horizontal"] .modal-lg {
+            width: 800px;
+        }
+    }
+</style>

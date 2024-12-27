@@ -1,0 +1,37 @@
+<div class="content">
+	<div class="content-header py-1">
+        <h4 class="text-center">Mã QR code phiếu xuất</h4>
+    </div>
+
+    <div class="row form-group">
+        <label>Mã phiếu xuất của nhà cung cấp</label>
+        <input class="form-control" data-bind="value:id_phieuxuat" placeholder="Vui lòng nhập mã phiếu xuất của nhà cung cấp">
+    </div>  
+
+    <div class="row">
+        <label>Chọn kho</label>
+        <select class="form-control" id="chonkho" placeholder="Tìm kiếm và chọn kho"></select>
+    </div>
+    <div class="row form-group">
+        <div class="col-12 col-md-6">
+            <div class="row form-group">
+                <label>Thời gian nhập</label>
+                <input class="form-control" data-bind="value:thoigian_nhap">
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="row form-group">
+                <label>Số phiếu chứng từ</label>
+                <input class="form-control" data-bind="value:so_phieu_chungtu" placeholder="Số phiếu chứng từ">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row py-2 mt-3 justify-content-center">
+        <div block-bind="toolbar"></div>
+    </div>
+</div>
+
+

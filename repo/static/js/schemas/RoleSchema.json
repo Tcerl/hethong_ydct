@@ -1,0 +1,23 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "vaitro": {
+        "type": "string",
+        "length": 200
+    },
+    "mota": {
+        "type": "string"
+    },
+    "active": {
+        "type": "number",
+        "default": 1
+    }
+}

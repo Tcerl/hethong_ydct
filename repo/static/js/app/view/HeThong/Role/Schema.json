@@ -1,0 +1,14 @@
+{
+	"id":{
+		"type": "number",
+		"primary": true
+	},
+	"vaitro":{
+		"type":"string",
+		"required": true
+	},
+	"mota":{
+		"type":"string",
+		"required": true
+	}
+}

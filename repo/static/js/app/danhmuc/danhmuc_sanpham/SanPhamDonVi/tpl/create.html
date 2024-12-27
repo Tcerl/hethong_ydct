@@ -1,0 +1,91 @@
+<!-- Page Header -->
+<div class="row header">
+	<div class="card col-12">
+		<div class="card-body py-2">
+			<h4 id="title_page" class="page-title text-uppercase text-center text-primary">Danh sách dược liệu đơn vị</h4>
+		</div>
+	</div>
+</div>
+<!-- End Page Header -->
+<div class="card">
+		<div class="card-body">
+            <div class="row mb-3">
+                <div class="col-3">
+                    <div block-bind="toolbar"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 pr-2">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-12">
+                                <label>Danh sách dược liệu</label>
+                                <select id="selectize-duoclieu" class="form-control" placeholder="Tìm kiếm theo tên dược liệu, mã viết tắt"></select>
+                            </div>
+                            <!-- <div class="col-2 align-self-end pb-1">
+                                <button type="button" class="btn btn-sm btn-success btn-add-duoclieu">Chọn</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="form-group" id="ds-duoclieu">
+                        <table class="ds-duoclieu table table-bordered">
+                            <thead>
+                                <th>Tên dược liệu</th>
+                                <th>Tên khoa học</th>
+                                <th>Bộ phận sử dụng</th>
+                                <th></th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 border-left">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-12">
+                                <label>Danh sách dược liệu đơn vị</label>
+                                <select id="selectize-duoclieu-donvi" class="form-control" placeholder="Tìm kiếm theo tên dược liệu, mã viết tắt"></select>
+                            </div>
+                            <!-- <div class="col-2 align-self-end pb-1">
+                                <button type="button" class="btn btn-sm btn-success btn-add-duoclieu-dv">Chọn</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="form-group" id = "ds-duoclieu-dv">
+                        <table class="ds-duoclieu-dv table table-bordered">
+                            <thead>
+                                <th>Tên dược liệu</th>
+                                <th>Mã dược liệu đơn vị</th>
+                                <th>Tên thương mại</th>
+                                <th></th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+		</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cảnh báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Danh mục dược liệu hiện tại của đơn vị sẽ được cập nhật bằng danh sách danh mục bạn vừa thiết lập. Bạn có muốn tiếp tục thay đổi danh mục hay không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy bỏ</button>
+                <button type="button" class="btn btn-primary btn-continue" data-dismiss="modal">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+</div>

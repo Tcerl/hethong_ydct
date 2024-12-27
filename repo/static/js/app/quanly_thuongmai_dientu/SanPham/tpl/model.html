@@ -1,0 +1,188 @@
+<div block-bind="content">
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin sản phẩm</h4>
+            </div>
+        </div>
+    </div>
+    <div class="card  card-small mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Mã sản phẩm <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control col-lg-8 col-md-7 col-sm-12 col-12" data-bind="value:ma_sanpham" placeholder="Nhập mã sản phẩm" required="" parsley-trigger="change">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Tên sản phẩm <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control col-lg-8 col-md-7 col-sm-12 col-12" data-bind="value:ten_sanpham" placeholder="Nhập tên sản phẩm" required="" parsley-trigger="change">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Tên khoa học </label>
+                        <input type="text" class="form-control col-lg-8 col-md-7 col-sm-12 col-12" data-bind="value:ten_khoa_hoc" placeholder="Tên khoa học" required="" parsley-trigger="change">
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Mã viết tắt </label>
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:ma_viettat" placeholder="Mã viết tắt">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Bộ phận sử dụng </label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:bophan_sudung" placeholder="Bộ phận sử dụng">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Đơn vị tính </label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:donvitinh" placeholder="Đơn vị tính">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12" >Nhóm sản phẩm </label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control bind-combobox" id="selectize-nhomsanpham" placeholder="Bạn hãy chọn nhóm sản phẩm">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12" >Nhà sản xuất </label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control bind-combobox" id="selectize-nhasanxuat" placeholder = "Bạn hãy chọn nhà sản xuất">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12" >Nhà cung cấp </label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control bind-combobox" id="selectize-nhacungcap" placeholder="Bạn hãy chọn nhà cung cấp">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="form-group">
+                        <label >Cách dùng, liều lượng </label>
+                        <div>
+                            <textarea rows="2" class="form-control " data-bind="value:cachdung_lieuluong" placeholder="Nhập cách dùng, liều lượng"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Kiêng kỵ </label>
+                        <div>
+                            <textarea rows="2" class="form-control " data-bind="value:kieng_ky" placeholder="Nhập thông tin Kiêng kỵ khi sử dụng sản phẩm"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Mô tả chi tiết sản phẩm </label>
+                        <div id="mota-editor" style="height: 200px;"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 font-weight-bold">
+                    <h5 class="">
+                        <a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false" class="d-block collapsed"><label class="col-form-label">Thông tin đặc tính chi tiết </label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                    </h5>
+                </div>
+            </div>
+            <div class="row mt-2 collapse hide" id="taskcollapse1">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Độ ẩm </label>
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:do_am" placeholder="Độ ẩm">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Chỉ số Acid </label>
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:chiso_acid" placeholder="Chỉ số acid">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Chỉ số Carbonyl</label>
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:chiso_carbonyl" placeholder="Chỉ số Carbonyl">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Chỉ số Peroxyd</label>
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:chiso_peroxyd" placeholder="Chỉ số Peroxyd">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Tỷ lệ vụn nát</label>
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:tyle_vun_nat" placeholder="Tỷ lệ vụn nát">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-3 col-md-5 col-sm-12 col-12">Thuộc họ </label>
+                        <div class="col-lg-8 col-md-7 col-sm-12 col-12 px-0">
+                            <textarea rows="3" class="form-control " data-bind="value:thuoc_ho" placeholder="Thuộc họ"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Tạp chất</label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:tap_chat" placeholder="Tạp chất">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Kim loại nặng</label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:kimloainang" placeholder="Kim loại nặng">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Tro toàn phần </label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:tro_toanphan" placeholder="Tro toàn phần">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Tro không tan trong acid </label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <input type="text" class="form-control " data-bind="value:tro_khongtan_trongacid" placeholder="Tro không tan trong acid">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Bột </label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <textarea class="form-control " data-bind="value:bot" placeholder="Bột"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-lg-4 col-md-5 col-sm-12 col-12">Định tính </label>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-12 px-0">
+                            <textarea class="form-control " data-bind="value:dinh_tinh" placeholder="Định tính"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="">
+                        <a href="#taskcollapse2" data-toggle="collapse" aria-expanded="false" class="d-block"><label class="col-form-label">Hình ảnh sản phẩm </label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                    </h5>
+                    <button type="button" class="btn btn-sm btn-success btn-add-file mb-2"><i class="fa fa-plus"></i> Thêm hình ảnh</button>
+                    <div class="collapse show" id="taskcollapse2">
+                        <div class="table-responsive w-80 list-attachment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row mx-0">
+            <div id="button-alway-show">
+                <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+            </div>
+        </div>
+    </div>
+</div>

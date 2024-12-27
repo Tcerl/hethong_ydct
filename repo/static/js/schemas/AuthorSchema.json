@@ -1,0 +1,58 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "name": {
+        "type": "string"
+    },
+    "unsigned_name": {
+        "type": "string"
+    },
+    "birthday": {
+        "type": "string"
+    },
+    "gender": {
+        "type": "number",
+        "default": 1
+    },
+    "introduce": {
+        "type": "string"
+    },
+    "alias_name": {
+        "type": "string"
+    },
+    "job_title": {
+        "type": "string"
+    },
+    "phone": {
+        "type": "string"
+    },
+    "email": {
+        "type": "string"
+    },
+    "address": {
+        "type": "string"
+    },
+    "workplace": {
+        "type": "string"
+    },
+    "years_of_experience": {
+        "type": "string"
+    },
+    "field_of_activity": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

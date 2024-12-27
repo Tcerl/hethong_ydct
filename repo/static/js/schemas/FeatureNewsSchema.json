@@ -1,0 +1,25 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "type_placement": {
+        "type": "number",
+        "default": 1
+    },
+    "list_news": {
+        "type": "json"
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

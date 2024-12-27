@@ -1,0 +1,110 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "chungnhan_id": {
+        "type": "string"
+    },
+    "so_co": {
+        "type": "string",
+        "required": true
+    },
+    "so_giay_phep": {
+        "type": "string"
+    },
+    "thoigian_cap_co": {
+        "type": "string"
+    },
+    "thoigian_hieuluc_batdau": {
+        "type": "string"
+    },
+    "thoigian_hieuluc_ketthuc": {
+        "type": "string"
+    },
+    "giayphep_nhapkhau_id": {
+        "type": "string"
+    },
+    "loai_co": {
+        "type": "number"
+    },
+    "id_sanpham": {
+        "type": "string"
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "loai_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "sanpham": {
+        "type": "json"
+    },
+    "dongia": {
+        "type": "number"
+    },
+    "soluong_donggoi": {
+        "type": "number"
+    },
+    "loai_donggoi": {
+        "type": "string"
+    },
+    "mota_sanpham": {
+        "type": "string"
+    },
+    "ma_HS": {
+        "type": "string"
+    },
+    "tieuchi_xuatxu": {
+        "type": "string"
+    },
+    "soluong": {
+        "type": "number"
+    },
+    "soluong_danhap": {
+        "type": "number"
+    },
+    "tongsoluong": {
+        "type": "number"
+    },
+    "donvitinh": {
+        "type": "string"
+    },
+    "so_hoadon": {
+        "type": "string"
+    },
+    "ngay_hoadon": {
+        "type": "string"
+    },
+    "ma_kiem_nghiem": {
+        "type": "string"
+    },
+    "phieu_kiem_nghiem_id": {
+        "type": "string"
+    },
+    "phieu_kiem_nghiem": {
+        "type": "json"
+    },
+    "ghichu": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "chungnhan": {
+        "type": "dict"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "created_at": {
+        "type": "string"
+    },
+    "created_by": {
+        "type": "string"
+    },
+    "updated_at": {
+        "type": "string"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "deleted": {
+        "type": "boolean",
+        "default": false
+    },
+    "deleted_by": {
+        "type": "string"
+    },
+    "deleted_at": {
+        "type": ""
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "hoten": {
+        "type": "string"
+    },
+    "taikhoan": {
+        "type": "string"
+    },
+    "dienthoai": {
+        "type": "string"
+    },
+    "email": {
+        "type": "string"
+    },
+    "matkhau": {
+        "type": "string"
+    },
+    "thoigian_xacnhan": {
+        "type": "datetime"
+    },
+    "salt": {
+        "type": "string"
+    },
+    "active": {
+        "type": "boolean",
+        "default": true
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "vaitro": {
+        "type": "list"
+    }
+}

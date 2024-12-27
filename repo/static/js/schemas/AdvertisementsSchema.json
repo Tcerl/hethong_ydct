@@ -1,0 +1,50 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "name": {
+        "type": "string",
+        "required": true
+    },
+    "title": {
+        "type": "string"
+    },
+    "content": {
+        "type": "string"
+    },
+    "type": {
+        "type": "number"
+    },
+    "url_media": {
+        "type": "json"
+    },
+    "url_redirect": {
+        "type": "string"
+    },
+    "position_show": {
+        "type": "string"
+    },
+    "category_id": {
+        "type": "string",
+        "required": true
+    },
+    "start_time": {
+        "type": "number"
+    },
+    "end_time": {
+        "type": "number"
+    },
+    "status": {
+        "type": "number"
+    },
+    "categories": {
+        "type": "dict"
+    }
+}

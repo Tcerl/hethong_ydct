@@ -1,0 +1,52 @@
+<div block-bind="content">
+	<div class="row py-2" style="justify-content:center">
+        <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin vị trí nổi bật</h4>
+           
+    </div>
+	<div class="card col-lg-12 col-xs-12">
+		<div class="card-body row">
+			<div class="col-12 pb-1">
+				<label for="simpleinput">Vị trí bài viết nổi bật</label>
+				<input type="text" class="form-control" id="type_placement" placeholder="Chọn vị trí">
+			</div>
+			<div class="col-12 pb-1 mt-2">
+				<button class="btn btn-sm btn-info" id="bocuc-vitri">Xem bố cục vị trí</button>
+			</div>
+			<div class="d-none">
+				<img src="static/images_template/preview_feature_news_skds.png" alt="" id="preview_feature_news" class="list-image">
+			</div>
+			<div class="col-12 pb-1">
+				<label for="simpleinput">Chọn bài viết nổi bật</label>
+				<input type="text" class="form-control" id="selectize-chon-baiviet" placeholder="Chọn bài viết nổi bật">
+			</div>
+			<div class="col-12 pb-1 table-news">
+				<div class="collapse show mb-2" id="taskcollapse1">
+					<div class="table-responsive mt-1">
+						<table id="demo-foo-addrow" class="table table-centered table-striped table-bordered mb-0 toggle-circle">
+							<thead>
+								<tr class="">
+									<th scope="col" style="width: 80px;">STT</th>
+									<th scope="col">Bài viết nổi bật</th>
+									<th scope="col" style="width: 40px;"></th>
+								</tr>
+							</thead>
+							<tbody>
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="form-group my-3">
+		<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+	</div>
+	<!-- <div class="form-group row" >
+        <div id="button-alway-show" >
+            <div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+        
+    </div> -->
+</div>

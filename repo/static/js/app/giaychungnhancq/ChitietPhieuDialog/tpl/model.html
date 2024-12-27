@@ -1,0 +1,109 @@
+<div class="col-12">
+    <h3 class="page-title text-uppercase text-primary mb-3">Giấy chứng nhận CQ chi tiết</h3>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label>Tên dược liệu <span class="text-danger">*</span></label>
+                <select id="selectize-programmatic" placeholder="Chọn dược liệu..."></select>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label>Số lô <span class="text-danger">*</span></label>
+                <input class="form-control" data-cq_chitiet="value:so_lo" placeholder="Nhập số lô" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label class="pr-0">Lượng lấy mẫu <span class="text-danger">*</span></label>
+                <input class="form-control" data-cq_chitiet="value:luong_lay_mau" placeholder="Nhập lượng lấy mẫu" />
+            </div>
+            <div class="form-group">
+                <label>Quy cách</label>
+                <input class="form-control" data-cq_chitiet="value:quy_cach" placeholder="Nhập quy cách" />
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label class="pr-0">Các mục kiểm nghiệm:</label>
+                <input class="form-control giatien" type="text" data-cq_chitiet="value:cac_muc_kiem_nghiem" />
+            </div>
+            <div class="form-group">
+                <label class="pr-0">Tiêu chuẩn kiểm nghiệm<span class="text-danger"></span></label>
+                <input class="form-control" data-cq_chitiet="value:tieu_chuan_kiem_nghiem"
+                    style="pointer-events: none" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="form-group col-6">
+            <label class="pr-0">Ngày kiểm nghiệm <span class="text-danger">*</span></label>
+            <input class="form-control" data-cq_chitiet="value:ngay_kiem_nghiem" />
+        </div>
+        <div class="form-group col-6">
+            <label class="pr-0">Ngày báo cáo <span class="text-danger">*</span></label>
+            <input class="form-control" data-cq_chitiet="value:ngay_bao_cao" />
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="form-group col-6">
+            <label class="pr-0">Ngày sản xuất <span class="text-danger">*</span></label>
+            <input class="form-control" data-cq_chitiet="value:ngay_san_xuat" type="number"
+                placeholder="Nhập ngày sản xuất" />
+        </div>
+        <div class="form-group col-6">
+            <label class="pr-0">Hạn sử dụng <span class="text-danger">*</span></label>
+            <input class="form-control" data-cq_chitiet="value:han_su_dung" type="number"
+                placeholder="Nhập hạn sử dụng" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label class="pr-0">Đơn vị gửi mẫu<span class="text-danger"></span></label>
+                <input class="form-control" data-cq_chitiet="value:don_vi_gui_mau" />
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label>Xuất sứ<span class="text-danger"></span></label>
+                <input class="form-control" data-cq_chitiet="value:nuoc_sanxuat" />
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h5 class="d-block">Kết quả kiểm nghiệm chi tiết</h5>
+            <button type="button col-12" class="btn btn-sm btn-success btn-add-ketqua mb-2">Thêm kết quả kiểm
+                nghiệm</button>
+            <div class="table-responsive w-100 mb-3">
+                <table id="ket-qua-kiem-nghiem"
+                    class="table table-centered table-striped table-bordered mb-0 table-ket-qua-kiem-nghiem"
+                    data-page-size="7">
+                    <thead>
+                        <tr>
+                            <th>Chỉ tiêu kiểm tra</th>
+                            <th>Nội dung</th>
+                            <th>Kết luận</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="form-group save-danhmuc_thuoc text-center col-12 col-md-12 mt-2">
+    <a class="btn btn-secondary btn-close"> Đóng </a>
+    <a class="btn btn-success btn-save ml-1"> Lưu </a>
+</div>
+</div>

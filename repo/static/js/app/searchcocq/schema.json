@@ -1,0 +1,26 @@
+{
+    "loai_timkiem": {
+        "type":"number"
+    },
+    "tungay": {
+        "type":"string"
+    },
+    "denngay": {
+        "type":"string"
+    },
+    "so_giay_phep": {
+        "type":"string"
+    },
+    "so_co": {
+        "type":"string"
+    },
+    "ma_kiem_nghiem":{
+        "type":"string"
+    },
+    "so_lo":{
+        "type":"string"
+    },
+    "ma_phieu":{
+        "type": "string"
+    }
+}

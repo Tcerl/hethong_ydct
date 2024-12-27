@@ -1,0 +1,44 @@
+<!-- Page Header -->
+<div class="row header">
+	<div class="card col-12">
+		<div class="card-body py-2">
+			<h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin hồ sơ cá nhân</h4>
+		</div>
+	</div>
+</div>
+<!-- End Page Header -->
+<div class="card">
+	<div class="card-body">
+		<div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-2 select-donvi d-none">
+                <div class="d-flex flex-wrap align-items-center">
+                    <label style="width: 90px;">Đơn vị</label>
+                    <div class="my-auto" style="width: calc(100% - 90px);">
+                        <input type="text" class="form-control" id="selectize_donvi">
+                    </div>
+                </div>
+            </div>
+			<div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-2">
+                <div class="d-flex flex-wrap align-items-center">
+                    <label style="width: 90px;">Chuyên mục</label>
+                    <div class="my-auto" style="width: calc(100% - 90px);">
+                        <input type="text" class="form-control" id="selectize_category">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-2">
+                <div class="d-flex flex-wrap">
+                    <div class="text-right w-100" id="grid_search">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-2">
+                <div class="btn-toolbar">
+                    <div block-bind="toolbar"></div>
+                </div>
+            </div>
+        </div>
+		<div class="mb-2 font-16">Tổng số bài viết: <span class="text-primary" id="total_post"></span></div>
+		<div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+<!-- Page Header -->
+<div class="row header">
+	<div class="card col-12">
+        <div class="container-fluid">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Báo cáo xuất nhập tồn</h4>
+            </div>
+        </div>
+	</div>
+</div>
+<!-- End Page Header -->
+<div class="card">
+		<div class="card-body p-0 m-0" style="min-height: 800px !important;">
+            <div class="container-fluid">
+                <div class="row d-flex mb-3 pt-2">
+                    <div class="col-2 col-lg-2 form-group mb-0">
+                        <label class=>Từ ngày</label>
+                        <input type ="text" class="form-control" data-bind="value:ngay_bat_dau"/>
+                    </div>
+                    <div class="col-2 col-lg-2 form-group mb-0">
+                        <label class=>Đến ngày</label>
+                        <input type="text" class="form-control" data-bind="value:ngay_ket_thuc" />
+					</div>
+					<div class="col-2 col-lg-2 form-group mb-0">
+						<label class="">Kho báo cáo</label>
+						<select id = "chonkho" class="form-control" placeholder="Chọn kho báo cáo"></select>
+					</div>
+					<div class="col-2 col-lg-5 align-self-end pr-3" style="margin-bottom: 0.4rem !important;">
+						<button class="btn btn-sm btn-success btn-search"><i class="fa fa-search"></i> Tìm kiếm</button>
+                        <button class="btn btn-sm btn-info btn-excel"><i class="fas fa-file-excel"></i>  Xuất excel</button>
+						<button class="btn btn-sm btn-primary btn-ds-baocao d-none">Danh sách báo cáo</button>												
+                    </div>
+                </div>
+                <div class="list-item px-1 pb-5">
+				</div>
+            </div>
+		</div>
+</div>

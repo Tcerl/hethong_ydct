@@ -1,0 +1,61 @@
+<div class="row text-center py-2" style="justify-content: center;">
+    <h4 class="page-title text-uppercase text-center text-primary">Quản lý hình ảnh</h4>
+</div>
+<div class="card col-lg-12 col-xs-12">
+    <div class="card-body row">
+        <div class="form-group row col-sm-12">
+            <label class="col-form-label" for="simpleinput">Từ khóa</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="search">
+            </div>
+            <button type="button" class="btn btn-primary mr-2" id="btn_search">Tìm kiếm</button>
+            <button type="button" class="btn btn-success mr-2" id="btn_add_img">Tải lên ảnh mới</button>
+            <button type="button" class="btn btn-info" id="btn_add_img_from_link">Tải lên từ đường dẫn</button>
+        </div>
+        <div class="form-group row col-sm-12">
+            <label class="col-form-label" for="simpleinput">Ảnh của tôi</label>
+            <label class="m_switch mr-3">
+                <input type="checkbox" id="img_me" checked>
+                <span class="m_slider m_round"></span>
+            </label>
+            
+            <label class="col-form-label" for="simpleinput">Nguời tải lên</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" id="selectize_people">
+            </div>
+        </div>
+        <div class="row col-sm-12 mt-2">
+            <div class="media-container">
+                <div class="media-body">
+                    <div class="m_notify">
+                        <p>Không có dữ liệu</p>
+                    </div>
+                    <div class="list-item-media">
+                        
+                    </div>
+                </div>
+                <div class="media-footer">
+                    <div class="pagination-container" id="pag_grid">
+                    </div>
+                </div>
+            </div>
+            <div class="media-info">
+                <div class="m_notify">
+                    <p>Không có dữ liệu</p>
+                </div>
+                <div class="m_info-container">
+                    
+                </div>
+                <button class="m_info-close"><i class="fas fa-times" style="color: #999;font-size: 20px;"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+        </div>
+    </div>
+</div>
+<style>
+
+</style>

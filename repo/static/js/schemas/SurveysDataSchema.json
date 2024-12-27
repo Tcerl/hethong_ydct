@@ -1,0 +1,44 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "session_survey": {
+        "type": "string"
+    },
+    "survey_id": {
+        "type": "string",
+        "required": true
+    },
+    "field_id": {
+        "type": "string"
+    },
+    "field_name": {
+        "type": "string"
+    },
+    "field_value": {
+        "type": "json"
+    },
+    "field_other": {
+        "type": "boolean",
+        "default": false
+    },
+    "post_id": {
+        "type": "string"
+    },
+    "user_id": {
+        "type": "string"
+    },
+    "user_name": {
+        "type": "string"
+    },
+    "survey": {
+        "type": "dict"
+    }
+}

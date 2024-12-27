@@ -1,0 +1,100 @@
+<div block-bind="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body">
+				<h3 class="page-title text-uppercase text-center text-primary">Thông tin phiếu kiểm kê kho</h3>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	<div class="card  card-small">
+		<div class="card-body">
+			<form class="form-horizontal needs-validation container-fluid" novalidate>
+				<div class="row justify-content-end">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-6 col-md-6 col-sm-12 col-12">Thời gian tạo phiếu:</label>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+								<span class="thoigian_kiemke"></span>
+							</div>
+							
+						</div>
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-9">
+						<div class="form-group row ">
+							<label class="col-lg-6 col-md-6 col-sm-12 col-12">Thời gian kiểm kê </label>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-12 px-0">
+									<input type="text" class="form-control" id="thoigian_capnhat_phieu"  placeholder="Nhập số phiếu chứng từ">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-9">
+						<div class="form-group row ">
+							<label class="col-lg-6 col-md-6 col-sm-12 col-12">Số phiếu chứng từ <span class="text-danger">*</span></label>
+							<div class="col-lg-6 col-md-6 col-sm-12 col-12 px-0">
+									<input type="text" class="form-control so_phieu_chungtu"  placeholder="Nhập số phiếu chứng từ">
+							</div>
+							
+						</div>
+					</div>
+					<div class="col-lg-1 col-md-1"></div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-sm-10 col-10">
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Kho</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12 px-0">
+                                <!-- <input type="text" class="form-control " id="kho" placeholder="Chọn kho dự trù"> -->
+                                <select class="form-control" id="chonkho" placeholder="Tìm kiếm và chọn kho"></select>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-10 col-10 timkiem-vattu">
+						<select class="form-control" id="selectize-programmatic" placeholder="Tìm kiếm và chọn dược liệu"></select>
+
+					</div>
+					<div class="col-3 col-lg-3 col-md-2 border-left">
+						<button type="button" class="btn btn-sm btn-primary btn-print mb-2 btn-add-vattu"><i class="fa fa-plus"></i> Thêm</button>
+						<button type="button" class="btn btn-sm btn-danger btn-print mb-2 btn-xoaboloc"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+						<!-- <button class="btn btn-sm btn-success btn-print mb-2">In Danh sách</button> -->
+
+					</div>
+					
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="card">
+		<div class="card-body table-phieukemke">
+			<div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+			<hr>
+			<div class="col-12">
+				<div class="form-group row">
+					<div class="col-lg-12 col-xs-12">
+						<h4>
+							<a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false"
+								class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách chứng từ
+									đính
+									kèm</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+						</h4>
+						<button class="btn btn-sm btn-success btn-add-file mb-2"><i class="fa fa-plus"></i> Thêm chứng từ đính kèm</button>
+						<div class="collapse show" id="taskcollapse1">
+							<div class="table-responsive w-80 list-attachment">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form-group row mx-0" >
+        <div id="button-alway-show" >
+            <div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+	</div>
+	
+</div>

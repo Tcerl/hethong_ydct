@@ -1,0 +1,59 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_coso": {
+        "type": "string",
+        "length": 255
+    },
+    "ten_coso": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "nguoi_dai_dien": {
+        "type": "string"
+    },
+    "email": {
+        "type": "string"
+    },
+    "dienthoai": {
+        "type": "string"
+    },
+    "xaphuong_id": {
+        "type": "string"
+    },
+    "xaphuong": {
+        "type": "json"
+    },
+    "quanhuyen_id": {
+        "type": "string"
+    },
+    "quanhuyen": {
+        "type": "json"
+    },
+    "tinhthanh_id": {
+        "type": "string"
+    },
+    "tinhthanh": {
+        "type": "json"
+    },
+    "sonha_tenduong": {
+        "type": "string"
+    },
+    "diachi": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    }
+}

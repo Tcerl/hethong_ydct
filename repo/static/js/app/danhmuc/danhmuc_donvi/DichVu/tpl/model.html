@@ -1,0 +1,80 @@
+
+<div block-bind="content">
+	<div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin dịch vụ</h4>
+            </div>
+        </div>
+    </div>
+	<div class="card  card-small mb-4">
+		<div class="card-body">
+			<form class="form-horizontal row" role="form">
+				<div class="col-12 col-md-6 border-right-5">
+					<!-- <div class="form-group row"> -->
+					<div class="form-group row">
+						<label class="col-md-3 col-form-label" for="simpleinput">Tên dịch vụ</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" data-bind="value:ten_dichvu">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-3 col-form-label" for="simpleinput">Mã dịch vụ</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" data-bind="value:ma_dichvu">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-3 col-form-label" for="simpleinput">Mã giá</label>
+						<div class="col-md-9">
+							<input type="text" class="form-control" data-bind="value:ma_gia">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-3 col-form-label" for="simpleinput">Giá dịch vụ</label>
+						<div class="col-md-9">
+							<input type="number"  class="form-control" data-bind="value:gia_dichvu">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-3 col-form-label" for="simpleinput">Quyết định</label>
+						<div class="col-md-9">
+							<input type="text" id="quyet_dinh" class="form-control" data-bind="value:quyet_dinh">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="form-group row">
+						<label class="col-md-3 col-form-label" for="simpleinput">Công bố</label>
+						<div class="col-md-9">
+							<input type="text" id="congbo" class="form-control" data-bind="value:ngay_congbo">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-3 col-form-label" for="simpleinput">Bảo hiểm y tế chi trả không?</label>
+						<div class="col-md-9">
+							<input type="text"  class="form-control" data-bind="value:bhyt_chi_tra">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-3 col-form-label" for="simpleinput">Tỷ lệ chi trả (%)</label>
+						<div class="col-md-9">
+							<input type="number"  class="form-control" data-bind="value:ty_le_chi_tra">
+						</div>
+					</div>
+					<div class="form-group row">
+						<label class="col-md-3 col-form-label" for="simpleinput">Giới hạn chi trả</label>
+						<div class="col-md-9">
+							<input type="number"  class="form-control" data-bind="value:gioi_han_chi_tra">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="form-group row mx-0" >
+        <div id="button-alway-show" >
+            <div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+    </div>
+</div>

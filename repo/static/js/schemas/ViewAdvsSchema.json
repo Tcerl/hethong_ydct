@@ -1,0 +1,27 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "post_id": {
+        "type": "string"
+    },
+    "user_id": {
+        "type": "string"
+    },
+    "user_name": {
+        "type": "string"
+    },
+    "adv_id": {
+        "type": "string"
+    },
+    "source": {
+        "type": "string"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma": {
+        "type": "string",
+        "length": 255
+    },
+    "ten": {
+        "type": "string",
+        "length": 255
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "apdung_y": {
+        "type": "boolean",
+        "default": false
+    },
+    "apdung_duoc": {
+        "type": "boolean",
+        "default": false
+    }
+}

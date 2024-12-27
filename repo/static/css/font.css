@@ -1,0 +1,237 @@
+@font-face {
+    font-family: Baloo2-Bold;
+    src: url("./font/Baloo2-Bold.ttf");
+}
+@font-face {
+    font-family: Baloo2-ExtraBold;
+    src: url("./font/Baloo2-ExtraBold.ttf");
+}
+@font-face {
+    font-family: Baloo2-Medium;
+    src: url("./font/Baloo2-Medium.ttf");
+}
+@font-face {
+    font-family: Baloo2-Regular;
+    src: url("./font/Baloo2-Regular.ttf");
+}
+@font-face {
+    font-family: Baloo2-SemiBold;
+    src: url("./font/Baloo2-SemiBold.ttf");
+}
+@font-face {
+    font-family: BalooBhaijaan2-VariableFont_wght;
+    src: url("./font/BalooBhaijaan2-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-Black;
+    src: url("./font/BarlowSemiCondensed-Black.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-BlackItalic;
+    src: url("./font/BarlowSemiCondensed-BlackItalic.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-Bold;
+    src: url("./font/BarlowSemiCondensed-Bold.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-BoldItalic;
+    src: url("./font/BarlowSemiCondensed-BoldItalic.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-ExtraBold;
+    src: url("./font/BarlowSemiCondensed-ExtraBold.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-ExtraBoldItalic;
+    src: url("./font/BarlowSemiCondensed-ExtraBoldItalic.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-ExtraLight;
+    src: url("./font/BarlowSemiCondensed-ExtraLight.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-ExtraLightItalic;
+    src: url("./font/BarlowSemiCondensed-ExtraLightItalic.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-Italic;
+    src: url("./font/BarlowSemiCondensed-Italic.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-Light;
+    src: url("./font/BarlowSemiCondensed-Light.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-LightItalic;
+    src: url("./font/BarlowSemiCondensed-LightItalic.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-Medium;
+    src: url("./font/BarlowSemiCondensed-Medium.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-MediumItalic;
+    src: url("./font/BarlowSemiCondensed-MediumItalic.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-Regular;
+    src: url("./font/BarlowSemiCondensed-Regular.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-SemiBold;
+    src: url("./font/BarlowSemiCondensed-SemiBold.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-SemiBoldItalic;
+    src: url("./font/BarlowSemiCondensed-SemiBoldItalic.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-Thin;
+    src: url("./font/BarlowSemiCondensed-Thin.ttf");
+}
+@font-face {
+    font-family: BarlowSemiCondensed-ThinItalic;
+    src: url("./font/BarlowSemiCondensed-ThinItalic.ttf");
+}
+@font-face {
+    font-family: NunitoSans-Black;
+    src: url("./font/NunitoSans-Black.ttf");
+}
+@font-face {
+    font-family: NunitoSans-BlackItalic;
+    src: url("./font/NunitoSans-BlackItalic.ttf");
+}
+@font-face {
+    font-family: NunitoSans-Bold;
+    src: url("./font/NunitoSans-Bold.ttf");
+}
+@font-face {
+    font-family: NunitoSans-BoldItalic;
+    src: url("./font/NunitoSans-BoldItalic.ttf");
+}
+@font-face {
+    font-family: NunitoSans-ExtraBold;
+    src: url("./font/NunitoSans-ExtraBold.ttf");
+}
+@font-face {
+    font-family: NunitoSans-ExtraBoldItalic;
+    src: url("./font/NunitoSans-ExtraBoldItalic.ttf");
+}
+@font-face {
+    font-family: NunitoSans-ExtraLight;
+    src: url("./font/NunitoSans-ExtraLight.ttf");
+}
+@font-face {
+    font-family: NunitoSans-ExtraLightItalic;
+    src: url("./font/NunitoSans-ExtraLightItalic.ttf");
+}
+@font-face {
+    font-family: NunitoSans-Italic;
+    src: url("./font/NunitoSans-Italic.ttf");
+}
+@font-face {
+    font-family: NunitoSans-Light;
+    src: url("./font/NunitoSans-Light.ttf");
+}
+@font-face {
+    font-family: NunitoSans-LightItalic;
+    src: url("./font/NunitoSans-LightItalic.ttf");
+}
+@font-face {
+    font-family: NunitoSans-Regular;
+    src: url("./font/NunitoSans-Regular.ttf");
+}
+@font-face {
+    font-family: NunitoSans-SemiBold;
+    src: url("./font/NunitoSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: NunitoSans-SemiBoldItalic;
+    src: url("./font/NunitoSans-SemiBoldItalic.ttf");
+}
+@font-face {
+    font-family: YesevaOne-Regular;
+    src: url("./font/YesevaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: Arial;
+    src: url("./font/arial.ttf");
+}
+@font-face {
+    font-family: Arialbd;
+    src: url("./font/arialbd.ttf");
+}
+@font-face {
+    font-family: Arialbi;
+    src: url("./font/arialbi.ttf");
+}
+@font-face {
+    font-family: Ariali;
+    src: url("./font/ariali.ttf");
+}
+@font-face {
+    font-family: Arialn;
+    src: url("./font/ARIALN.TTF");
+}
+@font-face {
+    font-family: Arialnb;
+    src: url("./font/ARIALNB.TTF");
+}
+@font-face {
+    font-family: Arialnbi;
+    src: url("./font/ARIALNBI.TTF");
+}
+@font-face {
+    font-family: Arialni;
+    src: url("./font/ARIALNI.TTF");
+}
+@font-face {
+    font-family: Helvetica-Neue-Bold;
+    src: url("./font/helvetica-neue-bold.ttf");
+}
+@font-face {
+    font-family: Helvetica-Neue-Bold-Italic;
+    src: url("./font/helvetica-neue-bold-italic.ttf");
+}
+@font-face {
+    font-family: Helvetica-Neue-Italic;
+    src: url("./font/helvetica-neue-italic.ttf");
+}
+@font-face {
+    font-family: NotoSerif-Bold;
+    src: url("./font/NotoSerif-Bold.ttf");
+}
+@font-face {
+    font-family: NotoSerif-BoldItalic;
+    src: url("./font/NotoSerif-BoldItalic.ttf");
+}
+@font-face {
+    font-family: NotoSerif-Italic;
+    src: url("./font/NotoSerif-Italic.ttf");
+}
+@font-face {
+    font-family: NotoSerif-Regular;
+    src: url("./font/NotoSerif-Regular.ttf");
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url("./font/lato-regular.ttf");
+}
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("./font/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: RobotoCondensed-Bold;
+    src: url("./font/RobotoCondensed-Bold.ttf");
+}
+@font-face {
+    font-family: Roboto-Black;
+    src: url("./font/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: RobotoSlab-ExtraBold;
+    src: url("./font/RobotoSlab-ExtraBold.ttf");
+}

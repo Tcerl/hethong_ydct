@@ -1,0 +1,22 @@
+<!-- Page Header -->
+<div class="page-header row no-gutters my-2">
+    <div class="col-12 text-center text-sm-left mb-0">
+      <span class="text-uppercase page-subtitle"> </span>
+      <h3 class="page-title pl-2">Danh sách đơn vị cấp trên</h3>
+    </div>
+  </div>
+  <!-- End Page Header -->
+      
+    <div class="row mb-3">
+        <div class="col-md-5 col-sm-12">
+            <div block-bind="toolbar"></div>
+        </div>	
+        <div class="col-md-7 col-sm-12">
+            <div class="form-group text-right" id="grid_search">
+            </div>
+        </div>
+    </div>
+    
+    <div id="grid" data-bind='collection:$collection'></div>
+
+  

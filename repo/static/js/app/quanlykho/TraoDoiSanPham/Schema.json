@@ -1,0 +1,177 @@
+{
+    "created_at": {
+        "type": "number"
+    },
+    "created_by": {
+        "type": "string"
+    },
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "deleted": {
+        "type": "boolean",
+        "default": false
+    },
+    "deleted_by": {
+        "type": "string"
+    },
+    "deleted_at": {
+        "type": "number"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "donvi_xuat_id": {
+        "type": "string",
+        "required": true
+    },
+    "donvi_xuat_ten": {
+        "type": "string"
+    },
+    "donvi_xuat": {
+        "type": "json"
+    },
+    "donvi_tiepnhan_id": {
+        "type": "string"
+    },
+    "donvi_tiepnhan_ten": {
+        "type": "string"
+    },
+    "donvi_tiepnhan": {
+        "type": "json"
+    },
+    "id_phieuxuat": {
+        "type": "string",
+        "required": true
+    },
+    "lichsu": {
+        "type": "json"
+    },
+    "thoigian_traodoi": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 0
+    },
+    "so_phieu_chungtu": {
+        "type": "string",
+        "required": true
+    },
+    "so_hoa_don": {
+        "type": "string"
+    },
+    "so_no": {
+        "type": "string"
+    },
+    "so_co": {
+        "type": "string"
+    },
+    "ma_donvi_tiepnhan": {
+        "type": "string"
+    },
+    "ten_donvi_tiepnhan": {
+        "type": "string"
+    },
+    "ten_nguoinhan": {
+        "type": "string"
+    },
+    "diachi_nguoinhan": {
+        "type": "string"
+    },
+    "dienthoai_nguoinhan": {
+        "type": "string"
+    },
+    "sohieu_phuongtien_vanchuyen": {
+        "type": "string"
+    },
+    "ma_donvi_vanchuyen": {
+        "type": "string"
+    },
+    "ten_donvi_vanchuyen": {
+        "type": "string"
+    },
+    "thoigian_batdau_vanchuyen": {
+        "type": "string"
+    },
+    "thoigian_ketthuc_vanchuyen": {
+        "type": "string"
+    },
+    "nguoi_vanchuyen": {
+        "type": "string"
+    },
+    "dienthoai_nguoi_vanchuyen": {
+        "type": "string"
+    },
+    "loaihinh_vanchuyen": {
+        "type": "string"
+    },
+    "thoigian_taophieu": {
+        "type": "string"
+    },
+    "thoigian_xuat": {
+        "type": "string"
+    },
+    "loai_xuat_ban": {
+        "type": "number"
+    },
+    "loai_xuat": {
+        "type": "string"
+    },
+    "lydo_xuat": {
+        "type": "string"
+    },
+    "ma_kho": {
+        "type": "string",
+        "required": true
+    },
+    "ten_kho": {
+        "type": "string"
+    },
+    "kho": {
+        "type": "json"
+    },
+    "diadiem": {
+        "type": "string"
+    },
+    "ghichu": {
+        "type": "string"
+    },
+    "tong_tien": {
+        "type": "number"
+    },
+    "donvi_tien": {
+        "type": "string"
+    },
+    "chungtu_dinhkem": {
+        "type": "json"
+    },
+    "ma_nguoi_lap_phieu": {
+        "type": "string"
+    },
+    "ten_nguoi_lap_phieu": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "active": {
+        "type": "number",
+        "default": 1
+    },
+    "xacnhan": {
+        "type": "number",
+        "default": 0
+    },
+    "chitiet_sanpham": {
+        "type": "list"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

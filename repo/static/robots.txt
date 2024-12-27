@@ -1,0 +1,6 @@
+https://cocq.baocaoyte.com
+https://cocq.baocaoyte.com/#login
+https://cocq.baocaoyte.com/#sanpham/collection
+https://cocq.baocaoyte.com/#truyxuat
+https://cocq.baocaoyte.com/api/v1/scanqrcode?id=*
+https://cocq.baocaoyte.com/#huongdansudung

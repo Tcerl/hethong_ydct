@@ -1,0 +1,24 @@
+<div class="content">
+	<div class="content-header py-1">
+        <h4>Chi tiết nhân viên</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-12">
+            <div class="form-group">
+                <label> Mã nhân viên<span class="text-danger">*</span></label>
+                <input type="text"  placeholder="Nhập mã nhân viên" data-bind="value:ma" class="form-control" />
+                </div>
+            <div class="form-group">
+                <label>Tên nhân viên <span class="text-danger">*</span></label>
+                <input type="text"  placeholder="Nhập tên nhân viên" data-bind="value:ten" class="form-control" >
+            </div>
+            <div class="form-group">
+                <label>Chuyên môn <span class="text-danger">*</span></label>
+                <textarea type="text" placeholder="Chuyên môn nhân viên" data-bind="value:chuyenmon" class="form-control" rows="3"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row py-2 justify-content-center">
+        <div block-bind="toolbar"></div>
+    </div>
+</div>

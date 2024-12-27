@@ -1,0 +1,87 @@
+<div block-bind="content">
+	<div class="row">
+		<h4 class="page-title text-uppercase text-center text-primary w-100 py-2">Thông tin cây thuốc</h4>
+	</div>
+	<div class="form-horizontal" role="form">
+		<div class="row">
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Mã cây thuốc <span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:ma_caythuoc" placeholder="Nhập mã cây thuốc">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Tên cây thuốc <span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:ten_caythuoc" placeholder="Nhập tên cây thuốc">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Tên khoa học</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:ten_khoa_hoc" placeholder="Nhập tên khoa học">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Tên họ</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:ten_ho" placeholder="Nhập tên họ">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Tên chi</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:ten_chi" placeholder="Nhập tên chi">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Tên loài</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:ten_loai" placeholder="Nhập tên loài">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Đặc tính</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:dac_tinh" placeholder="Nhập đặc tính">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Bộ phận sử dụng</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:bophan_sudung" placeholder="Nhập bộ phận sử dụng">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Công dụng</label>
+				<div class="">
+					<textarea rows="2" class="form-control" data-bind="value:cong_dung" placeholder="Nhập công dụng"></textarea>
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Mô tả</label>
+				<div class="">
+					<textarea rows="2" class="form-control" data-bind="value:mota" placeholder="Nhập mô tả"></textarea>
+				</div>
+			</div>
+			<div class="col-12">
+				<h4>
+					<a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false" class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách hình ảnh</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+				</h4>
+				<button id='button_off' class="btn btn-sm btn-success btn-add-file mb-2">Thêm hình ảnh</button>
+				<div class="collapse show" id="taskcollapse1">
+					<div class="table-responsive w-80 list-attachment">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-group row mt-3">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+		</div>
+	</div>
+</div>
+<style>
+	.modal-dialog {
+  		max-width: 800px !important;
+	}
+</style>

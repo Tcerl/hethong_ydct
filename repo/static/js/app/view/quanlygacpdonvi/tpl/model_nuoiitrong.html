@@ -1,0 +1,1386 @@
+<div block-bind="content" id="content">
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body">
+                <h4 class="page-title text-uppercase text-center text-primary">Chi tiết giấy chứng nhận GACP</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="card row">
+            <div class="card-body">
+                <h4 class="">Thông tin giấy chứng nhận</h4>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3 pr-1">Số giấy chứng nhận <span class="text-danger">*</span></label>
+                            <div class="col-12 col-lg-9">
+                                <input class="form-control" type="text" data-bind="value:so_giay_chungnhan" placeholder="Nhập số giấy chứng nhận">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3">Tên dược liệu <span class="text-danger">*</span></label>
+                            <div class="col-12 col-lg-9">
+                                <select id="sanpham" class="form-control" placeholder="Tìm kiếm và chọn dược liệu"></select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3">Tên khoa học</label>
+                            <div class="col-12 col-lg-9">
+                                <span data-bind="text:ten_khoa_hoc"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3">Mã dược liệu</label>
+                            <div class="col-12 col-lg-9">
+                                <span data-bind="text:ma_sanpham"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3">Tên gọi khác</label>
+                            <div class="col-12 col-lg-9">
+                                <input data-bind="text:ten_thuong_mai" placeholder="Tên gọi khác dược của dược liệu" class="form-control" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group row mb-0">
+                            <label class="col-12 col-lg-3">Thời gian hiệu lực <span class="text-danger">*</span></label>
+                            <div class="col-12 col-lg-9">
+                                <div class="row form-group">
+                                    <div class="col-6 pr-1">
+                                        <input class="form-control" data-bind="value:thoigian_batdau_hieuluc">
+                                    </div>
+                                    <div class="col-6 pl-1">
+                                        <input class="form-control" data-bind="value:thoigian_ketthuc_hieuluc">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-0">
+                            <div class="col-lg-3 col-12">
+
+                            </div>
+                            <div class="col-lg-9 col-12">
+                                <small>(Thời gian bắt đầu - kết thúc hiệu lực)</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 border-left">
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3">Diện tích trồng <span class="text-danger">*</span></label>
+                            <div class="col-12 col-lg-9">
+                                <div class="row">
+                                    <div class="col-6 pr-1">
+                                        <input type="number" class="form-control" data-bind="value:dientich" placeholder="Nhập diện tích trồng">
+                                    </div>
+                                    <div class="col-6 pl-0">
+                                        <input type="text" class="form-control" data-bind="value:donvi_dientich" placeholder="Đơn vị diện tích trồng">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3">Địa điểm trồng <span class="text-danger">*</span></label>
+                            <div class="col-12 col-lg-9">
+                                <input class="form-control" placeholder="Nhập địa điểm trồng" type="text" data-bind="value:diadiem">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3">Tên cơ sở <span class="text-danger">*</span></label>
+                            <div class="col-12 col-lg-9">
+                                <input class="form-control" type="text" placeholder="Nhập tên cơ sở" data-bind="value:ten_coso">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3">Địa chỉ cơ cở <span class="text-danger">*</span></label>
+                            <div class="col-12 col-lg-9">
+                                <textarea class="form-control" placeholder="Nhập địa chỉ cơ sở" data-bind="value:diachi_coso"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-12 col-lg-3"> MĐ tuân thủ GACP</label>
+                            <div class="col-12 col-lg-9">
+                                <input class="form-control" data-bind="value:mucdo_tuanthu_gacp" placeholder="Mức độ tuân thủ GACP">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row>">                                                      
+                    <div class="col-lg-12 col-xs-12 px-0">
+                        <h4>
+                            <a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false"
+                                class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm chứng nhận</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                        </h4>
+                        <button class="btn btn-sm btn-success btn-add-file mb-2"><i class="fa fa-plus"></i> Thêm giấy chứng nhận</button>
+                        <div class="collapse show" id="taskcollapse1">
+                            <div class="table-responsive  w-80 list-attachment">
+                            </div>
+                        </div>
+                    </div>                                                               
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body">
+                <h4 class="page-title text-uppercase text-center text-primary">Bảng chỉ tiêu đánh giá dược liệu nuôi trồng, thu hái theo chuẩn GACP</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="card col-12">
+            <div class="row">
+                <div class="col-12 div-gacp">
+                    <table class="table table-responsive table-bordered pl-2 pr-2 mt-2 table-gacp" style="border: none !important;">
+                        <thead>
+                            <tr class="first-tr">
+                                <th>Stt</th>
+                                <th>Tên chỉ tiêu</th>
+                                <th>Yêu cầu</th>
+                                <th style="width: 100px;">Đạt</th>
+                                <th style="width: 100px;">Chưa đạt</th>
+                                <th style="width: 200px;" class="text-center">Ghi chú</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tr-second">
+                                <td class="text-center">I</td>
+                                <td class="font-weight-bold" colspan="5">Thực hành tốt nuôi trồng, thu
+                                    hái dược liệu</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <p ><span lang="VI">Chọn giống:</span></p>
+                                    <p ><span lang="VI">- Có trong trong Dược điển (Việt
+                                        Nam, EP, USP, BP, Nhật Bản)</span></p>
+                                    <p ><span lang="VI">- Được ghi trong tài liệu chính thống
+                                            (kết quả nghiên cứu khoa học đã được nghiệm thu cấp Nhà nước hoặc cấp Bộ)</span></p>
+                                    <p ><span lang="VI">- Được di thực, thuần hóa và lập hồ
+                                            sơ như loại vật liệu nguồn.</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">Giống đùng để trồng phải Đúng loài;
+                                        có nguồn gốc xuất xứ; có chất lượng tốt, giống sạch bệnh và không bị lẫn giống
+                                        tạp.</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="chon_giong" name="chon_giong" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="chon_giong" name="chon_giong" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:chon_giong_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <p ><span lang="VI">Lai lịch thực vật</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">Có hồ sơ về lai lịch thực vật ghi
+                                        rõ tên cây thuốc, phần được sử dụng như là dược liệu, đặc điểm cây thuốc</span></p> 
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="lai_lich_thuc_vat" name="lai_lich_thuc_vat" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="lai_lich_thuc_vat" name="lai_lich_thuc_vat" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:lai_lich_thuc_vat_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <p ><span lang="VI">Hạt giống và các vật liệu nhân giống</span></p>
+                                    <p ><span lang="VI">- Ghi đặc điểm của giống</span></p>
+                                    <p ><span lang="VI">- Ghi đủ tên khoa học (chi, loài,
+                                            giống trồng, tác giả và họ)</span></p>
+                                    <p ><span lang="VI">- Ghi tên giống và nhà cung cấp đối
+                                            với giống bán trên thị trường:</span></p>
+                                    <p ><span lang="VI">- Giống nguyên thủy: tên địa phương
+                                            (xuất xứ cây thuốc, hạt giống gốc, hoặc vật liệu nhân giống)</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">1. Có hồ sơ quy trình quản lý giống
+                                        được hướng dẫn, giám sát thực hiện và kiểm soát chất lượng.</span></p>
+                                    <p ><span lang="VI">2. Giống được sản xuất tập trung do
+                                            Công ty điều hành và cung ứng giống cho người trồng hoặc mua tại đơn vị ....</span>
+                                    </p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hat_giong_vatlieu" name="hat_giong_vatlieu" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hat_giong_vatlieu" name="hat_giong_vatlieu" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:hat_giong_vatlieu_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <p ><span lang="VI">Địa điểm trồng trọt</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">1. Cần lựa chọn vùng trồng có điều
+                                        kiện thích hợp với yêu cầu sinh thái của cây</span></p>
+                                    <p ><span lang="VI">2. Không trái với quy hoạch sản xuất
+                                            nông nghiệp của địa phương;</span></p>
+                                    <p ><span lang="VI">3. Vùng đất trồng không bị ô nhiễm
+                                            kim loại nặng, không bị ô nhiễm vi sinh vật, có sự cách ly tương đối với các
+                                            cây trồng khác và không gần khu công nghiệp, bãi rác thải, bãi chăn thả gia
+                                            súc, khu chăn nuôi,…</span></p>
+                                    <p ><span lang="VI">4. Khu vực trồng phải có nguồn nước
+                                            sạch, không bị ô nhiễm kim loại nặng và vi sinh vật, đạt tiêu chuẩn nước tưới
+                                            tiêu trong nông nghiệp.</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="diadiem_trongtrot" name="diadiem_trongtrot" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="diadiem_trongtrot" name="diadiem_trongtrot" value="2" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:diadiem_trongtrot_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <p ><span lang="VI">Môi trường sinh thái và tác động xã
+                                        hội</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">1. Nơi bảo quản, xử lý phân bón và nơi
+                                        chứa thuốc bảo vệ thực vật, dụng cụ pha, bình bơm được che nắng mưa, có khóa;</span>
+                                    </p>
+                                    <p ><span lang="VI">2. Nhiên liệu (xăng, dầu) và hóa chất
+                                            được lưu trữ riêng, cách xa nơi chứa sản phẩm và nguồn nước tưới;</span></p>
+                                    <p ><span lang="VI">3. Chất thải trong quá trình sản xuất
+                                            (vỏ bao bì phân bón, thuốc bảo vệ thực vật, hóa chất, hạt giống...) phải được
+                                            thu gom để xử lý (có hợp đồng với đơn vị có chức năng) và chứa trong bể có
+                                            đáy, mái che, dụng cụ kín để tránh phát tán ra môi trường;</span></p>
+                                    <p ><span lang="VI">4. Không ảnh hưởng đến cân bằng
+                                            sinh thái và tác động tiêu cực đối với việc làm ăn sinh sống tại địa phương</span>
+                                    </p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="moitruong_sinhthai" name="moitruong_sinhthai" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="moitruong_sinhthai" name="moitruong_sinhthai" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:moitruong_sinhthai_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <p ><span lang="VI">Khí hậu</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">Phù hợp với yêu cầu về điều kiện thời
+                                        tiết và thời vụ gieo trồng của từng dược liệu (Có tài liệu nghiên cứu)</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khi_hau" name="khi_hau" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khi_hau" name="khi_hau" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:khi_hau_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    <p ><span lang="VI">Thổ nhưỡng</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">1. Hàm lượng một số kim loại nặng không
+                                        vượt quá theo tiêu chuẩn quốc gia về giới hạn cho phép của một số kim loại nặng
+                                        trong đất.</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="tho_nhuong" name="tho_nhuong" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="tho_nhuong" name="tho_nhuong" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:tho_nhuong_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>
+                                    <p ><span lang="VI">Phân bón</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">1. Phân vô cơ: có trong danh mục được
+                                        phép sử dụng theo quy định hiện hành;</span></p>
+                                    <p ><span lang="VI">2. Phân hữu cơ: phải được ủ hoai mục.</span></p>
+                                    <p ><span lang="VI">3. Có Hồ sơ theo dõi quá trình bón
+                                            phân, số lượng và thời gian cách ly</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phan_bon" name="phan_bon" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phan_bon" name="phan_bon" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:phan_bon_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>
+                                    <p ><span lang="VI">Tưới nước và thoát nước</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">1. Phù hợp với yêu cầu của từng loại
+                                        dược liệu;</span></p>
+                                    <p ><span lang="VI">2. Nước tưới phải đạt quy định về
+                                            nước sạch</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="tuoi_nuoc_thoat_nuoc" name="tuoi_nuoc_thoat_nuoc" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="tuoi_nuoc_thoat_nuoc" name="tuoi_nuoc_thoat_nuoc" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:tuoi_nuoc_thoat_nuoc_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    <p ><span lang="VI">Chăm sóc và bảo vệ cây</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">1. Có quy trình chăm sóc và bảo vệ
+                                        cho từng loại cây thuốc;</span></p>
+                                    <p ><span lang="VI">2. Có quy trình sử dụng hóa chất trừ
+                                            sâu (loại hóa chất, liều lượng, cách dùng, thời gian cách ly thích hợp với mỗi
+                                            loại cây và phù hợp với từng giai đoạn sinh trưởng của cây đó);</span></p>
+                                    <p ><span lang="VI">3. Hóa chất, thuốc bảo vệ thực vật
+                                            dùng tại cơ sở có thuộc danh mục được phép sử dụng theo quy định hiện hành;</span>
+                                    </p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="chamsoc_baove" name="chamsoc_baove" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="chamsoc_baove" name="chamsoc_baove" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:chamsoc_baove_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>
+                                    <p ><span lang="VI">Thu hoạch</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">1. Thời điểm thu hoạch đúng theo
+                                        tài liệu chính thống (dược điển, tài liệu khoa học chính thức) hoặc một số yếu
+                                        tố hình thái cây trồng;</span></p>
+                                    <p ><span lang="VI">2. Có quy định về khoảng thời gian
+                                            cách ly việc bón phân, phun thuốc trừ sâu trước khi thu hoạch</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="thu_hoach" name="thu_hoach" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="thu_hoach" name="thu_hoach" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:thu_hoach_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="tr-second d-none">
+                                <td class="text-center">II</td>
+                                <td class="font-weight-bold" colspan="5">
+                                    Nguyên tắc, tiêu chuẩn khai thác dược liệu tự nhiên
+                                </td>
+                            </tr>
+                            <tr class="d-none">
+                                <td>12</td>
+                                <td>
+                                    <p ><span lang="VI">Giấy phép khai thác dược liệu</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">Có giấy phép khai thác dược liệu
+                                        phù hợp với quy định trong nước và quốc tế</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="giayphep_khaithac" name="giayphep_khaithac" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="giayphep_khaithac" name="giayphep_khaithac" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:giayphep_khaithac_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="d-none">
+                                <td>13</td>
+                                <td>
+                                    <p ><span lang="VI">Không thuốc danh mục cấm khai thác
+                                        của quốc gia hay địa phương</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khong_trong_danhmuc_cam" name="khong_trong_danhmuc_cam" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khong_trong_danhmuc_cam" name="khong_trong_danhmuc_cam" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:khong_trong_danhmuc_cam_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="d-none">
+                                <td>14</td>
+                                <td>
+                                    <p ><span lang="VI">Kế hoạch khai thác và chọn cây thuốc
+                                        để thu hái</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">- Xác định phân bố địa lý và trữ lượng,
+                                        địa bàn khai thác;</span></p>
+                                    <p ><span lang="VI">- Thông tin chính yếu về dược liệu;</span></p>
+                                    <p ><span lang="VI">- Hình ảnh về dược liệu (ảnh sao chụp
+                                            hoặc mẫu vật, các đặc điểm nhận dạng);</span></p>
+                                    <p ><span lang="VI">- Hồ sơ lai lịch dược liệu khai
+                                            thác</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="kehoach_khaithac" name="kehoach_khaithac" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="kehoach_khaithac" name="kehoach_khaithac" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:kehoach_khaithac_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="d-none">
+                                <td>15</td>
+                                <td>
+                                    <p ><span lang="VI">Đặc điểm địa điểm khai thác</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">Không bị ảnh hưởng bởi các yếu tố
+                                        gây ô nhiễm sản phẩm</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="diadiem_khaithac" name="diadiem_khaithac" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="diadiem_khaithac" name="diadiem_khaithac" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:diadiem_khaithac_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="d-none">
+                                <td>16</td>
+                                <td>
+                                    <p ><span lang="VI">Hướng dẫn kỹ thuật khai thác theo
+                                        nguyên tắc đảm bảo tái sinh và phát triển bền vững tài nguyên thiên nhiên</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="kythuat_khaithac_theo_nguyentac" name="kythuat_khaithac_theo_nguyentac" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="kythuat_khaithac_theo_nguyentac" name="kythuat_khaithac_theo_nguyentac" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:kythuat_khaithac_theo_nguyentac_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="d-none">
+                                <td>17</td>
+                                <td>
+                                    <p ><span lang="VI">Dược liệu thu hoạch về được bảo quản
+                                        trong đồ đựng thích hợp,</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đồ đựng
+                                        phù hợp</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="thu_hoach_bao_quan" name="thu_hoach_bao_quan" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="thu_hoach_bao_quan" name="thu_hoach_bao_quan" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:thu_hoach_bao_quan_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="tr-second">
+                                <td class="text-center">II</td>
+                                <td colspan="5">
+                                    <b><span lang="VI">Chế biến sau thu hoạch</span></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>
+                                    <p ><span lang="VI">Diện tích Nhà xưởng</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">- Có
+                                        sơ đồ Diện tích Nhà xưởng</span></p>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">-
+                                            Phù hợp với quy mô chế biến</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="dientich_kho" name="dientich_kho" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="dientich_kho" name="dientich_kho" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:dientich_kho_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>
+                                    <p ><span lang="VI">Khu vực xử lý dược liệu sau thu hoạch,
+                                        sân phơi, xưởng chế biến và bảo quản có được bố trí riêng biệt, thuận chiều,
+                                        cách ly nhà ăn và các nguồn gây ô nhiễm như phòng vệ sinh, bãi rác, chăn nuôi
+                                        động vật...</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">- Có
+                                        Hồ sơ theo dõi quá trình xử lý dược liệu sau thu hoạch</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khuvuc_xuly" name="khuvuc_xuly" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khuvuc_xuly" name="khuvuc_xuly" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:khuvuc_xuly_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>
+                                    <p ><span lang="VI">Có hồ sơ ghi rõ điều kiện làm khô
+                                        dược liệu:</span></p>
+                                    <p ><span lang="VI">- Trường hợp làm khô bằng phương
+                                            pháp phơi: Bố trí khu vực phơi cần cách xa các loại côn trùng, gặm nhấm, chim
+                                            và những loài có hại khác, kể cả thú nuôi và gia súc</span></p>
+                                    <p ><span lang="VI">- Trường hợp làm khô bằng phương
+                                            pháp sấy: Có hồ sơ ghi nguồn nhiệt (thiết bị) sấy, thời gian, nhiệt độ sấy, độ
+                                            ẩm</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_dieukien_lamkho" name="hoso_dieukien_lamkho" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_dieukien_lamkho" name="hoso_dieukien_lamkho" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:hoso_dieukien_lamkho_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>
+                                    <p ><span lang="VI">Kiến trúc, kỹ thuật và vật liệu xây
+                                        dựng nhà xưởng có thuận lợi cho việc làm vệ sinh, phòng chống sự xâm nhập của
+                                        chuột bọ, mối mọt, côn trùng.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="kientruc_kho_dambao" name="kientruc_kho_dambao" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="kientruc_kho_dambao" name="kientruc_kho_dambao" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:kientruc_kho_dambao_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>
+                                    <p ><span lang="VI">Đảm bảo nhiệt độ, độ ẩm, ánh sáng
+                                        phù hợp với việc xử lý, chế biến và bảo quản</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="nhiet_do_do_am_kho" name="nhiet_do_do_am_kho" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="nhiet_do_do_am_kho" name="nhiet_do_do_am_kho" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:nhiet_do_do_am_kho_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>
+                                    <p ><span lang="VI">Bảo dưỡng và quy trình vệ sinh nhà
+                                        xưởng.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="bao_duong_vesinh_kho" name="bao_duong_vesinh_kho" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="bao_duong_vesinh_kho" name="bao_duong_vesinh_kho" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:bao_duong_vesinh_kho_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>
+                                    <p ><span lang="VI">Các thiết bị cần thiết, phù hợp với
+                                        việc sản xuất.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Phù hợp
+                                        với quy mô sản xuất</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="thietbi_sanxuat" name="thietbi_sanxuat" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="thietbi_sanxuat" name="thietbi_sanxuat" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:thietbi_sanxuat_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>
+                                    <p ><span lang="VI">Bề mặt của thiết bị có tiếp xúc trực
+                                        tiếp với sản phẩm có được làm bằng vật liệu trơ (không sét rỉ, bong tróc,
+                                        thôi) không?</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="be_mat_thietbi_tiepxuc" name="be_mat_thietbi_tiepxuc" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="be_mat_thietbi_tiepxuc" name="be_mat_thietbi_tiepxuc" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:be_mat_thietbi_tiepxuc_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>
+                                    <p ><span lang="VI">Dụng cụ sản xuất phải được làm bằng
+                                        vật liệu dễ làm vệ sinh, không gây ô nhiễm.</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">Những thiết bị đồng hồ đo áp suất nồi
+                                        hơi, máy chưng cất... được hiệu chuẩn, kiểm định bởi cơ quan có chức năng.</span>
+                                    </p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="vatlieu_dungcu_sanxuat" name="vatlieu_dungcu_sanxuat" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="vatlieu_dungcu_sanxuat" name="vatlieu_dungcu_sanxuat" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:vatlieu_dungcu_sanxuat_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>
+                                    <p ><span lang="VI">Những thiết bị đồng hồ đo áp suất nồi
+                                        hơi, máy chưng cất... được hiệu chuẩn, kiểm định bởi cơ quan có chức năng.</span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="kiemdinh_thietbi" name="kiemdinh_thietbi" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="kiemdinh_thietbi" name="kiemdinh_thietbi" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:kiemdinh_thietbi_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>
+                                    <p ><span lang="VI">Nước dùng trong rửa dược liệu</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">Đạt tiêu chuẩn nước sinh hoạt (có
+                                        Phiếu kiểm nghiệm nước của cơ quan đủ năng lực)</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="nuoc_rua_duoclieu" name="nuoc_rua_duoclieu" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="nuoc_rua_duoclieu" name="nuoc_rua_duoclieu" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:nuoc_rua_duoclieu_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>
+                                    <p ><span lang="VI">Nước dùng trong nấu, chiết xuất dược
+                                        liệu</span></p>
+                                </td>
+                                <td>
+                                    <p ><span lang="VI">Đạt tiêu chuẩn nước ăn uống (có Phiếu
+                                        kiểm nghiệm nước của cơ quan đủ năng lực)</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="nuoc_chietxuat_duoclieu" name="nuoc_chietxuat_duoclieu" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="nuoc_chietxuat_duoclieu" name="nuoc_chietxuat_duoclieu" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:nuoc_chietxuat_duoclieu_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="tr-second">
+                                <td class="text-center">III</td>
+                                <td colspan="5">
+                                   <b><span lang="VI">Đóng gói, ghi nhãn, bảo quản, vận
+                                        chuyển</span></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>
+                                    <p ><span lang="VI">Sản phẩm sau chế biến có được phân
+                                        loại và đóng gói để đảm bảo không bị ô nhiễm</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phanloai_donggoi" name="phanloai_donggoi" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phanloai_donggoi" name="phanloai_donggoi" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:phanloai_donggoi_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>
+                                    <p ><span lang="VI">Vật dụng, bao bì đóng gói phù hợp với
+                                        yêu cầu bảo quản cho từng loại dược liệu.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="vatdung_baobi_donggoi" name="vatdung_baobi_donggoi" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="vatdung_baobi_donggoi" name="vatdung_baobi_donggoi" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:vatdung_baobi_donggoi_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>
+                                    <p ><span lang="VI">Có thẻ kho theo dõi số lượng đối với
+                                        các loại bao bì in sẵn và nhãn hàng.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">C</span>ó</p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="co_the_kho" name="co_the_kho" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="co_the_kho" name="co_the_kho" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:co_the_kho_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td>
+                                    <p ><span lang="VI">Thực hiện đúng quy cách đóng gói
+                                        theo hồ sơ công bố.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="quycach_donggoi" name="quycach_donggoi" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="quycach_donggoi" name="quycach_donggoi" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:quycach_donggoi_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td>
+                                    <p ><span lang="VI">Thực hiện đúng các quy định về ghi
+                                        nhãn dược liệu</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="quydinh_ghinhan" name="quydinh_ghinhan" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="quydinh_ghinhan" name="quydinh_ghinhan" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:quydinh_ghinhan_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>
+                                    <p ><span lang="VI">Những sản phẩm sản xuất tại chính
+                                        cơ sở và những sản phẩm thu mua/thu hái từ nơi khác về (của cùng 1 loại dược
+                                        liệu) được mang các số lô khác nhau.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Đúng</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phan_lo_duoclieu" name="phan_lo_duoclieu" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phan_lo_duoclieu" name="phan_lo_duoclieu" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:phan_lo_duoclieu_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td>
+                                    <p ><span lang="VI">Cơ sở có thực hiện hồ sơ khai báo xuất
+                                        xứ trong quá trình phân phối sản phẩm theo đúng quy định</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" >Đúng</p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khaibao_xuatxu" name="khaibao_xuatxu" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khaibao_xuatxu" name="khaibao_xuatxu" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:khaibao_xuatxu_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>31</td>
+                                <td>
+                                    <p ><span lang="VI">Đầy đủ các phương tiện vận chuyển
+                                        dược liệu từ nơi thu hoạch về nơi chế biến và để lưu thông có đảm bảo không
+                                        gây ô nhiễm và nhiễm chéo lên sản phẩm không</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" >Đúng</p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phuongtien_vanchuyen" name="phuongtien_vanchuyen" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phuongtien_vanchuyen" name="phuongtien_vanchuyen" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:phuongtien_vanchuyen_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="tr-second">
+                                <td class="text-center">IV</td>
+                                <td colspan="5">
+                                    <b><span lang="VI">Đảm bảo chất lượng</span></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>32</td>
+                                <td>
+                                    <p ><span lang="VI">Thiết lập Hệ thống quản lý chất lượng
+                                        và duy trì hoạt động của Hệ thống này bao gồm từ khâu kiểm tra, kiểm soát chất
+                                        lượng giống cây, đất trồng, nước tưới, phân bón, thuốc trừ sâu đến việc giám sát
+                                        quá trình trồng trọt, thu hoạch, chế biến, đóng gói, bảo quản, phân phối và
+                                        kiểm tra chất lượng giống cây trồng, sản phẩm trung gian, thành phẩm cuối
+                                        cùng</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" >Có</p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="thietlap_hethong_quanly_chatluong" name="thietlap_hethong_quanly_chatluong" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="thietlap_hethong_quanly_chatluong" name="thietlap_hethong_quanly_chatluong" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:thietlap_hethong_quanly_chatluong"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>33</td>
+                                <td>
+                                    <p ><span lang="VI">Có SOP quy định và phân công người
+                                        thực hiện việc kiểm tra, kiểm soát chất lượng trong suốt quá trình sản xuất từ
+                                        khâu trồng trọt, thu hoạch đến sơ chế, chế biến, đóng gói hay không</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="sop_quydinh_phancong_kiemtra_chatluong" name="sop_quydinh_phancong_kiemtra_chatluong" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="sop_quydinh_phancong_kiemtra_chatluong" name="sop_quydinh_phancong_kiemtra_chatluong" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:sop_quydinh_phancong_kiemtra_chatluong_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>
+                                    <p ><span lang="VI">Các yêu cầu chất lượng và phương
+                                        pháp kiểm soát, kiểm tra chất lượng có bao gồm đối với:</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">&nbsp;</span>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>35</td>
+                                <td>
+                                    <p ><span lang="VI">- Nguyên liệu ban đầu (giống cây trồng,
+                                        sản phẩm mua về để sơ chế, chế biến, đóng gói);</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">TCCS</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="yeucau_chatluong_nguyenlieu" name="yeucau_chatluong_nguyenlieu" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="yeucau_chatluong_nguyenlieu" name="yeucau_chatluong_nguyenlieu" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:yeucau_chatluong_nguyenlieu_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>
+                                    <p ><span lang="VI">- Sản phẩm trung gian, bán thành phẩm
+                                        sau mỗi công đoạn sản xuất;</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">TCCS</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="yeucau_chatluong_sanpham_trung_gian" name="yeucau_chatluong_sanpham_trung_gian" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="yeucau_chatluong_sanpham_trung_gian" name="yeucau_chatluong_sanpham_trung_gian" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:yeucau_chatluong_sanpham_trung_gian_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>37</td>
+                                <td>
+                                    <p ><span lang="VI">- Thành phẩm sau công đoạn đóng gói
+                                        cuối cùng</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">TCCS</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="yeucau_chatluong_thanhpham_dong_goi" name="yeucau_chatluong_thanhpham_dong_goi" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="yeucau_chatluong_thanhpham_dong_goi" name="yeucau_chatluong_thanhpham_dong_goi" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:yeucau_chatluong_thanhpham_dong_goi_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>
+                                    <p ><span lang="VI">Tiêu chuẩn chất lượng và phương
+                                        pháp thử này có phù hợp với tiêu chuẩn chất lượng nêu trong Dược điển hiện
+                                        hành hoặc các tài liệu chuyên môn.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">TCCS</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phuhop_tieuchuan_duocdien" name="phuhop_tieuchuan_duocdien" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="phuhop_tieuchuan_duocdien" name="phuhop_tieuchuan_duocdien" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:phuhop_tieuchuan_duocdien_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>39</td>
+                                <td>
+                                    <p ><span lang="VI">Có thiết bị và sổ hồ sơ theo dõi
+                                        nhiệt độ, độ ẩm trong kho bảo quản dược liệu</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">(gh</span>i
+                                        <span lang="VI">đầy đ</span>ủ<span lang="VI">)</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="co_thietbi_hoso_theodoi_kho" name="co_thietbi_hoso_theodoi_kho" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="co_thietbi_hoso_theodoi_kho" name="co_thietbi_hoso_theodoi_kho" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:co_thietbi_hoso_theodoi_kho_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>
+                                    <p ><span lang="VI">Giới hạn dư lượng hóa chất, thuốc bảo
+                                        vệ thực vật có trong dược liệu, phù hợp với Dược điển Việt Nam hiện hành</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Chỉ
+                                        tiêu phù hợp với từng DL</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="gioihan_hoachat_trong_duoclieu" name="gioihan_hoachat_trong_duoclieu" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="gioihan_hoachat_trong_duoclieu" name="gioihan_hoachat_trong_duoclieu" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:gioihan_hoachat_trong_duoclieu_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">41</td>
+                                <td>
+                                    <p ><span lang="VI">Có hồ sơ đóng gói có được thực hiện
+                                        và lưu giữ theo từng/cho mọi lô sản phẩm và có bao gồm:</span></p>
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p ><span lang="VI">- Kết quả kiểm tra, kiểm soát, kiểm
+                                        nghiệm nguyên liệu ban đầu, sản phẩm trung gian, bán thành phẩm, thành phẩm
+                                        cuối cùng;</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_donggoi_kiemtra_nguyenlieu" name="hoso_donggoi_kiemtra_nguyenlieu" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_donggoi_kiemtra_nguyenlieu" name="hoso_donggoi_kiemtra_nguyenlieu" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:hoso_donggoi_kiemtra_nguyenlieu_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p ><span lang="VI">- Kết quả thử nghiệm dư lượng thuốc
+                                        trừ sâu, giới hạn kim loại nặng;</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_donggoi_thu_nghiem_thuoc_tru_sau" name="hoso_donggoi_thu_nghiem_thuoc_tru_sau" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_donggoi_thu_nghiem_thuoc_tru_sau" name="hoso_donggoi_thu_nghiem_thuoc_tru_sau" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:hoso_donggoi_thu_nghiem_thuoc_tru_sau_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p ><span lang="VI">- Hồ sơ lô sản phẩm?</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">C</span>ó</p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_donggoi_lo_sanpham" name="hoso_donggoi_lo_sanpham" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_donggoi_lo_sanpham" name="hoso_donggoi_lo_sanpham" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:hoso_donggoi_lo_sanpham_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>
+                                    <p ><span lang="VI">Hồ sơ lô sản phẩm có thể hiện chi
+                                        tiết quá trình xử lý đất đai, gieo, trồng, tưới tiêu, bón phân, phun thuốc,
+                                        thu hoạch- sơ chế/thu mua, chế biến, đóng gói, bảo quản; có ghi rõ thời gian
+                                        ban đầu, thời gian kết thúc, sản lượng đầu vào, sản lượng đầu ra cho mỗi công
+                                        đoạn sản xuất của lô sản phẩm.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">C</span>ó</p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_sanpham_chitiet" name="hoso_sanpham_chitiet" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hoso_sanpham_chitiet" name="hoso_sanpham_chitiet" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:hoso_sanpham_chitiet_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="tr-second">
+                                <td class="text-center">V</td>
+                                <td colspan="5">
+                                    <b><span lang="VI">Các vấn đề khác</span></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>43</td>
+                                <td>
+                                    <p ><span lang="VI">Người lao động được đào tạo về an
+                                        toàn lao động và trang bị bảo hộ lao động thích hợp khi bảo quản, cấp phát, sử
+                                        dụng phân bón, thuốc bảo vệ thực vật</span></p>
+                                    <p ><span lang="VI">- Có chương trình huấn luyện, đào tạo
+                                            hằng năm và kết quả kiểm tra, đào tạo</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="daotao_antoan_laodong" name="daotao_antoan_laodong" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="daotao_antoan_laodong" name="daotao_antoan_laodong" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:daotao_antoan_laodong_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>
+                                    <p ><span lang="VI">Quy định về an toàn lao động khi vận
+                                        hành các thiết bị như nồi hơi, chiết xuất dược liệu, chưng cất dung môi...</span>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="quydinh_antoan_laodong" name="quydinh_antoan_laodong" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="quydinh_antoan_laodong" name="quydinh_antoan_laodong" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:quydinh_antoan_laodong_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td>
+                                    <p ><span lang="VI">hệ thống phòng cháy, chữa cháy, tổ chức
+                                        tập huấn cho nhân viên về công tác phòng cháy, chữa cháy phù hợp theo quy định
+                                        hiện hành</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hethong_phongchay_chuachay" name="hethong_phongchay_chuachay" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="hethong_phongchay_chuachay" name="hethong_phongchay_chuachay" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:hethong_phongchay_chuachay_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="tr-second">
+                                <td class="text-center">VI</td>
+                                <td colspan="5">
+                                    <b><span lang="VI">Kiểm tra nội bộ</span></b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>46</td>
+                                <td>
+                                    <p ><span lang="VI">Chương trình, kế hoạch, nội dung kiểm
+                                        tra nội bộ và tổ chức thực hiện theo đúng quy định.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="chuongtrinh_kiemtra_noibo" name="chuongtrinh_kiemtra_noibo" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="chuongtrinh_kiemtra_noibo" name="chuongtrinh_kiemtra_noibo" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:chuongtrinh_kiemtra_noibo_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>47</td>
+                                <td>
+                                    <p ><span lang="VI">Biên bản kiểm tra nội bộ được lưu
+                                        giữ</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="luu_bienban_kiemtra_noibo" name="luu_bienban_kiemtra_noibo" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="luu_bienban_kiemtra_noibo" name="luu_bienban_kiemtra_noibo" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:luu_bienban_kiemtra_noibo_ghichu"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>
+                                    <p ><span lang="VI">Khắc phục các khiếm khuyết, đạt yêu
+                                        cầu, đúng tiến độ.</span></p>
+                                </td>
+                                <td>
+                                    <p style="margin-top:6.0pt;text-align:center" ><span lang="VI">Có</span></p>
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khacphuc_khiem_khuyet" name="khacphuc_khiem_khuyet" value="1" class="">
+                                </td>
+                                <td class="align-middle text-center">
+                                    <input type="radio" id="khacphuc_khiem_khuyet" name="khacphuc_khiem_khuyet" value="0" class="">
+                                </td>
+                                <td>
+                                    <textarea class="form-control" data-bind="value:khacphuc_khiem_khuyet_ghichu"></textarea>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row mx-0">
+        <div id="button-alway-show">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cảnh báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Sau khi xóa dữ liệu sẽ không thể khôi phục lại được, bạn có muốn tiếp tục không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary btn-deleted-continue" data-dismiss="modal">Tiếp
+                    tục</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+<!-- Page Header -->
+<div class="row header">
+    <div class="card col-12">
+        <div class="container-fluid">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Quản Lý Nguồn Gốc-CO</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Page Header --> 
+<div class="card">
+    <div class="card-body">
+        <div class="col-12 mb-3 ">
+            <div class="row">
+                <div class="w-30 d-flex mb-1">
+                    <label for="" class="text-label-left">Từ ngày</label>
+                    <div class="text-input-right">
+                        <input type="text" id="tungay" class="form-control">
+                    </div>
+                </div>
+                <div class="w-30 d-flex mb-1">
+                    <label for="" class="text-label-left">Đến ngày</label>
+                    <div class="text-input-right">
+                        <input type="text" id="denngay" class="form-control">
+                    </div>
+                </div>
+                <div class="w-30 d-flex mb-1">
+                    <label for="" class="text-label-left">Trạng thái</label>
+                    <div class="text-input-right">
+                        <select class="form-control browser-default custom-select" id = "trangthai" >
+                            <option value="10" selected>Tất cả trạng thái</option>
+                            <option value="1">Tạo mới</option>
+                            <option value="2">Chờ duyệt</option>
+                            <option value="3">Đã duyệt</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="w-30 d-flex">
+                    <label for="" class="text-label-left">Số CO</label>
+                    <div class="text-input-right">
+                        <input type="text" id="so_co" class="form-control">
+                    </div>
+                </div>
+                <div class="w-30 d-flex">
+                    <label for="" class="text-label-left pr-0">Đơn vị chứng nhận</label>
+                    <div class="text-input-right">
+                        <input type="text" id="donvicap" class="form-control">
+                    </div>
+                </div>
+                <div class="w-40  row">
+
+                    <div class="col-8">
+                        <button class="btn btn-primary btn-sm btn-search"><i class="fa fa-search"></i> Tìm kiếm</button>
+                        <button class="btn btn-danger btn-sm btn-clear ml-1"> <i class="fa fa-times"></i> Xóa bộ lọc</button>
+                    </div>
+                    <div class="col-4 text-right pr-0">
+                        <div block-bind="toolbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-bordered table-hover" style="border: none !important;">
+            <div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+        </div>
+    </div>
+</div>

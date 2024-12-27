@@ -1,0 +1,269 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			<div class="page-title-box page-title-box-alt">
+				<h4 class="page-title">THỐNG KÊ DƯỢC LIỆU</h4>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col pr-1">
+			<div class="card overview-item--c1">
+				<div class="card-body">
+					<div class="d-flex justify-content-between align-items-center soluong_nhapkhau">
+						<div class="knob-chart" dir="ltr">
+							<img width="100px" height="100px" src="static/images_template/khautrang.png" alt="user-image" class="rounded-circle">
+						</div>
+						<div class="text-right">
+							<h3 class="mb-1 mt-0"> <span data-plugin="counterup" class="text-white nhapkhau">0</span> </h3>
+							<a href="javascript:void(0)"><p class="mb-0 text-white">Tổng số nhập khẩu</p></a>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end col -->
+
+		<div class="col px-1">
+			<div class="card overview-item--c2">
+				<div class="card-body">
+					<div class="d-flex justify-content-between align-items-center soluong_muaban">
+						<div class="knob-chart" dir="ltr">
+							<img width="100px" height="100px" src="static/images_template/gangtay.jpg" alt="user-image" class="rounded-circle">
+						</div>
+						<div class="text-right">
+							<h3 class="mb-1 mt-0"> <span data-plugin="counterup"  class="text-white muaban">0</span> </h3>
+							<a href="javascript:void(0)"><p class="mb-0 text-white">Tổng số phân phối</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end col -->
+
+		<div class="col px-1">
+			<div class="card overview-item--c3">
+				<div class="card-body">
+					<div class="d-flex justify-content-between align-items-center soluong_thugom">
+						<div class="knob-chart" dir="ltr">
+							<img width="100px" height="100px" src="static/images_template/quanao.jpg" alt="user-image" class="rounded-circle">
+						</div>
+						<div class="text-right text-white">
+							<h3 class="mb-1 mt-0"><span data-plugin="counterup" class="text-white thugom">0</span> </h3>
+							<a href="javascript:void(0)"><p class="mb-0 text-white">Tổng số thu gom</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end col -->
+
+		<div class="col px-1">
+			<div class="card overview-item--c4">
+				<div class="card-body">
+					<div class="d-flex justify-content-between align-items-center soluong_nuoitrong">
+						<div class="knob-chart" dir="ltr">
+							<img width="100px" height="100px" src="static/images_template/kinhchan.jpg" alt="user-image" class="rounded-circle">
+						</div>
+						<div class="text-right text-white">
+							<h3 class="mb-1 mt-0"> <span data-plugin="counterup" class="text-white nuoitrong">0</span> </h3>
+							<a href="javascript:void(0)"><p class="mb-1 text-white">Tổng số nuôi trồng</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end col -->
+
+		<div class="col pl-1">
+			<div class="card overview-item--c5">
+				<div class="card-body">
+					<div class="d-flex justify-content-between align-items-center soluong_khaithac">
+						<div class="knob-chart" dir="ltr">
+							<img width="100px" height="100px" src="static/images_template/kinhchan.jpg" alt="user-image" class="rounded-circle">
+						</div>
+						<div class="text-right text-white">
+							<h3 class="mb-1 mt-0"> <span data-plugin="counterup" class="text-white khaithac">0</span> </h3>
+							<a href="javascript:void(0)"><p class="mb-1 text-white">Tổng số khai thác</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end col -->
+	</div>
+
+
+	<div class="row">
+		<div class="col-12">
+			<div class="card" dir="ltr">
+				<div class="card-body">
+					
+					<div class="row">
+						<h4 class="header-title py-3 col-lg-3 col-md-3 col-sm-12 col-12">Biểu đồ báo cáo xuất nhập tồn </h4>
+						<div class="col-lg-5 col-md-5 col-sm-12 col-12">
+							<div class="form-group nhom-vattu">
+								<label>Tìm kiếm Dược liệu</label>
+								<select id="selectize-duoclieu" class="form-control" placeholder="Chọn dược liệu"></select>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-12 timkiem-donvi-chart">
+							<div class="form-group">
+								<label class="w-100">Hiển thị theo đơn vị 
+									<small class="px-1 float-right d-none">
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="chartRadio" id="chart_loaidonvi_yte" value="1" checked>
+											<label class="form-check-label" for="chartRadio1">Đơn vị y tế</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="chartRadio" id="chart_loaidonvi_cungung" value="2">
+											<label class="form-check-label" for="chartRadio2">Đơn vị cung ứng</label>
+										</div>
+									</small>
+								</label>
+								<select id="selectize-chart" class="form-control timkiem-chart" placeholder="Nhập tên đơn vị tìm kiếm"></select>
+								
+							</div>
+						</div>
+
+					</div>
+					
+					<div class="text-center">
+						<p class="text-muted font-15 font-family-secondary mb-0">
+							<span class="mx-2"><i class="mdi mdi-checkbox-blank-circle text-primary"></i> SL Nhập</span>
+							<span class="mx-2"><i class="mdi mdi-checkbox-blank-circle text-success"></i> SL Xuất</span>
+							<span class="mx-2"><i class="mdi mdi-checkbox-blank-circle text-muted"></i> SL Tồn</span>
+						</p>
+					</div>
+					<div id="morris-bar-stacked" style="height: 350px; position: relative;" class="morris-chart" data-colors="#009688,#0056c1,#e3eaef">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Danh sach don vi -->
+	<div class="row">
+		<div class="col-12">
+			<div class="card">
+				<div class="card-body">
+					<h3 class="header-title pt-2 pb-2">Báo cáo chi tiết đơn vị</h3>
+					<div class="row">
+						<div class="col-lg-5 col-md-5 col-sm-12 col-12">
+							<div class="form-group nhom-vattu">
+								<label>Tìm kiếm Dược liệu</label>
+								<select id="selectize-duoc-lieu" class="form-control" placeholder="Chọn dược liệu"></select>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-12 timkiem-donvi-baocao">
+							<div class="form-group">
+								<label class="w-100">Tìm theo tên đơn vị 
+									<small class="px-1 float-right d-none">
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="loaidonvi_yte" value="1" checked>
+											<label class="form-check-label" for="inlineRadio1">Đơn vị y tế</label>
+										</div>
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="loaidonvi_cungung" value="2">
+											<label class="form-check-label" for="inlineRadio2">Đơn vị cung ứng</label>
+										</div>
+									</small>
+								</label>
+								<select id="selectize-programmatic" class="form-control timkiem-donvi" placeholder="Nhập tên đơn vị tìm kiếm"></select>								
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-12">
+							<label>Loại Báo Cáo</label>
+							<div class="" id = "loai_bao_cao">
+								<input class="form-control" data-bind="value:loai_bao_cao">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-12 col-12 pr-lg-3">
+							<div class="form-group row ">
+								<label class="col-lg-4 col-md-4 col-sm-12 col-12">Từ ngày<span class="text-danger">*</span></label>
+								<input type="text" class="form-control col-lg-8 col-md-8 col-sm-12 col-12 tungay"  placeholder="Nhập ngày bắt đầu">
+							</div>
+							
+							
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12 col-12 pr-lg-3">
+							<div class="form-group row ">
+								<label class="col-lg-4 col-md-4 col-sm-12 col-12">Đến ngày<span class="text-danger">*</span></label>
+								<input type="text" class="form-control col-lg-8 col-md-8 col-sm-12 col-12 denngay" placeholder="Nhập kết thúc">
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+							<button class="btn btn-sm btn-success btn-search mb-2">Tìm kiếm</button>
+							<button class="btn btn-sm btn-secondary btn-clean mb-2">Xóa bộ lọc</button>
+							<button class="btn btn-sm btn-success btn-xuat-exel mb-2">Xuất excel</button>
+	
+						</div>
+						
+					</div>
+
+					<div class=" tablesaw-bar tablesaw-mode-stack thongkebaocao-xuatnhapton table-responsive table-bordered">
+						<table class="table mb-0" data-tablesaw-mode="stack" id="tablesaw-9517">
+							<thead class="">
+							<tr>
+								<th style="width: 250px;" class="font-weight-bold">Tên Đơn Vị</th>
+								<th class="font-weight-bold">Tên dược liệu</th>
+								<th  class="text-center font-weight-bold">SL Tồn Đầu Kỳ (Kg)</th>
+								<th  class="text-center font-weight-bold">SL Nhập Trong Kỳ (Kg)</th>
+								<th class="text-center font-weight-bold">SL Xuất Trong Kỳ (Kg)</th>
+								<th class="text-center  font-weight-bold">SL Tồn Cuối Kỳ (Kg)</th>
+								<th class="font-weight-bold">Đơn vị cung ứng</th>
+							</tr>
+							</thead>
+							<tbody class="body-data">
+								
+								
+							</tbody>
+						</table>
+					</div>
+
+
+					<div class=" tablesaw-bar tablesaw-mode-stack thongkebaocao-nhapkhau d-none table-responsive">
+						<table class="table mb-0 tablesaw-stack table-bordered" data-tablesaw-mode="stack" id="tablesaw-9517">
+							<thead class="">
+							<tr>
+								<th class="font-weight-bold">Tên Đơn Vị</th>
+								<th class="font-weight-bold">Tên Dược Liệu</th>
+								<th class="font-weight-bold" style="width: 150px !important;">Số Giấy Phép NK</th>
+								<th class="text-center font-weight-bold">SL Cấp Phép (Kg)</th>
+								<th class="text-center font-weight-bold">SL Nhập Khẩu Thực Tế (Kg)</th>
+								<th class="font-weight-bold" style="width: 150px !important;">Số CO</th> 
+								<th  class="font-weight-bold">Đơn Vị Sản Xuất</th>
+								<th  class="font-weight-bold">Cửa Khẩu</th>
+								<th class="text-center font-weight-bold">Giá Nhập</th>
+							</tr>
+							</thead>
+							<tbody class="body-data">
+								
+								
+							</tbody>
+						</table>
+					</div>
+					
+					<div class=" tablesaw-bar tablesaw-mode-stack thongkebaocao-thugom d-none table-responsive">
+						<table class="table mb-0 tablesaw-stack table-bordered" data-tablesaw-mode="stack" id="tablesaw-9517">
+							<thead class="">
+							<tr>
+								<th scope="col" class="font-weight-bold">Tên Đơn Vị</th>
+								<th  class="font-weight-bold">Tên dược liệu</th>
+								<th  class="font-weight-bold text-center">SL Thu Mua (Kg)</th>
+								<th class="font-weight-bold">Địa Chỉ Cơ Sở Thu Mua</th>
+								<th class="font-weight-bold text-center">Giá Thu Mua</th>
+								<th class="font-weight-bold text-center">Giấy Chứng Nhận Nguồn Gốc (CO)</th>
+							</tr>
+							</thead>
+							<tbody class="body-data">
+								
+								
+							</tbody>
+						</table>
+					</div>
+
+				</div>
+			</div> <!-- end card-->
+		</div> <!-- end col -->
+	</div>
+
+</div>

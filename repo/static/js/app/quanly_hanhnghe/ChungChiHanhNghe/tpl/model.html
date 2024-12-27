@@ -1,0 +1,78 @@
+<div block-bind="content">
+    <div class="row">
+        <div class="col-12 pb-2">
+            <h3 class="page-title text-uppercase text-center text-primary">Thông tin chứng chỉ hành nghề</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group">
+                <label class="text-primary">Số CCHN<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="Số CCHND" data-cchn-chitiet="value:so_giay_phep">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label class="text-primary">Ngày hiệu lực</label>
+                <input type="text" class="form-control" data-cchn-chitiet="value:ngay_hieu_luc">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label class="text-primary">Văn bằng chuyên môn</label>
+                <input id="selectize-vanbang" class="form-control" placeholder="Chọn văn bằng chuyên môn">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label class="text-primary">Ngày hết hạn</label>
+                <input type="text" class="form-control" data-cchn-chitiet="value:ngay_het_han">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label class="text-primary">Nơi cấp</label>
+                <input type="text" class="form-control" placeholder="Nhập nơi cấp" data-cchn-chitiet="value:noi_cap">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label class="text-primary">Ngày cấp</label>
+                <input type="text" class="form-control" data-cchn-chitiet="value:ngay_cap">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label class="text-primary">Nơi công tác</label>
+                <input type="text" class="form-control" placeholder="Nhập nơi công tác" data-cchn-chitiet="value:noi_cong_tac">
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-group">
+                <label class="text-primary">Loại CCHN</label>
+                <input type="text" class="form-control" placeholder="Loại chứng chỉ hành nghề" data-cchn-chitiet="value:loai_chungchi">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="form-group row">
+        <div class="col-12">
+            <h4>
+                <a href="#taskcollapse2" data-toggle="collapse" aria-expanded="false" class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách chứng từ đính kèm</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+            </h4>
+            <button class="btn btn-sm btn-success btn-add-file mb-2">Thêm chứng từ đính kèm</button>
+            <div class="collapse show" id="taskcollapse2">
+                <div class="table-responsive w-80 list-attachment">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group row pt-3">
+        <div block-bind="toolbar" class="col-12 text-center"></div>
+    </div>
+</div>
+<style>
+    .modal-dialog.modal-lg {
+        max-width: 1000px !important;
+    }
+</style>

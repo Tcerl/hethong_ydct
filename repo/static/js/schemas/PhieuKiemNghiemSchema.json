@@ -1,0 +1,147 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_kiem_nghiem": {
+        "type": "string",
+        "required": true
+    },
+    "ngay_kiem_nghiem": {
+        "type": "string"
+    },
+    "ten_donvi_cap": {
+        "type": "string"
+    },
+    "donvi_cap_id": {
+        "type": "string"
+    },
+    "diachi_donvi_cap": {
+        "type": "string"
+    },
+    "donvi_yeucau": {
+        "type": "json"
+    },
+    "ma_donvi_yeucau": {
+        "type": "string"
+    },
+    "ten_donvi_yeucau": {
+        "type": "string"
+    },
+    "diachi_donvi_yeucau": {
+        "type": "string"
+    },
+    "id_sanpham": {
+        "type": "string"
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "loai_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "sanpham": {
+        "type": "json"
+    },
+    "so_lo": {
+        "type": "string"
+    },
+    "nguoi_lay_mau": {
+        "type": "string"
+    },
+    "nguoi_giao_mau": {
+        "type": "string"
+    },
+    "nguoi_nhan_mau": {
+        "type": "string"
+    },
+    "tinh_trang_mau": {
+        "type": "string"
+    },
+    "luong_lay_mau": {
+        "type": "string"
+    },
+    "tieu_chuan_kiem_nghiem": {
+        "type": "string"
+    },
+    "cac_muc_kiem_nghiem": {
+        "type": "string"
+    },
+    "noi_san_suat": {
+        "type": "string"
+    },
+    "noi_san_suat_id": {
+        "type": "string"
+    },
+    "nuoc_sanxuat": {
+        "type": "string"
+    },
+    "ngay_san_xuat": {
+        "type": "string"
+    },
+    "han_su_dung": {
+        "type": "string"
+    },
+    "ngay_bao_cao": {
+        "type": "string"
+    },
+    "ngay_nhan_mau": {
+        "type": "string"
+    },
+    "quy_cach": {
+        "type": "string"
+    },
+    "ket_qua": {
+        "type": "json"
+    },
+    "ketluan": {
+        "type": "string"
+    },
+    "don_vi_gui_mau": {
+        "type": "string"
+    },
+    "ghichu": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "chungtu_dinhkem": {
+        "type": "json"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "nguoi_duyet_id": {
+        "type": "string"
+    },
+    "nguoi_duyet_ten": {
+        "type": "string"
+    },
+    "thoigian_duyet": {
+        "type": "string"
+    },
+    "thoigian_guiduyet": {
+        "type": "string"
+    },
+    "auto_ma_kiem_nghiem": {
+        "type": "boolean"
+    },
+    "donvi_id_truycap": {
+        "type": "json"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ten_diadiem": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "lat": {
+        "type": "string"
+    },
+    "long": {
+        "type": "string"
+    },
+    "loai_diadiem": {
+        "type": "number"
+    },
+    "xaphuong_id": {
+        "type": "string"
+    },
+    "xaphuong": {
+        "type": "json"
+    },
+    "quanhuyen_id": {
+        "type": "string"
+    },
+    "quanhuyen": {
+        "type": "json"
+    },
+    "tinhthanh_id": {
+        "type": "string"
+    },
+    "tinhthanh": {
+        "type": "json"
+    },
+    "quocgia_id": {
+        "type": "string"
+    },
+    "quocgia": {
+        "type": "json"
+    },
+    "sonha_tenduong": {
+        "type": "string"
+    },
+    "diachi": {
+        "type": "string"
+    },
+    "mo_ta": {
+        "type": "string"
+    },
+    "dien_tich": {
+        "type": "number"
+    },
+    "donvitinh_dientich": {
+        "type": "number"
+    },
+    "chungtu_xacnhan": {
+        "type": "json"
+    },
+    "giayphep_khaithac": {
+        "type": "json"
+    },
+    "thoigian_batdau_khaithac": {
+        "type": "string"
+    },
+    "thoigian_ketthuc_khaithac": {
+        "type": "string"
+    },
+    "dinhkem_chungnhan_vungtrong": {
+        "type": "json"
+    },
+    "dinhkem_chungnhan_kiemnghiem": {
+        "type": "json"
+    },
+    "active": {
+        "type": "number",
+        "default": 0
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

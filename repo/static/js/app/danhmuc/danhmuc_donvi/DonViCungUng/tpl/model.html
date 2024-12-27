@@ -1,0 +1,71 @@
+
+<div block-bind="content">
+	<div class="row">
+        <div class="card col-12">
+            <div class="card-body py-2">
+                <h4 id="title_page" class="page-title text-uppercase text-center text-primary">Thông tin đơn vị cung ứng</h4>
+            </div>
+        </div>
+    </div>
+	<div class="card  card-small mb-4">
+		<div class="card-body">
+			<form class="form-horizontal" role="form">
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label" for="simpleinput">Tên đơn vị<span class="text-danger">*</span></label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" data-bind="value:ten">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label" for="simpleinput">Số đăng ký đơn vị<span class="text-danger">*</span></label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" data-bind="value:ma_donvi">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label" for="simpleinput">Ngày cấp phép<span class="text-danger">*</span></label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" data-bind="value:ngay_capphep">
+					</div>
+				</div>
+
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label" for="simpleinput">Số điện thoại</label>
+					<div class="col-sm-10">
+						<input type="number" maxlength="10"  class="form-control" data-bind="value:sodienthoai">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label" for="simpleinput">Email</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" data-bind="value:email">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label" for="simpleinput">Địa chỉ</label>
+					<div class="col-sm-10">
+						<textarea data-bind="value:diachi" rows="2"></textarea>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label" for="simpleinput">Tên người liên hệ</label>
+					<div class="col-sm-10">
+						<input type="text"  class="form-control" data-bind="value:nguoilienlac_ten">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-sm-2 col-form-label" for="simpleinput">Số điện thoại người liên hệ</label>
+					<div class="col-sm-10">
+						<input type="number" maxlength="10"  class="form-control" data-bind="value:nguoilienlac_sodienthoai">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="form-group row mx-0" >
+        <div id="button-alway-show" >
+            <div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+        
+    </div>
+</div>

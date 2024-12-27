@@ -1,0 +1,6 @@
+{
+    "display_type": {
+        "type": "number",
+        "default": 1
+    }
+}

@@ -1,0 +1,123 @@
+<div block-bind="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body py-1">
+				<h3 class="page-title text-uppercase text-center text-primary">Báo Cáo Xuất Nhập Tồn</h3>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	<div class="card  card-small">
+		<div class="card-body">
+			
+
+			<form class="form-horizontal needs-validation container-fluid" novalidate>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Ngày lập báo cáo<span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 ">
+								<input type="text" class="form-control" data-bind="value:ngay_bao_cao" placeholder="Nhập ngày báo cáo" required="" parsley-trigger="change">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Kho báo cáo</label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 ">
+								<input type="text" class="form-control " data-bind="dict:kho" placeholder="Chọn kho báo cáo">
+							</div>
+						</div>
+						<div class="form-group row justify-content-end">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12"></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 ">
+								<input type="text" class="custom-control-input" data-bind="value:bao_cao_tat_ca_kho">
+							</div>
+						</div>
+					</div>
+					
+					
+
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Loại kỳ báo cáo<span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 ">
+								<input type="text" class="form-control " data-bind="value:loai_ky_bao_cao" placeholder="Chọn loại kỳ báo cáo">
+
+							</div>
+						</div>
+						
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<div class="form-group row kybaocao d-none">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Kỳ báo cáo<span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12 ">
+								<input type="text" class="form-control " data-bind="value:ky_bao_cao" placeholder="Nhập kỳ báo cáo">
+
+							</div>
+						</div>
+						<div class="form-group row nambaocao  d-none">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12"> Năm báo cáo<span class="text-danger">*</span> </label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12">
+								<div class="">
+									<input type="number" maxlength="4" class="form-control" data-bind="value:nam_bao_cao" placeholder="Nhập năm báo cáo">
+								</div>
+							</div>
+						</div>
+						<div class="form-group row tungay  d-none">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Từ ngày<span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:ngay_bat_dau" placeholder="Nhập ngày bắt đầu">
+							</div>
+						</div>
+						<div class="form-group row denngay  d-none">
+							<label class="col-lg-5 col-md-5 col-sm-12 col-12">Đến ngày<span class="text-danger">*</span></label>
+							<div class="col-lg-7 col-md-7 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:ngay_ket_thuc" placeholder="Nhập kết thúc">
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 col-12 pr-lg-3">
+						<button class="btn btn-sm btn-success waves-effect mb-2 congdon">Cộng dồn số liệu</button>
+						<a href="javascript:void(0);" class="btn btn-sm btn-success waves-effect mb-2 btn-xuat-exel">Xuất excel</a>
+					</div>
+					
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-lg-10 col-md-10 col-sm-10 col-10 " id="grid_search">
+						<input class="form-control"  placeholder="Tìm kiếm vật tư, thuốc...">
+
+					</div>
+					<div class="col-2 col-lg-2 col-md-2 border-left">
+						<a href="javascript:void(0);" class="btn btn-sm btn-success btn-print mb-2">In Danh sách</a>
+
+					</div>
+					
+				</div>
+
+				<hr>
+				<div class="list-item">
+				</div>
+				
+		
+					
+				</div>
+			</div>
+			<div class="form-group row mx-0" >
+				<div id="button-alway-show" >
+					<div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+				</div>
+				
+			</div>
+
+			</form>
+			
+		</div>
+	</div>
+</div>

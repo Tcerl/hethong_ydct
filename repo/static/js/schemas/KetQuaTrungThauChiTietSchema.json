@@ -1,0 +1,95 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ketqua_trungthau_id": {
+        "type": "string"
+    },
+    "ma_goi_thau": {
+        "type": "string"
+    },
+    "ten_goi_thau": {
+        "type": "string"
+    },
+    "loai_goi_thau": {
+        "type": "string"
+    },
+    "thuoc_goi_thau": {
+        "type": "string"
+    },
+    "thoigian_trungthau": {
+        "type": "string"
+    },
+    "thoigian_batdau": {
+        "type": "string"
+    },
+    "thoigian_ketthuc": {
+        "type": "string"
+    },
+    "nam_ke_hoach": {
+        "type": "number"
+    },
+    "id_sanpham": {
+        "type": "string"
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "loai_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "ten_khoa_hoc": {
+        "type": "string"
+    },
+    "sanpham": {
+        "type": "json"
+    },
+    "dongia": {
+        "type": "number",
+        "default": 0
+    },
+    "donvi_cungung_ma": {
+        "type": "string"
+    },
+    "donvi_cungung_ten": {
+        "type": "string"
+    },
+    "donvi_cungung": {
+        "type": "json"
+    },
+    "donvitinh": {
+        "type": "string"
+    },
+    "so_luong_thucte": {
+        "type": "number"
+    },
+    "so_luong_ke_hoach": {
+        "type": "number"
+    },
+    "so_luong_con_lai": {
+        "type": "number"
+    },
+    "ghichu": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "ketqua_trungthau": {
+        "type": "dict"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

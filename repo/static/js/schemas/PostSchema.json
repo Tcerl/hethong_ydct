@@ -1,0 +1,213 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "title": {
+        "type": "string"
+    },
+    "unsigned_title": {
+        "type": "string"
+    },
+    "path": {
+        "type": "string"
+    },
+    "detail_path": {
+        "type": "string"
+    },
+    "default_path": {
+        "type": "boolean",
+        "default": true
+    },
+    "description": {
+        "type": "string"
+    },
+    "content": {
+        "type": "string"
+    },
+    "image_thumbnail": {
+        "type": "json"
+    },
+    "avatar_doc": {
+        "type": "json"
+    },
+    "avatar_vuong": {
+        "type": "json"
+    },
+    "avatar_share_fb": {
+        "type": "json"
+    },
+    "tags": {
+        "type": "string"
+    },
+    "status": {
+        "type": "number",
+        "default": 0
+    },
+    "approved_time": {
+        "type": "number"
+    },
+    "approved_by": {
+        "type": "string"
+    },
+    "publish_time": {
+        "type": "number"
+    },
+    "returned_time": {
+        "type": "number"
+    },
+    "returned_by": {
+        "type": "string"
+    },
+    "priority": {
+        "type": "number"
+    },
+    "tags_unsigned": {
+        "type": "string"
+    },
+    "tags_display": {
+        "type": "string"
+    },
+    "is_highlights_home": {
+        "type": "boolean",
+        "default": false
+    },
+    "is_highlights_category": {
+        "type": "boolean",
+        "default": false
+    },
+    "style_display": {
+        "type": "number",
+        "default": 0
+    },
+    "is_show": {
+        "type": "number",
+        "default": 1
+    },
+    "user_id": {
+        "type": "string",
+        "required": true
+    },
+    "show_comment": {
+        "type": "boolean",
+        "default": true
+    },
+    "allowed_comment": {
+        "type": "boolean",
+        "default": true
+    },
+    "allow_show_advertisement": {
+        "type": "boolean",
+        "default": true
+    },
+    "survey_id": {
+        "type": "string"
+    },
+    "promotion_id": {
+        "type": "string"
+    },
+    "author_id": {
+        "type": "string"
+    },
+    "is_show_avatar": {
+        "type": "boolean",
+        "default": false
+    },
+    "tac_gia": {
+        "type": "string"
+    },
+    "chuc_danh_tac_gia": {
+        "type": "string"
+    },
+    "related_news": {
+        "type": "json"
+    },
+    "is_show_icon": {
+        "type": "boolean",
+        "default": false
+    },
+    "avatar_caption": {
+        "type": "string"
+    },
+    "note": {
+        "type": "string"
+    },
+    "news_source": {
+        "type": "string"
+    },
+    "link_original_post": {
+        "type": "string"
+    },
+    "category_id": {
+        "type": "string"
+    },
+    "related_category": {
+        "type": "json"
+    },
+    "topic": {
+        "type": "json"
+    },
+    "is_sensitive": {
+        "type": "boolean",
+        "default": false
+    },
+    "show_suggestion": {
+        "type": "number",
+        "default": 0
+    },
+    "is_post_pr": {
+        "type": "boolean",
+        "default": false
+    },
+    "title_google": {
+        "type": "string"
+    },
+    "description_google": {
+        "type": "string"
+    },
+    "main_keyword": {
+        "type": "string"
+    },
+    "keywords": {
+        "type": "string"
+    },
+    "is_post_video": {
+        "type": "boolean",
+        "default": false
+    },
+    "age_group": {
+        "type": "json"
+    },
+    "allow_send_notify": {
+        "type": "boolean",
+        "default": false
+    },
+    "status_send_notify": {
+        "type": "boolean",
+        "default": false
+    },
+    "ward": {
+        "type": "json"
+    },
+    "district": {
+        "type": "json"
+    },
+    "province_id": {
+        "type": "string"
+    },
+    "reason_delete": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

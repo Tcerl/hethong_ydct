@@ -1,0 +1,66 @@
+<div block-bind="content">
+	<div class="row">
+		<h4 id="title_page" class="page-title text-uppercase text-center text-primary w-100 py-2">Thông tin đơn vị sản xuất</h4>
+
+	</div>
+	<div class="form-horizontal" role="form">
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Mã DN</label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:ma_donvi">
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Tên DN <span class="text-danger">*</span></label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:ten_donvi">
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Loại DN <span class="text-danger">*</span></label>
+			<div class="">
+				<input type="text" class="form-control" data-bind="value:loai_donvi">
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Quốc gia</label>
+			<div class="">
+				<select type="text" class="form-control" id="selectize-quocgia"></select>
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Địa chỉ</label>
+			<div class="">
+				<textarea type="text" class="form-control" data-bind="value:diachi" rows="2"></textarea>
+			</div>
+		</div>
+		<!-- <div class="">
+			<label class="col-form-label" for="simpleinput">Tỉnh thành</label>
+			<div class="">
+				<input type="text"  class="form-control" id="selectize-tinhthanh" placeholder="Tỉnh thành">
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Quận huyện</label>
+			<div class="">
+				<input type="text"  class="form-control" id="selectize-quanhuyen" placeholder="Quận huyện" readonly>
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Xã phường</label>
+			<div class="">
+				<input type="text"  class="form-control" id="selectize-xaphuong" placeholder="Xã phường" readonly>
+			</div>
+		</div>
+		<div class="">
+			<label class="col-form-label" for="simpleinput">Địa chỉ</label>
+			<div class="">
+				<input type="text"  class="form-control" data-bind="value:diachi">
+			</div>
+		</div> -->
+
+		<div class="form-group row mt-2">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+		</div>
+	</div>
+</div>

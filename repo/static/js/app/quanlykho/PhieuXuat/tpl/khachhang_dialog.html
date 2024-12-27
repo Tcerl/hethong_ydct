@@ -1,0 +1,80 @@
+<div class="content">
+	<div class="content-header py-1">
+        <h4 class="text-center py-2">Thêm mới khách hàng</h4>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <div class="form-group row">
+                <label class="font-weight-bold col-6 col-md-3">Tên đơn vị</label>
+                <div class="col-6 col-md-9">
+                    <input class="form-control" type="text" placeholder="Nhập tên đơn vị/doanh nghiệp" data-bind="value:ten_coso">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="font-weight-bold col-6 col-md-3">Mã số doanh nghiệp</label>
+                <div class="col-6 col-md-9">
+                    <input class="form-control" type="text" placeholder="Mã doanh nghiệp" data-bind="value:sogiayphep">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="font-weight-bold col-6 col-md-3">Người đại diện</label>
+                <div class="col-6 col-md-9">
+                    <input class="form-control" type="text" placeholder="Người đại diện" data-bind="value:hoten">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 border-left">
+            <div class="form-group row">
+                <label class="font-weight-bold col-6 col-md-3">Số điện thoại</label>
+                <div class="col-6 col-md-9">
+                    <input class="form-control" type="number" placeholder="Nhập số điện thoại" data-bind="value:dienthoai">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="font-weight-bold col-6 col-md-3">Email</label>
+                <div class="col-6 col-md-9">
+                    <input class="form-control" type="text" placeholder="Nhập email" data-bind="value:email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="font-weight-bold col-6 col-md-3">Địa chỉ</label>
+                <div class="col-6 col-md-9">
+                    <textarea class="form-control" type="text" placeholder="Nhập địa chỉ" data-bind="value:diachi"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row py-2 mt-3 justify-content-center">
+        <div block-bind="toolbar"></div>
+    </div>
+</div>
+
+<style>
+	/* .modal-lg {
+		max-width: 700px !important;
+	} */
+</style>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="background-color: whitesmoke;">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Thông báo</h5>
+                <button type="button" class="close btn-close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-close">Đóng</button>
+                <button type="button" class="btn btn-primary btn-continue">Tiếp
+                    tục</button>
+            </div>
+        </div>
+    </div>
+</div>

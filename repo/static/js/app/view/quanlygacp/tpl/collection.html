@@ -1,0 +1,48 @@
+<!-- Page Header -->
+<div class="row header">
+	<div class="card col-12">
+		<div class="card-body py-2">
+			<h4 id="title_page" class="page-title text-uppercase text-center text-primary">Danh sách chứng nhận GACP</h4>
+		</div>
+	</div>
+</div>
+<!-- End Page Header -->
+<div class="card">
+		<div class="card-body">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-3 padding-custom">
+						<div class="form-group">
+							<label>Loại quá trình</label>
+							<select class="form-control rowser-default custom-select" id="loai_nuoitrong_khaithac">
+								<option value="10" selected>Tất cả</option>
+								<option value="1">Nuôi trồng, thu hái</option>
+								<option value="2">Khai thác tự nhiên</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-6 padding-custom">
+						<label>Tìm kiếm theo đơn vị</label>
+						<select id="donvi" class="form-control" placeholder="Tìm kiếm theo đơn vị"></select>
+					</div>
+				</div>
+				<div class="row mb-2">
+					<div class="col-12 col-md-6 col-lg-3 padding-custom">
+						<label>Số chứng nhận GACP</label>
+						<input class="form-control" id="so_giay_chungnhan" placeholder="Tìm kiếm theo số chứng nhận GACP">
+					</div>
+					<div class="col-12 col-md-6 col-lg-6 padding-custom">
+						<label>Tìm kiếm theo dược liệu</label>
+						<select id="duoclieu" class="form-control" aria-placeholder="Tìm kiếm theo tên, mã dược liệu"></select>
+					</div>
+					<div class="col-12 col-md-6 col-lg-3 padding-custom align-self-end group-button-gacp-cuc">
+						<button class="btn btn-search btn-sm btn-primary"><i class="fa fa-search"></i> Tìm kiếm</button>
+						<button class="btn btn-clear btn-sm btn-danger"><i class="fa fa-times"></i>  Xóa bộ lọc</button>
+					</div>
+				</div>
+			</div>
+			<div class="table-bordered table-hover" style="border: none !important;">
+				<div class="grid-collection" id="grid" data-bind='collection:$collection'></div>
+			</div>
+		</div>
+</div>

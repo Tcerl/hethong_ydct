@@ -1,0 +1,39 @@
+
+<div class="col-12">
+    <h3 class="page-title text-uppercase text-primary mb-3">Kết quả trúng thầu chi tiết</h3>
+            <div class="form-group">
+                <label>Tên dược liệu <span class="text-danger">*</span></label>
+                <select id="selectize-programmatic" placeholder="Tìm kiếm theo tên"></select>
+                <small class="ma_sanpham"></small>
+            </div>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label >Số lượng kế hoạch <span class="text-danger">*</span></label>
+                    <input class="form-control" data-ketqua_trungthau_chitiet="value:so_luong_ke_hoach" type="number" placeholder="Số lượng kế hoạch"/>
+                </div>
+                <div class="form-group col-6">
+                    <label >Số lượng thực tế<span class="text-danger">*</span></label>
+                    <input class="form-control" data-ketqua_trungthau_chitiet="value:so_luong_thucte" type="number" placeholder="Số lượng thực tế"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label >Đơn vị cung ứng</label>
+                <!-- <input class="form-control" data-ketqua_trungthau_chitiet="dict:donvi_cungung" placeholder="Chọn đơn vị cung ứng"/> -->
+                <select id="selectize-donvi-cungung" class="form-control" placeholder="Tìm kiếm và chọn đơn vị cung ứng"></select>
+            </div>
+            <div class="form-group">
+                <label >Ghi chú</label>
+                <textarea class="form-control"  data-ketqua_trungthau_chitiet="value:ghichu" rows="2" ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label >Đơn giá (VND):</label>
+                <input class="form-control giatien" type="number"  data-ketqua_trungthau_chitiet="value:dongia" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group save-danhmuc_thuoc text-center col-12 col-md-12 mt-2">
+        <a class="btn btn-secondary btn-close"> Đóng </a>
+        <a class="btn btn-success btn-save ml-1"> Lưu </a>
+    </div>
+</div>

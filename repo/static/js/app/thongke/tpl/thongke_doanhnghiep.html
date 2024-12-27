@@ -1,0 +1,324 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-12">
+			<div class="page-title-box page-title-box-alt">
+				<h4 class="page-title">THỐNG KÊ DƯỢC LIỆU</h4>
+			</div>
+		</div>
+	</div>
+
+    <div class="card">
+        <div class="card-body">
+            <div class="row thongke-donvi">
+                <div class="col-lg-4">
+                    <select class="browser-default custom-select form-control" id ="filter-condition">
+                        <option selected value="1">Danh mục sản phẩm</option>
+                        <option value="2">Danh sách chứng nhận CO</option>
+                        <option value="3">Danh sách phiếu kiểm nghiệm COA</option>
+                        <option value="4">Giấy phép nhập khẩu</option>
+                    </select>
+                    <div class="form-group list_duoclieu sanpham d-none mt-2">
+                        <div id="thongke-duoclieu-custom">
+                            <select id="chonduoclieu1" autocomplete="off"  class="form-control" placeholder="Tìm kiếm và chọn dược liệu"></select>
+                        </div>
+                    </div>
+                    <div class="list_duoclieu table table-bordered table-responsive w-100 d-none sanpham" style="border: none !important;">
+                        <table id="duoclieu_trongkho" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">STT</th>
+                                    <th>Tên dược liệu</th>
+                                    <th>Mã dược liệu</th>
+                                    <th>Số lượng tồn (KG)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>  
+                    <div class="list_co table table-bordered table-responsive w-100 d-none" style="border: none !important;">
+                        <table id="list_co" class="mt-2 table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">STT</th>
+                                    <th>Tên dược liệu</th>
+                                    <th>Số chứng nhận CO</th>
+                                    <th>Thời gian cấp</th>
+                                </tr>
+                            </thead>
+                            <tbody class="body-data">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="list_cq table table-bordered table-responsive w-100 d-none" style="border: none !important;">
+                        <table id="list_cq" class="mt-2 table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">STT</th>
+                                    <th>Tên dược liệu</th>
+                                    <th>Mã số kiểm nghiệm</th>
+                                    <th>Thời gian kiểm nghiệm</th>
+                                </tr>
+                            </thead>
+                            <tbody class="body-data">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="list_giayphep table table-bordered table-responsive w-100 d-none" style="border: none !important;">
+                        <table id="list_giayphep" class="mt-2 table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">STT</th>
+                                    <th>Tên dược liệu</th>
+                                    <th>Số giấy phép</th>
+                                    <th>Thời gian cấp phép</th>
+                                </tr>
+                            </thead>
+                            <tbody class="body-data">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="col-lg-8">
+                    <div class="row sanpham d-none">
+                        <div class="col-12 col-md-6">
+                            <h4 class="text-center">Biểu đồ thống kê số lượng tồn hiện tại</h4>
+                            <div id="pie-chart" class="sanpham d-none">
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h4 class="text-center">Biểu đồ thống kê số lượng xuất kho</h4>
+                            <div id="pie-chart-xuat" class="sanpham d-none">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row d-none filter-search sanpham pl-2">
+                        <div class="col-12 col-md-3 time-custom padding-custom time-custom-doanhnghiep">
+                            <div class="form-group">
+                                <label class="font-weight-bold padding-custom">Từ ngày</label>
+                                <div class="">
+                                    <input type="text" class="form-control" data-bind="value:tungay" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 time-custom padding-custom time-custom-doanhnghiep">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Đến ngày</label>
+                                <div class="">
+                                    <input type="text" class="form-control" data-bind="value:denngay" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 padding-custom">
+                            <div class="form-group">
+                                <label class="font-weight-bold">Tìm kiếm dược liệu</label>
+                                <div id="thongke-duoclieu-custom">
+                                    <select id="chonduoclieu" autocomplete="off"  class="form-control" placeholder="Tìm kiếm và chọn dược liệu"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-5 align-self-end padding-custom" style="margin-bottom: 0.5rem !important;">
+                            <div class="form-group d-flex">
+                                <button class="btn btn-sm btn-primary btn-search" style="margin-right: 0.2rem !important;"><i class="fa fa-search"></i> Tìm kiếm</button>
+                                <button class="btn btn-sm btn-danger btn-clean" style="margin-right: 0.2rem !important;"><i class="fa fa-times"></i> Xóa bộ lọc</button>
+                                <button class="btn btn-sm btn-success btn-excel"><i class="fas fa-file-excel"></i> Xuất excel</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="tablesaw-bar tablesaw-mode-stack thongkebaocao-xuatnhapton sanpham table-responsive table-bordered d-none">
+                        <h4 class="text-center">Thống kê SL Xuất - Nhập - Tồn của đơn vị</h4>
+                        <table class="table mb-0" data-tablesaw-mode="stack" id="tablesaw-9517">
+                            <thead class="">
+                            <tr>
+                                <th class="font-weight-bold">Tên dược liệu</th>
+                                <th class="font-weight-bold">Tên kho</th>
+                                <th  class="text-center font-weight-bold">SL Tồn Đầu Kỳ (Kg)</th>
+                                <th  class="text-center font-weight-bold">SL Nhập Trong Kỳ (Kg)</th>
+                                <th class="text-center font-weight-bold">SL Xuất Trong Kỳ (Kg)</th>
+                                <th class="text-center  font-weight-bold">SL Tồn Cuối Kỳ (Kg)</th>
+                                <th class="font-weight-bold" style="min-width: 60px !important;">Ghi chú</th>
+                            </tr>
+                            </thead>
+                            <tbody class="body-data">
+                                
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="row d-none co_info">
+                        <div class="col-12 col-md-6 border-right">
+                        <h4 class="">Thông tin chi tiết CO</h4>
+                            <div class="form-group">
+                                <div class="so_co">
+                                    <label class="font-weight-bold">Số CO: <span class="font-weight-bold text-primary"></span></label>
+                                </div>
+                                <div class="thoigian_cap_co">
+                                    <label class="font-weight-bold">Thời gian cấp CO: <span class="font-weight-bold text-primary"></span></label>
+                                </div>
+                                <div class="ten_donvi_sanxuat">
+                                    <label class="font-weight-bold">Tên đơn vị sản xuất: <span class="font-weight-bold text-primary"></span></label>
+                                </div>
+                                <div class="quocgia_donvi_sanxuat">
+                                    <label class="font-weight-bold">Quốc gia đơn vị sản xuất : <span class="font-weight-bold text-primary"></span></label>
+                                </div>
+                                <div class="ten_donvi_phanphoi">
+                                    <label class="font-weight-bold">Tên đơn vị phân phối: <span class="font-weight-bold text-primary"></span></label>
+                                </div>
+                                <div class="quocgia_donvi_phanphoi">
+                                    <label class="font-weight-bold">Quốc gia đơn vị phân phối: <span class="font-weight-bold text-primary"></span></label>
+                                </div>
+                                <div class="donvi_chungnhan_co">
+                                    <label class="font-weight-bold">Đơn vị chứng nhận CO: <span class="font-weight-bold text-primary"></span></label>
+                                </div>
+                                <div class="ten_duoclieu">
+                                    <label class="font-weight-bold">Tên dược liệu: <span class="font-weight-bold text-primary"></span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="soluong_conlai_co co_info table-responsive table-bordered d-none" style="border: none  !important;">
+                                <h4 class="text-center">Số lượng còn lại của CO</h4>
+                                <table class="table mb-0" data-tablesaw-mode="stack" id="tablesaw-9517">
+                                    <thead class="">
+                                    <tr>
+                                        <th class="font-weight-bold">Tên dược liệu</th>
+                                        <th  class="text-center font-weight-bold">Số lượng trên CO (KG)</th>
+                                        <th  class="text-center font-weight-bold">Số lượng đã nhập (KG)</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="body-data">
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-none cq_info">
+                        <h4 class="col-12 text-center">Thông tin chi tiết phiếu kiểm nghiệm COA</h4>
+                        <div class="col-12">
+                            <div class="form-group ma_kiem_nghiem">
+                                <label class="font-weight-bold">Mã kiểm nghiệm: <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group ngay_kiem_nghiem">
+                                <label class="font-weight-bold">Ngày kiểm nghiệm: <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group ten_sanpham">
+                                <label class="font-weight-bold">Mẫu kiểm nghiệm: <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group ten_donvi_cap">
+                                <label class="font-weight-bold">Tên đơn vị cấp: <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group diachi_donvi_cap">
+                                <label class="font-weight-bold">Địa chỉ đơn vi cấp <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group ten_donvi_yeucau">
+                                <label class="font-weight-bold">Đơn vị yêu cầu <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group nguoi_lay_mau">
+                                <label class="font-weight-bold">Người lấy mẫu <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group nguoi_giao_mau">
+                                <label class="font-weight-bold">Người giao mẫu <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group nguoi_nhan_mau">
+                                <label class="font-weight-bold">Người nhận mẫu <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group tinh_trang_mau">
+                                <label class="font-weight-bold">Tình trạng mẫu <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group noi_san_suat">
+                                <label class="font-weight-bold">Nơi sản xuất <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group nuoc_sanxuat">
+                                <label class="font-weight-bold">Nước sản xuất <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-none giayphep_info">
+                        <h4 class="col-12 text-center">Thông tin chi tiết giấy phép nhập khẩu</h4>
+                        <div class="col-12">
+                            <div class="form-group so_giay_phep">
+                                <label class="font-weight-bold">Số giấy phép: <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group thoigian_capphep">
+                                <label class="font-weight-bold">Thời gian cấp phép: <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group thoigian_hieuluc_batdau">
+                                <label class="font-weight-bold">Thời gian hiệu lực bắt đầu: <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group thoigian_hieuluc_ketthuc">
+                                <label class="font-weight-bold">Thời gian kết thúc hiệu lực: <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                            <div class="form-group duoclieu_nhapkhau">
+                                <label class="font-weight-bold">Dược liệu: <span class="font-weight-bold text-primary"></span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Thông báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Đơn vị của bạn hiện tại chưa có danh mục dược liệu.
+                Vui lòng thiết lập danh mục dược liệu để có thể sử dụng đầy đủ chức năng của hệ thống.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary btn-create" data-dismiss="modal">Tạo danh mục</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Thông báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Vui lòng cập nhất số lượng Nhập/Xuất kho của đơn vị.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary btn-create" data-dismiss="modal">Tạo phiếu nhập</button>
+            </div>
+        </div>
+    </div>
+</div>

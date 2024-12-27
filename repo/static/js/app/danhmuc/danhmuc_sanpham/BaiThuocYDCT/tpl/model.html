@@ -1,0 +1,96 @@
+<div block-bind="content">
+	<div class="row">
+		<h4 class="page-title text-uppercase text-center text-primary w-100 py-2">Thông tin bài thuốc gia truyền</h4>
+	</div>
+	<div class="form-horizontal" role="form">
+		<h3>Thông tin về tác giả:</h3>
+		<div class="row" id="pointer-selectize">
+			
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Tên tác giả<span class="text-danger">*</span></label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:tacgia_ten" placeholder="Nhập tên tác giả">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Số điện thoại liên hệ</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:tacgia_dienthoai" placeholder="Nhập số điện thoại tác giả">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Tỉnh thành</label>
+				<div class="">
+					<input type="text" class="form-control" id="selectize-tinhthanh" placeholder="Tỉnh thành">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Quận huyện</label>
+				<div class="">
+					<input type="text" class="form-control" id="selectize-quanhuyen" placeholder="Quận huyện">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Xã phường</label>
+				<div class="">
+					<input type="text" class="form-control" id="selectize-xaphuong" placeholder="Xã phường">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Số nhà, tên đường</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:tacgia_sonha_tenduong" placeholder="Nhập số nhà, tên đường của tác giả">
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<h3>Thông tin bài thuốc</h3>
+		<div class="row">
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Mã bài thuốc/số giấy phép </label>
+				<input type="text" class="form-control" data-bind="value:ma_baithuoc" placeholder="Nhập mã bài thuốc">
+			</div>
+			<div class="col-12">
+				<label class="col-form-label" for="simpleinput">Tên bài thuốc <span class="text-danger">*</span></label>
+				<textarea rows="2" type="text" class="form-control" data-bind="value:ten_baithuoc" placeholder="Nhập tên bài thuốc"></textarea>
+			</div>
+			<div class="col-12">
+				<label class="col-form-label" for="simpleinput">Công dụng</label>
+				<textarea rows="3"  type="text" class="form-control" data-bind="value:cong_dung" placeholder="Nhập công dụng"></textarea>
+			</div>
+			<div class="col-12">
+				<label class="col-form-label" for="simpleinput">Thành phần</label>
+				<textarea rows="3"  type="text" class="form-control" data-bind="value:thanh_phan" placeholder="Nhập thành phần"></textarea>
+			</div>
+			<div class="col-12">
+				<label class="col-form-label" for="simpleinput">Hướng dẫn sử dụng</label>
+				<textarea rows="3"  type="text" class="form-control" data-bind="value:hdsd" placeholder="Nhập hướng dẫn sử dụng"></textarea>
+			</div>
+			<div class="col-12">
+				<label class="col-form-label" for="simpleinput">Mô tả</label>
+				<textarea rows="5" type="text" class="form-control" data-bind="value:mota_baithuoc" placeholder="Nhập mô tả"></textarea>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Ngày công bố</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:ngay_congbo">
+				</div>
+			</div>
+			<div class="col-6">
+				<label class="col-form-label" for="simpleinput">Người công bố</label>
+				<div class="">
+					<input type="text" class="form-control" data-bind="value:nguoi_congbo" placeholder="Nhập người công bố">
+				</div>
+			</div>
+		</div>
+		<div class="form-group row mt-3">
+			<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+		</div>
+	</div>
+</div>
+<style>
+	.modal-dialog.modal-lg {
+  		max-width: 1200px !important;
+	}
+</style>

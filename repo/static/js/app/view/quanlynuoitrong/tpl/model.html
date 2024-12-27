@@ -1,0 +1,569 @@
+<div block-bind="content" id="content">
+        <!-- Page Header -->
+        <div class="row">
+            <div class="card col-12">
+                <div class="card-body">
+                    <h3 class="page-title text-uppercase text-center text-primary">Thông tin chi tiết</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row duoclieu_nuoitrong">
+            <div class="card col-12">
+                <div class="card-body">
+                    <ul class="timeline_cncc">
+                        <li>
+                            <div class="form-group row">
+                                <div class="col-12 col-md-6">
+                                    <h4 class="">Thông tin dược liệu</h4>
+                                    <div class="form-group row mb-0">
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-12 pr-1">
+                                            <select id="sanpham" class="form-control" placeholder="Tìm kiếm và chọn dược liệu" ></select>
+                                        </div>
+                                        <div class="col-3 col-lg-3 pl-0">
+                                            <button class="btn btn-sm btn-success btn-add-duoclieu float-right"><i class="fa fa-plus"></i> Thêm mới</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 border-left">
+                                    <h4 class="">Theo giấy chứng nhận GACP</h4>
+                                    <div class="form-group row mb-0">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12 pr-1">
+                                            <select id="chungnhangacp" class="form-control" placeholder="Tìm kiếm theo tên dược liệu, số giấy chứng nhận" ></select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-12 col-md-6">
+                                    <div class="row">
+                                        <div class="col-12 pl-2">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <span>Tên khoa học: </span>
+                                                    <span class="ten_khoa_hoc font-weight-bold"></span>
+                                                </div>
+                                                <div class="col-12">
+                                                    <span>Mã viết tắt: </span>
+                                                    <span class="ma_viet_tat font-weight-bold"></span>
+                                                </div>
+                                                <div class="col-12">
+                                                    <span>Bộ phận sử dụng: </span>
+                                                    <span class="bo_phan_su_dung font-weight-bold"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 border-left">
+                                    <div class="row">
+                                        <div class="col-12 pl-2">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <span>Tên dược liệu: </span>
+                                                    <span class="ten_sanpham font-weight-bold"></span>
+                                                </div>
+                                                <div class="col-12">
+                                                    <span>Thời gian bắt đầu hiệu lực: </span>
+                                                    <span class="thoigian_batdau_hieuluc font-weight-bold"></span>
+                                                </div>
+                                                <div class="col-12">
+                                                    <span>Thời gian kết thúc hiệu lực: </span>
+                                                    <span class="thoigian_ketthuc_hieuluc font-weight-bold"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <hr>
+                        <li>
+                            <h4>Thông tin giống</h4>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 border-right">
+                                    <div class="form-group row">
+                                        <div class="col-lg-6 col-md-6 col-12 pr-0">
+                                            <!-- <div class="row form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="chon_giong_trong_duoc_dien">
+                                                        <label class="custom-control-label" for="chon_giong_trong_duoc_dien">Giống có trong dược điển</label>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <div class="form-group row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="giong_nhap_khau" >
+                                                        <label class="custom-control-label" for="giong_nhap_khau">Giống là hàng nhập khẩu</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="form-group row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="co_xuat_xu" >
+                                                        <label class="custom-control-label" for="co_xuat_xu">Giống có nguồn gốc xuất xứ</label>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                            <div class="row form-group">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="giong_lan_tap_chat" >
+                                                        <label class="custom-control-label" for="giong_lan_tap_chat">Giống bị lẫn tạp chất</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="form-group row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="thuan_hoa_tai_vietnam" >
+                                                        <label class="custom-control-label" for="thuan_hoa_tai_vietnam">Di thực thuần hóa tại Việt Nam</label>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group row">
+                                                <label class="col-lg-7 col-md-7 col-sm-12 col-12">Tỷ lệ tạp chất (%)</label>
+                                                <div class="col-lg-5 col-md-5 col-sm-12 col-12">
+                                                    <input type="number" class="form-control" data-bind="value:tyle_tap_chat"
+                                                        placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-6 col-md-4 col-lg-4">Số lượng giống gieo trồng</label>
+                                        <div class="col-6 col-md-3 col-lg-3 pr-1">
+                                            <input class="form-control" type="number" data-bind="value:soluong_giong" />
+                                        </div>
+                                        <div class="col-6 col-md-3 col-lg-3 pl-0">
+                                            <input class="form-control" type="number" data-bind="value:donvi_tinh_soluong_giong" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Đơn vị cung cấp</label>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                            <input type="text" class="form-control" data-bind="value:donvi_cungcap_giong"
+                                                placeholder="Tên đơn vị cung cấp giống">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Địa chỉ đơn vị cung cấp</label>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                            <textarea type="text" class="form-control" data-bind="value:diachi_donvi_cungcap_giong"
+                                                placeholder="Địa chỉ đơn vị cung cấp giống"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <hr>
+                            <div class="row mt-1">
+                                <div class="col-lg-6 col-md-6 col-12 border-right">
+                                    <div class="form-group row">
+                                        <label class="pl-2">Địa điểm nuôi trồng</label>
+                                        <button class="btn btn-sm btn-success btn-new-diadiem ml-auto mr-2 mb-2"><i class="fa fa-plus"></i> Thêm mới địa điểm</button>
+                                        <div class="col-12">
+                                            <select id="diaidem-nuoitrong" class="form-control" placeholder="Tìm kiếm theo tên địa điểm"></select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <table class="table table-bordered table-centered table-nuoi-trong d-none">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Tên địa điểm</th>
+                                                        <th class="text-right">Diện tích</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="gird-nuoi-trong"> 
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group row">
+                                        <label class="pl-2">Mô tả chi tiết nguồn gốc của giống</label>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                            <textarea type="text" class="form-control" rows="3" data-bind="value:mota_nguon_goc"
+                                                placeholder="Mô tả chi tiết nguồn gốc giống"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row>">                                                      
+                                <div class="col-lg-12 col-xs-12 px-0">
+                                    <h4>
+                                        <a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false"
+                                            class="d-block title-benhkemtheo px-1"><label class="col-form-label">Giấy chứng nhận nguồn gốc giống</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                                    </h4>
+                                    <button class="btn btn-sm btn-success btn-add-file-nguongoc mb-2"><i class="fa fa-plus"></i> Thêm đính kèm</button>
+                                    <div class="collapse show" id="taskcollapse1">
+                                        <div class="table-responsive  w-80 list-attachment-nguongoc">
+                                        </div>
+                                    </div>
+                                </div>                                                               
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <h4 class="">Quá trình trồng, chăm sóc</h4>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 border-right">
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Ngày làm đất</label>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                            <input type="text" class="form-control" data-bind="value:ngay_lam_dat"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Ngày ủ/ươm giống?</label>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                            <input type="text" class="form-control" data-bind="value:ngay_uom_giong"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="sudung_phan_huuco" >
+                                                        <label class="custom-control-label" for="sudung_phan_huuco">Sử dụng phân hữu cơ</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="form-group row">
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="sudung_phan_voco" >
+                                                        <label class="custom-control-label" for="sudung_phan_voco">Sử dụng phân vô cơ</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row" style="margin-top: 0.6rem !important;">
+                                        <label class="col-lg-3 col-md-3 col-sm-12 col-12">Ngày trồng giống</label>
+                                        <div class="col-lg-9 col-md-9 col-sm-12 col-12">
+                                            <input type="text" class="form-control" data-bind="value:ngay_trong_giong"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <label class="col-12">Mô tả quá trình trồng</label>
+                                        <div class="col-12">
+                                            <textarea class="form-control" rows="3" type="text" data-bind="value:mota_qtrinh_trong" placeholder="Nhập mô tả phương pháp, cách trồng và những lưu ý xảy ra trong quá trình trồng"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <label class="col-12">Chi tiết phân bón</label>
+                                        <div class="col-12">
+                                            <textarea class="form-control" rows="3" type="text" data-bind="value:mota_phan_bon" placeholder="Mô tả chi tiết từng loại phân, hàm lượng"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-xs-12">
+                                    <h4>
+                                        <a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false"
+                                            class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm hình ảnh/video/tài liệu liên quan đến quá trình trồng</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                                    </h4>
+                                    <button class="btn btn-sm btn-success btn-add-file-trong mb-2"><i class="fa fa-plus"></i> Thêm đính kèm</button>
+                                    <div class="collapse show" id="taskcollapse1">
+                                        <div class="table-responsive w-80 list-attachment-trong">
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <hr>
+
+                            <h5>Chi tiết quá trình chăm sóc</h5>
+                            <button type="button" class="btn btn-success btn-sm btn-add-chamsoc"><i class="fa fa-plus"></i> Thêm chi tiết</button>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul class="timeline_cncc chamsoc">
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </li>
+                        <hr>
+                        <li>
+                            <h4 class="">Quá trình thu hoạch</h4>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 border-right">
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Ngày bắt đầu thu hoạch</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="text" data-bind="value:ngay_batdau_thuhoach" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Bộ phận sử dụng, thu hoạch</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="text" data-bind="value:bo_phan_thuhoach"  placeholder="Bộ phận sử dụng thu hoạch, sử dụng">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Tổng thời gian thu hoạch (ngày)</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="number" data-bind="value:thoigian_thuhoach" >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Tổng sản lượng thu hoạch thô</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="number" data-bind="value:tong_soluong_tho" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Đơn vị tính số lượng</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="text" data-bind="value:donvi_tinh_soluong" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Tổng sản lượng sau sơ chế</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="number" data-bind="value:tong_soluong_thanhpham" placeholder="Tổng số lượng thành phẩm sau khi sơ chế">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <label class="col-12">Mô tả chi tiết quá trình thu hoạch</label>
+                                        <div class="col-12">
+                                            <textarea class="form-control" rows="3" type="text" data-bind="value:mota_qtrinh_thuhoach" placeholder="Mô tả chi tiết quá trình thu hoạch"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group row">
+                                        <label class="col-12">Mô tả chi tiết quá trình sơ chế</label>
+                                        <div class="col-12">
+                                            <textarea class="form-control" rows="3" type="text" data-bind="value:mota_qtrinh_so_che" placeholder="Mô tả chi tiết quá trình sơ chế"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <h5>Quy trình đóng gói, bảo quản</h5>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12 border-right">
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Hình thức đóng gói </label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="text" data-bind="value:hinhthuc_dong_goi" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Số lượng kiện đóng gói</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="number" data-bind="value:soluong_kien_dong_goi" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Thời gian nhập kho </label>
+                                        <div class="col-lg-7 col-md-9 cl-sm-12 col-12">
+                                            <input class="form-control" type="text" data-bind="value:thoigian_nhap_kho" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Nhiệt độ kho</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="number" data-bind="value:nhiet_do_kho_bao_quan" placeholder="Nhiệt độ kho bảo quản (độ C)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Áp suất kho</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="text" data-bind="value:apsuat_kho_bao_quan" placeholder="Ấp suất kho bảo quản">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Diện tích kho</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="number" data-bind="value:dientich_kho" placeholder="Tính theo đơn vị m2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Đánh giá nội bộ</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="text" data-bind="value:danhgia_noibo" >
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-lg-5 col-md-5 col-sm-12 col-12">Mục đích sử dụng</label>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-12">
+                                            <input class="form-control" type="text" data-bind="value:mucdich_sudung" >
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-12">Quy trình đóng gói</label>
+                                <div class="col-12">
+                                    <textarea class="form-control" type="text" data-bind="value:mota_quy_trinh_dong_goi" rows="3" placeholder="Mô tả chi tiết quy trình đóng gói"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-12">Chi tiết đánh giá</label>
+                                <div class="col-12">
+                                    <textarea class="form-control" type="text" data-bind="value:mota_danhgia_noibo" rows="3" placeholder="Mô tả chi tiết đánh giá nội bộ"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <h4>
+                                        <a href="#taskcollapse2" data-toggle="collapse" aria-expanded="false"
+                                            class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm chứng nhận kiểm nghiệm</label>
+                                            <i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                                    </h4>
+                                    <button class="btn btn-sm btn-success btn-add-file-kiemnghiem mb-2"><i class="fa fa-plus"></i> Thêm đính kèm</button>
+                                    <div class="collapse show" id="taskcollapse2">
+                                        <div class="table-responsive w-80 list-attachment-kiemnghiem">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <h4>
+                                        <a href="#taskcollapse3" data-toggle="collapse" aria-expanded="false"
+                                            class="d-block title-benhkemtheo px-1"><label class="col-form-label">Đính kèm đánh giá nội bộ</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+                                    </h4>
+                                    <button class="btn btn-sm btn-success btn-add-file-danhgia mb-2"><i class="fa fa-plus"></i> Thêm đính kèm</button>
+                                    <div class="collapse show" id="taskcollapse3">
+                                        <div class="table-responsive w-80 list-attachment-danhgia">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <hr>
+                        <li>
+                            <h4>Tạo phiếu nhập trên hệ thống</h4>
+                            <button type="button" class="btn btn-success btn-sm btn-add-phieunhap mb-2"><i class="fa fa-plus"></i> Thêm phiếu nhập</button>
+                            <div class="row">
+                                <div class="col-12">
+                                    <table class="table table-bordered table-centered table-phieunhap d-none">
+                                        <thead>
+                                            <tr>
+                                                <th>Mã phiếu</th>
+                                                <th>Tên dược liệu</th>
+                                                <th class="text-center">Số lô</th>
+                                                <th>ĐVT</th>
+                                                <th class="text-right">Số lượng</th>
+                                                <th class="text-right">Thời gian nhập kho</th>
+                                                <th>Tên kho</th>
+                                                <th style="width: 80px;"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="gird-phieunhap"> 
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row mx-0">
+            <div id="button-alway-show">
+                <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+            </div>
+    
+        </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cảnh báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Sau khi xóa dữ liệu sẽ không thể khôi phục lại được, bạn có muốn tiếp tục không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary btn-deleted-continue" data-dismiss="modal">Tiếp
+                    tục</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cảnh báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Sau khi xóa dữ liệu sẽ không thể khôi phục lại được, bạn có muốn tiếp tục không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"> Hủy</button>
+                <button type="button" class="btn btn-primary btn-item-deleted-continue" data-dismiss="modal">Tiếp
+                    tục</button>
+            </div>
+        </div>
+    </div>
+</div>

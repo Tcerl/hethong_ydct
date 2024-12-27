@@ -1,0 +1,25 @@
+<div class="row text-center py-2" style="justify-content: center;">
+    <h4 class="page-title text-uppercase text-center text-primary">Chọn kiểu hiển thị</h4>
+</div>
+<div class="card col-lg-12 col-xs-12">
+    <div class="card-body row">
+        <form class="form-horizonta col-xs-12 col-md-12" role="form">
+            <div class="form-group row">
+                <label class="col-sm-3 col-form-label" for="simpleinput">Chọn kiểu hiển thị</label>
+                <div class="col-sm-9">
+                    <input type="text"  class="form-control" data-bind="value:display_type">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+        </div>
+    </div>
+</div>
+<style>
+    body[data-layout-mode=horizontal] .modal-dialog {
+        min-width: 600px !important;
+    }
+</style>

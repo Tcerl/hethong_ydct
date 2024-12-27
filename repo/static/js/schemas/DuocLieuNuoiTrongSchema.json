@@ -1,0 +1,174 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "id_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "ten_khoa_hoc": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "sanpham": {
+        "type": "json"
+    },
+    "soluong_giong": {
+        "type": "number"
+    },
+    "donvi_tinh_soluong_giong": {
+        "type": "number"
+    },
+    "chon_giong_trong_duoc_dien": {
+        "type": "number"
+    },
+    "co_xuat_xu": {
+        "type": "number"
+    },
+    "mota_nguon_goc": {
+        "type": "string"
+    },
+    "dinhkem_nguon_goc": {
+        "type": "json"
+    },
+    "giong_nhap_khau": {
+        "type": "number"
+    },
+    "thuan_hoa_tai_vietnam": {
+        "type": "number"
+    },
+    "donvi_cungcap_giong": {
+        "type": "string"
+    },
+    "diachi_donvi_cungcap_giong": {
+        "type": "string"
+    },
+    "giong_lan_tap_chat": {
+        "type": "number"
+    },
+    "tyle_tap_chat": {
+        "type": "number"
+    },
+    "diadiem_nuoitrong": {
+        "type": "json"
+    },
+    "ngay_lam_dat": {
+        "type": "string"
+    },
+    "ngay_uom_giong": {
+        "type": "string"
+    },
+    "ngay_trong_giong": {
+        "type": "string"
+    },
+    "mota_qtrinh_trong": {
+        "type": "string"
+    },
+    "dinhkem_qtrinh_trong": {
+        "type": "json"
+    },
+    "sudung_phan_huuco": {
+        "type": "number"
+    },
+    "sudung_phan_voco": {
+        "type": "number"
+    },
+    "mota_phan_bon": {
+        "type": "string"
+    },
+    "mota_qtrinh_chamsoc": {
+        "type": "json"
+    },
+    "ngay_batdau_thuhoach": {
+        "type": "string"
+    },
+    "thoigian_thuhoach": {
+        "type": "number"
+    },
+    "bo_phan_thuhoach": {
+        "type": "string"
+    },
+    "mota_qtrinh_thuhoach": {
+        "type": "string"
+    },
+    "tong_soluong_tho": {
+        "type": "number"
+    },
+    "donvi_tinh_soluong": {
+        "type": "number"
+    },
+    "mota_qtrinh_so_che": {
+        "type": "string"
+    },
+    "thoigian_nhap_kho": {
+        "type": "string"
+    },
+    "hinhthuc_dong_goi": {
+        "type": "string"
+    },
+    "mota_quy_trinh_dong_goi": {
+        "type": "string"
+    },
+    "soluong_kien_dong_goi": {
+        "type": "number"
+    },
+    "danhgia_noibo": {
+        "type": "number"
+    },
+    "mota_danhgia_noibo": {
+        "type": "string"
+    },
+    "dinhkem_danhgia_noibo": {
+        "type": "json"
+    },
+    "dinhkem_chungnhan_kiemnghiem": {
+        "type": "json"
+    },
+    "nhiet_do_kho_bao_quan": {
+        "type": "number"
+    },
+    "apsuat_kho_bao_quan": {
+        "type": "string"
+    },
+    "tong_soluong_thanhpham": {
+        "type": "number"
+    },
+    "dientich_kho": {
+        "type": "number"
+    },
+    "mucdich_sudung": {
+        "type": "number"
+    },
+    "chungnhangacp_id": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "chungnhangacp": {
+        "type": "dict"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

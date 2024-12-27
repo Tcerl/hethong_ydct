@@ -1,0 +1,57 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "id_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "ten_khoa_hoc": {
+        "type": "string"
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "ten_thuong_mai": {
+        "type": "string"
+    },
+    "ma_sanpham_donvi": {
+        "type": "string"
+    },
+    "donvi_cungung_id": {
+        "type": "string"
+    },
+    "donvi_cungung_ma": {
+        "type": "string"
+    },
+    "donvi_cungung_ten": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "thoigian_dongbo": {
+        "type": "string"
+    },
+    "trangthai": {
+        "type": "number",
+        "default": 1
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

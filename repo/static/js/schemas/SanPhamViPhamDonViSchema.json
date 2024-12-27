@@ -1,0 +1,59 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "id_sanpham": {
+        "type": "string",
+        "required": true
+    },
+    "ma_sanpham": {
+        "type": "string"
+    },
+    "ten_sanpham": {
+        "type": "string"
+    },
+    "tenkhongdau_sanpham": {
+        "type": "string"
+    },
+    "thongtin_sanpham": {
+        "type": "json"
+    },
+    "id_nhacungcap": {
+        "type": "string"
+    },
+    "ma_nhacungcap": {
+        "type": "string"
+    },
+    "ten_nhacungcap": {
+        "type": "string"
+    },
+    "tenkhongdau_nhacungcap": {
+        "type": "string"
+    },
+    "thongtin_nhacungcap": {
+        "type": "json"
+    },
+    "soquyetdinh": {
+        "type": "string"
+    },
+    "noidung_vipham": {
+        "type": "string"
+    },
+    "thoigian_vipham": {
+        "type": "string"
+    },
+    "donvi_id": {
+        "type": "string",
+        "required": true
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

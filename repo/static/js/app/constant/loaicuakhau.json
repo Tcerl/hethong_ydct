@@ -1,0 +1,9 @@
+[
+	{ "value": 1, "text": "Đường bộ - Cửa khẩu quốc tế" },
+	{ "value": 2, "text": "Đường bộ - Cửa khẩu chính" },
+	{ "value": 3, "text": "Đường bộ - Cửa khẩu phụ" },
+	{ "value": 4, "text": "Đường sắt" },
+	{ "value": 5, "text": "Đường hàng không" },
+	{ "value": 6, "text": "Đường thủy loại I" },
+	{ "value": 7, "text": "Đường thủy loại II" }
+]

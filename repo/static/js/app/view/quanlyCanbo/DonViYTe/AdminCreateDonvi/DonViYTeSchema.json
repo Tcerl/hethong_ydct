@@ -1,0 +1,147 @@
+{
+    "created_at": {
+        "type": ""
+    },
+    "created_by": {
+        "type": "string"
+    },
+    "updated_at": {
+        "type": ""
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "deleted": {
+        "type": "boolean",
+        "default": false
+    },
+    "deleted_by": {
+        "type": "string"
+    },
+    "deleted_at": {
+        "type": ""
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "hoten": {
+        "type": "string",
+        "length": 255
+    },
+    "user_email": {
+        "type": "string",
+        "length": 255
+    },
+    "password": {
+        "type": "string",
+        "length": 255
+    },
+    "cfpassword": {
+        "type": "string",
+        "length": 255
+    },
+    "phone": {
+        "type": "string",
+        "length": 255
+    },
+    "ma_coso": {
+        "type": "string"
+    },
+    "ten_coso": {
+        "type": "string"
+    },
+    "sogiayphep": {
+        "type": "string"
+    },
+    "ngaycapphep": {
+        "type": "number"
+    },
+    "dienthoai": {
+        "type": "string",
+        "length": 63
+    },
+    "email": {
+        "type": "string",
+        "length": 255
+    },
+    "website": {
+        "type": "string"
+    },
+    "loaihinh_hoatdong": {
+        "type": "number"
+    },
+    "gioithieu": {
+        "type": "string"
+    },
+    "nguoidaidien": {
+        "type": "string"
+    },
+    "nguoidaidien_dienthoai": {
+        "type": "string"
+    },
+    "thumbnail_url": {
+        "type": "string"
+    },
+    "banner_url": {
+        "type": "string"
+    },
+    "xaphuong_id": {
+        "type": "string"
+    },
+    "xaphuong": {
+        "type": "json"
+    },
+    "quanhuyen_id": {
+        "type": "string"
+    },
+    "quanhuyen": {
+        "type": "json"
+    },
+    "tinhthanh_id": {
+        "type": "string"
+    },
+    "tinhthanh": {
+        "type": "json"
+    },
+    "quocgia_id": {
+        "type": "string"
+    },
+    "quocgia": {
+        "type": "json"
+    },
+    "sonha_tenduong": {
+        "type": "string"
+    },
+    "dia_chi": {
+        "type": "string"
+    },
+    "tuyendonvi_id": {
+        "type": "string"
+    },
+    "captren_id": {
+        "type": "string"
+    },
+    "captren_name": {
+        "type": "string"
+    },
+    "loai_donvi": {
+        "type": "number"
+    },
+    "active": {
+        "type": "boolean",
+        "default": false
+    },
+    "tenkhongdau": {
+        "type": "string"
+    },
+    "tuyendonvi": {
+        "type": "dict"
+    },
+    "users": {
+        "type": "list"
+    },
+    "children": {
+        "type": "list"
+    }
+}

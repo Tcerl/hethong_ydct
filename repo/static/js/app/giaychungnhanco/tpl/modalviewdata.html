@@ -1,0 +1,180 @@
+<div block-bind="content">
+    <!-- Page Header -->
+    <div class="row">
+        <div class="card col-12">
+            <div class="card-body py-1">
+                <h3 class="page-title text-uppercase text-center text-primary">Thông tin giấy chứng nhận nguồn gốc CO
+                </h3>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Header -->
+    <div class="card card-small">
+        <div class="card-body view_co">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3 ">
+                    <div class="form-group row" id="loai_co">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Loại giấy chứng nhận CO</label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span class="loai_co"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="so_co">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Số chứng nhận (CO)</label>
+                        <div class=" col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:so_co"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="thoigian_cap_co">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Ngày cấp CO</label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span class="thoigian_cap_co"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="ten_donvi_sanxuat">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Đơn vị sản xuất</label>
+                        <div class=" col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:ten_donvi_sanxuat"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="quocgia_donvi_sanxuat">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Quốc gia đơn vị sản xuất</label>
+                        <div class=" col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span class="quocgia_donvi_sanxuat"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="diachi_donvi_sanxuat">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Địa chỉ đơn vị sản xuất</label>
+                        <div class=" col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:diachi_donvi_sanxuat"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="ten_donvi_phanphoi">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Đơn vị phân phối</label>
+                        <div class=" col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:ten_donvi_phanphoi"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="quocgia_donvi_phanphoi">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Quốc gia đơn vị phân phối</label>
+                        <div class=" col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span class="quocgia_donvi_phanphoi"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="diachi_donvi_phanphoi">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Địa chỉ đơn vị phân phối</label>
+                        <div class=" col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:diachi_donvi_phanphoi"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+                    <div class="form-group row" id="ten_donvi_tiepnhan">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Đơn vị tiếp nhận </label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:ten_donvi_tiepnhan"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="ten_nguoiky_xacnhan">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Tên người xác nhận </label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:ten_nguoiky_xacnhan"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="diachi_donvi_tiepnhan">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Địa chỉ đơn vị tiếp nhận</label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:diachi_donvi_tiepnhan"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="donvi_chungnhan_co">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Đơn vị chứng nhận</label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:donvi_chungnhan_co"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="tencuakhau">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Cửa khẩu</label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:tencuakhau"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="so_giay_phep">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">GP nhập khẩu mặc định</label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:so_giay_phep"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="ngay_khoi_hanh">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Ngày khởi hành </label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span class="ngay_khoi_hanh"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="ngay_nhap_canh">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Ngày nhập cảnh </label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span class="ngay_nhap_canh"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="so_hieu_phuongtien">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Số hiệu phương tiện </label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:so_hieu_phuongtien"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="ten_phuongtien">
+                        <label class="col-lg-4 col-md-4 col-sm-12 col-12">Tên phương tiện </label>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                            <span data-bind="text:ten_phuongtien"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-xs-12">
+                    <h4 class="text-primary">Danh sách dược liệu</h4>
+                    <div class="collapse show" id="taskcollapse2">
+                        <div class="table-responsive w-100 mb-3">
+                            <table id="demo-foo-addrow"
+                                class="table table-centered  table-bordered mb-0 toggle-circle table-vattu"
+                                data-page-size="7">
+                                <thead>
+                                    <tr>
+                                        <th data-sort-initial="true" data-toggle="true" class="text-center"
+                                            style="width: 5%">STT</th>
+                                        <th class="text-center">Tên dược liệu </th>
+                                        <th class="text-center">Mã hàng hoá</th>
+                                        <th class="text-center">Số hóa đơn</th>
+                                        <th class="text-center">Số lượng</th>
+                                        <th class="text-center">ĐVT</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-xs-12">
+                    <h4 class="text-primary">Danh sách chứng từ đính kèm</h4>
+                    <div class="collapse show" id="taskcollapse1">
+                        <div class="table-responsive w-80 list-attachment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row py-2 mt-3 justify-content-center">
+        <div block-bind="toolbar"></div>
+    </div>
+
+    <!-- </form> -->
+
+</div>
+</div>
+</div>

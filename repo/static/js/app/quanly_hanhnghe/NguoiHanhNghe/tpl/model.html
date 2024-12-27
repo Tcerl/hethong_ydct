@@ -1,0 +1,142 @@
+<div block-bind="content">
+	<div class="row">
+        <div class="card col-12">
+            <div class="card-body">
+                <h3 class="page-title text-uppercase text-center text-primary">Thông tin người hành nghề</h3>
+            </div>
+        </div>
+    </div>
+	<div class="card p-2">
+		<div class="row" id="pointer-selectize">
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Họ tên <span class="text-danger">*</span> </label>
+					<input type="text" class="form-control text-uppercase" placeholder="Nhập họ tên người hành nghề"
+						data-bind="value:ten">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Ngày sinh</label>
+					<input type="text" class="form-control" data-bind="value:ngaysinh">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Giới tính</label>
+					<input type="text" class="form-control" data-bind="value:gioitinh">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Email</label>
+					<input type="text" class="form-control text-lowercase" placeholder="Nhập email" data-bind="value:email">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>SĐT</label>
+					<input type="text" class="form-control" placeholder="Nhập SĐT" data-bind="value:sodienthoai">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Mã công dân</label>
+					<input type="text" class="form-control" placeholder="Nhập mã công dân" data-bind="value:ma_cong_dan">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Ngày bắt đầu làm việc tại cơ sở</label>
+					<input type="text" class="form-control" data-bind="value:ngay_batdau">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Ngày kết thúc làm việc tại cơ sở</label>
+					<input type="text" class="form-control" data-bind="value:ngay_kethuc">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Tỉnh/TP</label>
+					<input type="text" id="selectize-tinhthanh" class="form-control">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Quận/Huyện</label>
+					<input type="text" id="selectize-quanhuyen" class="form-control">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Xã/Phường</label>
+					<input type="text" id="selectize-xaphuong" class="form-control">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<label>Số nhà/Tên đường</label>
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Nhập số nhà tên đường" data-bind="value:sonha_tenduong">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Mã CCHN</label>
+					<input type="text" class="form-control" placeholder="Nhập mã chứng chỉ hành nghề" data-bind="value:ma_cchn">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Ngày hiệu lực</label>
+					<input type="text" class="form-control" placeholder="Chọn ngày hiệu lực" data-bind="value:ngay_hieu_luc">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Ngày hết hạn</label>
+					<input type="text" class="form-control" placeholder="Chọn ngày hết hạn" data-bind="value:ngay_het_han">
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="form-group">
+					<label>Ngày cấp</label>
+					<input type="text" class="form-control" placeholder="Chọn ngày cấp" data-bind="value:ngay_cap">
+				</div>
+			</div>
+			<div class="col-sm-6 col-12">
+				<div class="form-group">
+					<label>Nơi cấp</label>
+					<input type="text" class="form-control" placeholder="Nhập nơi cấp" data-bind="value:noi_cap">
+				</div>
+			</div>
+			<div class="col-sm-6 col-12">
+				<div class="form-group">
+					<label>Vai trò</label>
+					<input type="text" class="form-control" data-bind="value:vaitro">
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="form-group row">
+			<div class="col-12">
+				<h4>
+					<a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false" class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách chứng từ đính kèm</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+				</h4>
+				<button class="btn btn-sm btn-success btn-add-file mb-2">Thêm chứng từ đính kèm</button>
+				<div class="collapse show" id="taskcollapse1">
+					<div class="table-responsive w-80 list-attachment">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="d-none" id="danhsach_chungchi_hanhnghe">
+    </div>
+	<div class="form-group row mx-0">
+        <div id="button-alway-show">
+            <div block-bind="toolbar" class="col-12 text-center"></div>
+        </div>
+    </div>
+</div>

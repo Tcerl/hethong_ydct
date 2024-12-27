@@ -1,0 +1,58 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "image_thumbnail": {
+        "type": "json"
+    },
+    "name": {
+        "type": "string"
+    },
+    "unsigned_name": {
+        "type": "string"
+    },
+    "path": {
+        "type": "string"
+    },
+    "tags": {
+        "type": "string"
+    },
+    "description": {
+        "type": "string"
+    },
+    "show_top_menu": {
+        "type": "boolean",
+        "default": true
+    },
+    "show_in_home": {
+        "type": "boolean",
+        "default": true
+    },
+    "cate_parent_id": {
+        "type": "string"
+    },
+    "status": {
+        "type": "number",
+        "default": 0
+    },
+    "style_display": {
+        "type": "number",
+        "default": 0
+    },
+    "priority": {
+        "type": "number"
+    },
+    "donvi_id": {
+        "type": "string"
+    },
+    "donvi": {
+        "type": "dict"
+    }
+}

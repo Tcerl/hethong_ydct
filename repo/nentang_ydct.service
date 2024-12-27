@@ -1,0 +1,20 @@
+[Unit]
+Description=NentangYDCT daemon
+After=network.target
+
+[Service]
+PIDFile=/var/run/nentang_ydct.pid
+User=ubuntu
+Group=ubuntu
+RuntimeDirectory=nentang_ydct
+WorkingDirectory=/opt/deploys/nentang_ydct/repo
+ExecStart=/opt/deploys/nentang_ydct/bin/python manage.py run
+ExecReload=/bin/kill -s HUP $MAINPID
+ExecStop=/bin/kill -s TERM $MAINPID
+PrivateTmp=true
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+#place in to /etc/systemd/system

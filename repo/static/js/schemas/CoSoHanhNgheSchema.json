@@ -1,0 +1,215 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "ma_coso": {
+        "type": "string"
+    },
+    "ten_coso": {
+        "type": "string"
+    },
+    "ten_coso_khongdau": {
+        "type": "string"
+    },
+    "loai_coso": {
+        "type": "number",
+        "default": 1
+    },
+    "ma_dangky_kinhdoanh": {
+        "type": "string"
+    },
+    "dkkd_ngay_cap": {
+        "type": "string"
+    },
+    "dkkd_ngay_hieu_luc": {
+        "type": "string"
+    },
+    "dkkd_ngay_het_han": {
+        "type": "string"
+    },
+    "dkkd_co_quan_cap": {
+        "type": "string"
+    },
+    "email_coso": {
+        "type": "string"
+    },
+    "dienthoai_coso": {
+        "type": "string"
+    },
+    "fax_coso": {
+        "type": "string"
+    },
+    "avatar_url": {
+        "type": "string"
+    },
+    "nguoi_tncm_ten": {
+        "type": "string"
+    },
+    "nguoi_tncm_so_cchn": {
+        "type": "string"
+    },
+    "nguoi_tncm_ngaycap": {
+        "type": "number"
+    },
+    "nguoi_tncm_vanbang": {
+        "type": "json"
+    },
+    "dinhkem_chungchi": {
+        "type": "json"
+    },
+    "dinhkem_anh_chandung": {
+        "type": "json"
+    },
+    "dinhkem_vanbang_chuyenmon": {
+        "type": "json"
+    },
+    "dinhkem_xacnhan_congdan": {
+        "type": "json"
+    },
+    "dinhkem_files_khac": {
+        "type": "json"
+    },
+    "loaihinh_kinhdoanh": {
+        "type": "json"
+    },
+    "phamvi_kinhdoanh": {
+        "type": "json"
+    },
+    "tinhthanh_coso_id": {
+        "type": "string"
+    },
+    "tinhthanh_coso": {
+        "type": "json"
+    },
+    "quanhuyen_coso_id": {
+        "type": "string"
+    },
+    "quanhuyen_coso": {
+        "type": "json"
+    },
+    "xaphuong_coso_id": {
+        "type": "string"
+    },
+    "xaphuong_coso": {
+        "type": "json"
+    },
+    "sonha_tenduong_coso": {
+        "type": "string"
+    },
+    "diachi_coso": {
+        "type": "string"
+    },
+    "tinhthanh_kho_id": {
+        "type": "string"
+    },
+    "tinhthanh_kho": {
+        "type": "json"
+    },
+    "quanhuyen_kho_id": {
+        "type": "string"
+    },
+    "quanhuyen_kho": {
+        "type": "json"
+    },
+    "xaphuong_kho_id": {
+        "type": "string"
+    },
+    "xaphuong_kho": {
+        "type": "json"
+    },
+    "sonha_tenduong_kho": {
+        "type": "string"
+    },
+    "diachi_kho": {
+        "type": "string"
+    },
+    "ten_kinhdoanh": {
+        "type": "string"
+    },
+    "ten_kinhdoanh_khongdau": {
+        "type": "string"
+    },
+    "tinhthanh_kinhdoanh_id": {
+        "type": "string"
+    },
+    "tinhthanh_kinhdoanh": {
+        "type": "json"
+    },
+    "quanhuyen_kinhdoanh_id": {
+        "type": "string"
+    },
+    "quanhuyen_kinhdoanh": {
+        "type": "json"
+    },
+    "xaphuong_kinhdoanh_id": {
+        "type": "string"
+    },
+    "xaphuong_kinhdoanh": {
+        "type": "json"
+    },
+    "sonha_tenduong_kinhdoanh": {
+        "type": "string"
+    },
+    "diachi_kinhdoanh": {
+        "type": "string"
+    },
+    "ten_nguoi_lienhe": {
+        "type": "string"
+    },
+    "chucdanh_nguoi_lienhe": {
+        "type": "string"
+    },
+    "email_nguoi_lienhe": {
+        "type": "string"
+    },
+    "dienthoai_nguoi_lienhe": {
+        "type": "string"
+    },
+    "fax_nguoi_lienhe": {
+        "type": "string"
+    },
+    "tructhuoc": {
+        "type": "boolean",
+        "default": false
+    },
+    "ten_tructhuoc": {
+        "type": "string"
+    },
+    "ten_tructhuoc_khongdau": {
+        "type": "string"
+    },
+    "tinhthanh_tructhuoc_id": {
+        "type": "string"
+    },
+    "tinhthanh_tructhuoc": {
+        "type": "json"
+    },
+    "quanhuyen_tructhuoc_id": {
+        "type": "string"
+    },
+    "quanhuyen_tructhuoc": {
+        "type": "json"
+    },
+    "xaphuong_tructhuoc_id": {
+        "type": "string"
+    },
+    "xaphuong_tructhuoc": {
+        "type": "json"
+    },
+    "sonha_tenduong_tructhuoc": {
+        "type": "string"
+    },
+    "diachi_tructhuoc": {
+        "type": "string"
+    },
+    "danhsach_nguoi_hanhnghe": {
+        "type": "list"
+    }
+}

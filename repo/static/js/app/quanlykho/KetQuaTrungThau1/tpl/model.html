@@ -1,0 +1,176 @@
+<div block-bind="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body">
+				<h3 class="page-title text-uppercase text-center text-primary">Thông tin Gói trúng thầu</h3>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	<div class="card  card-small row">
+		<div class="card-body">
+
+			<div class="col-12">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12 pr-lg-3 pr-md-3">
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Mã gói thầu <span class="text-danger">*</span></label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:ma_goi_thau"
+									placeholder="Nhập mã gói thầu">
+							</div>
+						</div>
+						<div class="form-group  row ">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Tên gói thầu <span class="text-danger">*</span></label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:ten_goi_thau"
+									placeholder="Nhập tên gói thầu">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Loại gói thầu</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="text" class="form-control " data-bind="value:loai_goi_thau"
+									placeholder="Chọn loại gói thầu">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Ngày trúng thầu <span
+									class="text-danger">*</span></label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="text" class="form-control" data-bind="value:thoigian_trungthau"
+									placeholder="Nhập thời gian nhập kho">
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-12 col-12 border-left">
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Thực hiện từ ngày<span
+									class="text-danger">*</span></label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12"><input type="text" class="form-control "
+									data-bind="value:thoigian_batdau" placeholder="Thời gian bắt đầu">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Thực hiện đến ngày <span
+								class="text-danger">*</span></label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<input type="text" class="form-control " data-bind="value:thoigian_ketthuc"
+									placeholder="Thời gian kết thúc">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="col-lg-3 col-md-3 col-sm-12 col-12">Thuộc gói thầu</label>
+							<div class="col-lg-9 col-md-9 col-sm-12 col-12">
+								<textarea type="text" class="form-control " data-bind="value:thuoc_goi_thau"
+									placeholder="Nhập tên gói thầu tổng" rows="2"></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-12">
+				<hr>
+				<div class="row form-group">
+					<div class="col-lg-12 col-xs-12">
+						<h4>
+							<a href="#taskcollapse2" data-toggle="collapse" aria-expanded="false" class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách dược liệu</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+						</h4>
+						<button class="btn btn-sm btn-success btn-add-vattu mb-2"><i class="fa fa-plus"></i> Thêm dược liệu</button>
+						<div class="collapse show" id="taskcollapse2">
+							<div class="table-responsive w-100 mb-3">
+								<table id="demo-foo-addrow" class="table table-centered table-striped table-bordered mb-0 toggle-circle table-vattu" data-page-size="7">
+									<thead>
+										<tr>
+											<th class="text-center">STT</th>
+											<th >Tên dược liệu</th>
+											<th class="text-center">ĐVT</th>
+											<th class="text-center">Đơn giá</th>
+											<th class="text-center">SL Kế Hoạch</th>
+											<th class="text-center">SL Thực Tế</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="col-12">
+				<hr>
+				<div class="form-group row">
+					<div class="col-lg-12 col-xs-12">
+						<h4>
+							<a href="#taskcollapse1" data-toggle="collapse" aria-expanded="false" class="d-block title-benhkemtheo px-1"><label class="col-form-label">Danh sách chứng từ đính kèm</label><i class="mdi mdi-chevron-down accordion-arrow"></i></a>
+						</h4>
+						<button class="btn btn-sm btn-success btn-add-file mb-2">Thêm chứng từ đính kèm</button>
+						<div class="collapse show" id="taskcollapse1">
+							<div class="table-responsive w-80 list-attachment">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+		</div>
+	</div>
+	<div class="form-group row" >
+        <div id="button-alway-show" >
+            <div  block-bind="toolbar" class="col-sm-12 col-xs-12 text-center "></div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cảnh báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Sau khi xóa dữ liệu sẽ không thể khôi phục lại được, bạn có muốn tiếp tục không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary btn-deleted-continue" data-dismiss="modal">Tiếp
+                    tục</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cảnh báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Sau khi xóa dữ liệu sẽ không thể khôi phục lại được, bạn có muốn tiếp tục không?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal"> Hủy</button>
+                <button type="button" class="btn btn-primary btn-item-deleted-continue" data-dismiss="modal">Tiếp
+                    tục</button>
+            </div>
+        </div>
+    </div>
+</div>

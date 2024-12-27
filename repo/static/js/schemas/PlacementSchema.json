@@ -1,0 +1,47 @@
+{
+    "updated_at": {
+        "type": "number"
+    },
+    "updated_by": {
+        "type": "string"
+    },
+    "id": {
+        "type": "string",
+        "primary": true
+    },
+    "name": {
+        "type": "string"
+    },
+    "unsigned_name": {
+        "type": "string"
+    },
+    "description": {
+        "type": "string"
+    },
+    "priority": {
+        "type": "number",
+        "default": 0
+    },
+    "status": {
+        "type": "number",
+        "default": 0
+    },
+    "ad_placement": {
+        "type": "string",
+        "default": "home"
+    },
+    "type_display": {
+        "type": "string",
+        "default": "1"
+    },
+    "width": {
+        "type": "string"
+    },
+    "height": {
+        "type": "string"
+    },
+    "type_screen": {
+        "type": "string",
+        "default": "1"
+    }
+}

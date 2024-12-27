@@ -1,0 +1,87 @@
+<div class="row text-center py-2" style="justify-content: center;">
+    <h4 class="page-title text-uppercase text-center text-primary">Đính kèm file</h4>
+</div>
+<div class="card col-lg-12 col-xs-12 px-0">
+    <div class="card-body">
+        <div class="col-12 pb-1">
+            <button type="button" class="btn btn-primary" id="choose_file" style="box-shadow: none;"><i class="fas fa-upload"></i> Chọn file</button>
+        </div>
+        <div class="col-12 pb-1 mt-1">
+            <label for="simpleinput">Tiêu đề</label>
+            <input type="text" class="form-control" id="title_attach_file" placeholder="Nhập tiêu đề">
+        </div>
+        <div class="col-12 pb-1 mt-1">
+            <label for="simpleinput">Tên file <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="file_name" placeholder="Nhập tên file">
+        </div>
+        <div class="col-12 pb-1 mt-1">
+            <label for="simpleinput">Đường dẫn <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" id="url_file" placeholder="Nhập đường dẫn">
+        </div>
+        <div class="col-12 pb-1 mt-1">
+            <h4 class="header-title mt-2 mb-2 text-uppercase">Xem trước</h4>
+            <div id="preview_attach_file">
+                
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="form-group">
+            <div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+        </div>
+    </div>
+</div>
+<style>
+    .file-attach {
+        border-radius: 4px;
+        border: 1px solid #ced0d4;
+        padding: 10px;
+        background-color: #f0f0f0;
+    }
+    .file-attach-title p {
+        margin: 0;
+        font-family: Roboto-Regular;
+        font-size: 18px;
+        color: #333;
+    }
+    .file-attach-content {
+        display: flex;
+        margin-top: 10px;
+    }
+    .file-attach-icon {
+        margin-right: 10px;
+    }
+    .file-attach-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .file-attach-info a, .file-attach-info a:visited {
+        color: #3575d3 !important;
+        font-size: 18px;
+        font-family: Roboto,sans-serif;
+    }
+    .btn-download {
+        box-shadow: none;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: 5px 10px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        color: #fff;
+        background-color: #0056c1;
+        border-color: #0056c1;
+        margin-top: -3px;
+    }
+    .btn-download:hover {
+        color: #fff;
+        background-color: #00459b;
+        border-color: #003f8e;
+        text-decoration: none;
+    }
+</style>

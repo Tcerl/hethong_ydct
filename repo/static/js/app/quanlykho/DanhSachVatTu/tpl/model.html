@@ -1,0 +1,94 @@
+<div block-bind="content">
+	<!-- Page Header -->
+	<div class="row">
+		<div class="card col-12">
+			<div class="card-body py-2">
+				<h3 class="page-title text-uppercase text-center text-primary">Chi tiết dược liệu</h3>
+			</div>
+		</div>
+	</div>
+	<!-- End Page Header -->
+	<div class="card  card-small mb-4">
+		<div class="card-body">
+			<div class=" row">
+				<div class="form-group col-lg-6 col-md-6 col-12 row">
+					<label class="col-sm-4 col-form-label" for="simpleinput">Kho lưu trữ</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" data-bind="dict:kho" placeholder="Chọn Kho">
+					</div>
+				</div>
+				<div class="form-group col-lg-6 col-md-6 col-12 row">
+					<label class="col-sm-4 col-form-label" for="simpleinput">Tên dược liệu</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" data-bind="value:ten_sanpham" placeholder="Dược liệu">
+					</div>
+				</div>
+			</div>
+			<div class=" row">
+				<div class="form-group col-6 row">
+					<label class="col-sm-4 col-form-label" for="simpleinput">Số Lô</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" data-bind="value:so_lo" placeholder="Nhập Số lô">
+					</div>
+				</div>
+				<div class="form-group col-6 row">
+					<label class="col-sm-4 col-form-label" for="simpleinput">Số Lượng Tồn</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" data-bind="value:soluong" placeholder="Nhập số lượng">
+					</div>
+				</div>
+
+			</div>
+			<div class=" row">
+				<div class="form-group col-6 row">
+					<label class="col-sm-4 col-form-label" for="simpleinput">Đơn giá nhập</label>
+					<div class="col-sm-8">
+						<input type="number" class="form-control" data-bind="value:dongia_nhap"
+							placeholder="Nhập đơn giá nhập vào">
+					</div>
+				</div>
+				<div class="form-group col-6 row">
+					<label class="col-sm-4 col-form-label" for="simpleinput">Đơn giá bán</label>
+					<div class="col-sm-8">
+						<input type="number" class="form-control" data-bind="value:dongia_ban"
+							placeholder="Nhập đơn giá bán ra">
+					</div>
+				</div>
+
+			</div>
+			<div class=" row">
+				<div class="form-group col-6 row">
+					<label class="col-sm-4 col-form-label" for="simpleinput">Đơn vị tính</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" data-bind="value:donvitinh"
+							placeholder="Nhập đơn vị tính">
+					</div>
+				</div>
+				<div class="form-group col-6 row">
+					<label class="col-sm-4 col-form-label" for="simpleinput">Hạn sử dụng</label>
+					<div class="col-sm-8">
+						<input type="text" class="form-control" data-bind="value:hansudung"
+							placeholder="Nhập hạn sử dụng">
+					</div>
+				</div>
+
+			</div>
+			<div class="row form-group">
+				<label class="col-4 col-form-label">Mã QR code dược liệu</label>
+				<div id="qrcode" class="col-sm-8"></div>
+			</div>
+			<div class="row form-group justify-content-end">
+				<a download="QR_code.png" class="d-none col-sm-8">
+					<button class="btn btn-outline-primary btn-sm download-qrcode">Tải mã QR code</button>
+				</a>
+			</div>
+			<div class="form-group row updated_at d-none">
+				<label class="col-sm-2 col-form-label" for="simpleinput">Thời gian thay đổi gần nhất</label>
+				<h4 class="updated_time"></h4>
+			</div>
+			<div class="form-group row">
+				<div block-bind="toolbar" class="col-sm-12 col-xs-12 text-center"></div>
+			</div>
+		</div>
+	</div>
+</div>

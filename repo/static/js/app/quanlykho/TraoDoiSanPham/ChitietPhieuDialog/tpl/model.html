@@ -1,0 +1,50 @@
+
+<div class="col-12 container-fluid">
+    <h3 class="page-title text-uppercase text-primary">Chi tiết dược liệu xuất kho</h3>
+    <!-- <div class="col-12 row">
+        <div class="col-6"> -->
+            <!-- <div class="form-group row">
+                <label class="col-lg-4 col-md-4 col-sm-12 col-12">Loại vật tư<span class="text-danger">*</span></label>
+                <input class="form-control col-lg-8 col-md-8 col-sm-12 col-12" data-phieuxuatkho_chitiet="value:loai_vattu" placeholder="Nhập số phiếu"/>
+            </div> -->
+            <div class="form-group row">
+                <label class="col-lg-4 col-md-4 col-sm-12 col-12">Tên dược liệu <span class="text-danger">*</span></label>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-12 px-0">
+                    <select class="form-control" id="selectize-programmatic" placeholder="Chọn dược liệu..."></select>
+                    <small></span><span id="tonkho"></span></small>
+                    <small class="so_lo float-right" >Số Lô: <span data-phieuxuatkho_chitiet="text:so_lo"></span></small>
+                </div>
+            </div>
+            <!-- <div class="form-group row">
+                <label class="col-lg-4 col-md-4 col-sm-12 col-12">Số lô</label>
+                <input class="form-control  col-lg-8 col-md-8 col-sm-12 col-12" data-phieuxuatkho_chitiet="value:so_lo" placeholder="Nhập số lô"/>
+            </div> -->
+            <div class="form-group row">
+                <label class="col-lg-4 col-md-4 col-sm-12 col-12">Thời gian xuất kho</label>
+                <input class="form-control col-lg-8 col-md-8 col-sm-12 col-12" data-phieuxuatkho_chitiet="value:thoigian_xuat"/>
+            </div>
+        <!-- </div>
+        <div class="col-6"> -->
+            <div class="form-group row">
+                <label class="col-lg-4 col-md-4 col-sm-12 col-12">Số lượng chứng từ</label>
+                <input class="form-control col-lg-8 col-md-8 col-sm-12 col-12" data-phieuxuatkho_chitiet="value:soluong_chungtu" type="number" placeholder="Nhập số lượng theo chứng từ"/>
+            </div>
+            <div class="form-group row">
+                <label class="col-lg-4 col-md-4 col-sm-12 col-12">Số lượng thực xuất<span class="text-danger">*</span></label>
+                <input class="form-control col-lg-8 col-md-8 col-sm-12 col-12" data-phieuxuatkho_chitiet="value:soluong_thucte" type="number" placeholder="Nhập số lượng thực tế"/>
+            </div>
+            <div class="form-group row">
+                <label class="col-lg-4 col-md-4 col-sm-12 col-12">Đơn giá (VND):</label>
+                <input class="form-control giatien col-lg-8 col-md-8 col-sm-12 col-12" type="number"  data-phieuxuatkho_chitiet="value:dongia" />
+            </div>
+            <div class="form-group">
+                <label >Tổng tiền:  <span class="gia_thanhtoan"></span> VND</label>
+                <!-- <input class="form-control gia_thanhtoan"  style="pointer-events: none"/> -->
+            </div>
+        </div>
+    </div>
+    <div class="form-group save-danhmuc_thuoc text-center col-12 col-md-12 mt-2">
+        <a class="btn btn-secondary btn-close"> Đóng </a>
+        <a class="btn btn-success btn-save ml-1"> Lưu </a>
+    </div>
+</div>
